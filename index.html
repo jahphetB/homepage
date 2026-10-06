@@ -3,256 +3,673 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Homepage</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@400;500&display=swap"
+		rel="stylesheet"
+	>
+
 	<link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet"
-    >
 </head>
-<body>
-    <header class="about-section">
-        <div class="about-image-wrapper">
-            <img
-                class="about-image"
-                src="assets/images/profile.jpg"
-                alt="Portrait of Ashley Williams"
-            >
-            <h1>Yaphet Bashahider</h1>
-        </div>
 
-        <div class="about-content">
-            <h2>About me</h2>
+<body id="page-body">
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
-            </p>
+	<header id="about-section">
 
-            <div class="social-links">
-                <a href="#" aria-label="GitHub">
-                    <img src="assets/icons/github.svg" alt="">
-                </a>
+		<div id="about-background-shape"></div>
 
-                <a href="#" aria-label="LinkedIn">
-                    <img src="assets/icons/linkedin.svg" alt="">
-                </a>
+		<div id="about-layout">
 
-                <a href="#" aria-label="Twitter">
-                    <img src="assets/icons/twitter.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </header>
+			<div id="profile-image-box" class="profile-image-box">
+				<img
+					id="profile-image"
+					src="assets/images/profile.jpg"
+					alt="Portrait of Yaphet Bashahider"
+				>
+			</div>
 
-    <main>
-        <section class="work-section">
-            <h2>My work</h2>
+			<div id="profile-name-box" class="profile-name-box">
+				<h1 id="profile-name">
+					Yaphet Bashahider
+				</h1>
+			</div>
 
-            <div class="projects">
-                <article class="project-card">
-                    <div class="project-screenshot">
-                        <p>screenshot<br>of project</p>
-                    </div>
+			<div id="about-card" class="about-card">
 
-                    <div class="project-info">
-                        <div class="project-heading">
-                            <h3>Project name</h3>
+				<h2 id="about-heading" class="section-heading">
+					About me
+				</h2>
 
-                            <div class="project-links">
-                                <a href="#" aria-label="View project on GitHub">
-                                    <img src="assets/icons/github.svg" alt="">
-                                </a>
+				<p id="about-description">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
 
-                                <a href="#" aria-label="Open live project">
-                                    <img src="assets/icons/open-in-new.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
+				<div id="about-social-links" class="social-links">
 
-                        <p>
-                            Short description of the project. Just a couple sentences will do.
-                        </p>
-                    </div>
-                </article>
-                                <article class="project-card">
-                    <div class="project-screenshot">
-                        <p>screenshot<br>of project</p>
-                    </div>
+					<a
+						id="about-github-link"
+						class="social-link"
+						href="#"
+						aria-label="GitHub"
+					>
+						<img
+							id="about-github-icon"
+							class="social-icon"
+							src="assets/icons/github.svg"
+							alt=""
+						>
+					</a>
 
-                    <div class="project-info">
-                        <div class="project-heading">
-                            <h3>Project name</h3>
+					<a
+						id="about-linkedin-link"
+						class="social-link"
+						href="#"
+						aria-label="LinkedIn"
+					>
+						<img
+							id="about-linkedin-icon"
+							class="social-icon"
+							src="assets/icons/linkedin.svg"
+							alt=""
+						>
+					</a>
 
-                            <div class="project-links">
-                                <a href="#" aria-label="View project on GitHub">
-                                    <img src="assets/icons/github.svg" alt="">
-                                </a>
+					<a
+						id="about-twitter-link"
+						class="social-link"
+						href="#"
+						aria-label="X"
+					>
+						<img
+							id="about-twitter-icon"
+							class="social-icon"
+							src="assets/icons/twitter.svg"
+							alt=""
+						>
+					</a>
 
-                                <a href="#" aria-label="Open live project">
-                                    <img src="assets/icons/open-in-new.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-                        <p>
-                            Short description of the project. Just a couple sentences will do.
-                        </p>
-                    </div>
-                </article>
-                                <article class="project-card">
-                    <div class="project-screenshot">
-                        <p>screenshot<br>of project</p>
-                    </div>
 
-                    <div class="project-info">
-                        <div class="project-heading">
-                            <h3>Project name</h3>
+	<main id="main-content">
 
-                            <div class="project-links">
-                                <a href="#" aria-label="View project on GitHub">
-                                    <img src="assets/icons/github.svg" alt="">
-                                </a>
+		<section id="work-section">
 
-                                <a href="#" aria-label="Open live project">
-                                    <img src="assets/icons/open-in-new.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
+			<h2 id="work-heading" class="section-heading">
+				My work
+			</h2>
 
-                        <p>
-                            Short description of the project. Just a couple sentences will do.
-                        </p>
-                    </div>
-                </article>
-                                <article class="project-card">
-                    <div class="project-screenshot">
-                        <p>screenshot<br>of project</p>
-                    </div>
+			<div id="projects-grid">
 
-                    <div class="project-info">
-                        <div class="project-heading">
-                            <h3>Project name</h3>
+				<article id="project-one" class="project-card">
 
-                            <div class="project-links">
-                                <a href="#" aria-label="View project on GitHub">
-                                    <img src="assets/icons/github.svg" alt="">
-                                </a>
+					<div
+						id="project-one-screenshot"
+						class="project-screenshot"
+					>
+						<p
+							id="project-one-screenshot-text"
+							class="project-screenshot-text"
+						>
+							screenshot<br>
+							of project
+						</p>
+					</div>
 
-                                <a href="#" aria-label="Open live project">
-                                    <img src="assets/icons/open-in-new.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
+					<div
+						id="project-one-info"
+						class="project-info"
+					>
+						<div
+							id="project-one-header"
+							class="project-header"
+						>
+							<h3
+								id="project-one-title"
+								class="project-title"
+							>
+								Project name
+							</h3>
 
-                        <p>
-                            Short description of the project. Just a couple sentences will do.
-                        </p>
-                    </div>
-                </article>
-                                <article class="project-card">
-                    <div class="project-screenshot">
-                        <p>screenshot<br>of project</p>
-                    </div>
+							<div
+								id="project-one-links"
+								class="project-links"
+							>
+								<a
+									id="project-one-github-link"
+									class="project-link"
+									href="#"
+									aria-label="Project one GitHub"
+								>
+									<img
+										id="project-one-github-icon"
+										class="project-link-icon"
+										src="assets/icons/github.svg"
+										alt=""
+									>
+								</a>
 
-                    <div class="project-info">
-                        <div class="project-heading">
-                            <h3>Project name</h3>
+								<a
+									id="project-one-live-link"
+									class="project-link"
+									href="#"
+									aria-label="Open project one"
+								>
+									<img
+										id="project-one-live-icon"
+										class="project-link-icon"
+										src="assets/icons/open-in-new.svg"
+										alt=""
+									>
+								</a>
+							</div>
+						</div>
 
-                            <div class="project-links">
-                                <a href="#" aria-label="View project on GitHub">
-                                    <img src="assets/icons/github.svg" alt="">
-                                </a>
+						<p
+							id="project-one-description"
+							class="project-description"
+						>
+							Short description of the project.
+							Just a couple sentences will do.
+						</p>
+					</div>
+				</article>
 
-                                <a href="#" aria-label="Open live project">
-                                    <img src="assets/icons/open-in-new.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
 
-                        <p>
-                            Short description of the project. Just a couple sentences will do.
-                        </p>
-                    </div>
-                </article>
-                                <article class="project-card">
-                    <div class="project-screenshot">
-                        <p>screenshot<br>of project</p>
-                    </div>
+				<article id="project-two" class="project-card">
 
-                    <div class="project-info">
-                        <div class="project-heading">
-                            <h3>Project name</h3>
+					<div
+						id="project-two-screenshot"
+						class="project-screenshot"
+					>
+						<p
+							id="project-two-screenshot-text"
+							class="project-screenshot-text"
+						>
+							screenshot<br>
+							of project
+						</p>
+					</div>
 
-                            <div class="project-links">
-                                <a href="#" aria-label="View project on GitHub">
-                                    <img src="assets/icons/github.svg" alt="">
-                                </a>
+					<div
+						id="project-two-info"
+						class="project-info"
+					>
+						<div
+							id="project-two-header"
+							class="project-header"
+						>
+							<h3
+								id="project-two-title"
+								class="project-title"
+							>
+								Project name
+							</h3>
 
-                                <a href="#" aria-label="Open live project">
-                                    <img src="assets/icons/open-in-new.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
+							<div
+								id="project-two-links"
+								class="project-links"
+							>
+								<a
+									id="project-two-github-link"
+									class="project-link"
+									href="#"
+									aria-label="Project two GitHub"
+								>
+									<img
+										id="project-two-github-icon"
+										class="project-link-icon"
+										src="assets/icons/github.svg"
+										alt=""
+									>
+								</a>
 
-                        <p>
-                            Short description of the project. Just a couple sentences will do.
-                        </p>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+								<a
+									id="project-two-live-link"
+									class="project-link"
+									href="#"
+									aria-label="Open project two"
+								>
+									<img
+										id="project-two-live-icon"
+										class="project-link-icon"
+										src="assets/icons/open-in-new.svg"
+										alt=""
+									>
+								</a>
+							</div>
+						</div>
 
-    <footer class="contact-section">
-        <div class="contact-content">
-            <h2>Contact me</h2>
+						<p
+							id="project-two-description"
+							class="project-description"
+						>
+							Short description of the project.
+							Just a couple sentences will do.
+						</p>
+					</div>
+				</article>
 
-            <p>
-                Please get in touch if you think our work could be mutually beneficial!
-            </p>
 
-            <address>
-                <p>
-                    1234 Random Road<br>
-                    Random Town, California 12345
-                </p>
+				<article id="project-three" class="project-card">
 
-                <p>
-                    <img src="assets/icons/phone.svg" alt="">
-                    555-555-5555
-                </p>
+					<div
+						id="project-three-screenshot"
+						class="project-screenshot"
+					>
+						<p
+							id="project-three-screenshot-text"
+							class="project-screenshot-text"
+						>
+							screenshot<br>
+							of project
+						</p>
+					</div>
 
-                <p>
-                    <img src="assets/icons/email.svg" alt="">
-                    ashleywilliams.is.not.real@gmail.com
-                </p>
-            </address>
+					<div
+						id="project-three-info"
+						class="project-info"
+					>
+						<div
+							id="project-three-header"
+							class="project-header"
+						>
+							<h3
+								id="project-three-title"
+								class="project-title"
+							>
+								Project name
+							</h3>
 
-            <div class="social-links">
-                <a href="#" aria-label="GitHub">
-                    <img src="assets/icons/github.svg" alt="">
-                </a>
+							<div
+								id="project-three-links"
+								class="project-links"
+							>
+								<a
+									id="project-three-github-link"
+									class="project-link"
+									href="#"
+									aria-label="Project three GitHub"
+								>
+									<img
+										id="project-three-github-icon"
+										class="project-link-icon"
+										src="assets/icons/github.svg"
+										alt=""
+									>
+								</a>
 
-                <a href="#" aria-label="LinkedIn">
-                    <img src="assets/icons/linkedin.svg" alt="">
-                </a>
+								<a
+									id="project-three-live-link"
+									class="project-link"
+									href="#"
+									aria-label="Open project three"
+								>
+									<img
+										id="project-three-live-icon"
+										class="project-link-icon"
+										src="assets/icons/open-in-new.svg"
+										alt=""
+									>
+								</a>
+							</div>
+						</div>
 
-                <a href="#" aria-label="Twitter">
-                    <img src="assets/icons/twitter.svg" alt="">
-                </a>
-            </div>
-        </div>
+						<p
+							id="project-three-description"
+							class="project-description"
+						>
+							Short description of the project.
+							Just a couple sentences will do.
+						</p>
+					</div>
+				</article>
 
-        <img
-            class="contact-image"
-            src="assets/images/contact.jpg"
-            alt="Ashley Williams working on a laptop"
-        >
-    </footer>
+
+				<article id="project-four" class="project-card">
+
+					<div
+						id="project-four-screenshot"
+						class="project-screenshot"
+					>
+						<p
+							id="project-four-screenshot-text"
+							class="project-screenshot-text"
+						>
+							screenshot<br>
+							of project
+						</p>
+					</div>
+
+					<div
+						id="project-four-info"
+						class="project-info"
+					>
+						<div
+							id="project-four-header"
+							class="project-header"
+						>
+							<h3
+								id="project-four-title"
+								class="project-title"
+							>
+								Project name
+							</h3>
+
+							<div
+								id="project-four-links"
+								class="project-links"
+							>
+								<a
+									id="project-four-github-link"
+									class="project-link"
+									href="#"
+									aria-label="Project four GitHub"
+								>
+									<img
+										id="project-four-github-icon"
+										class="project-link-icon"
+										src="assets/icons/github.svg"
+										alt=""
+									>
+								</a>
+
+								<a
+									id="project-four-live-link"
+									class="project-link"
+									href="#"
+									aria-label="Open project four"
+								>
+									<img
+										id="project-four-live-icon"
+										class="project-link-icon"
+										src="assets/icons/open-in-new.svg"
+										alt=""
+									>
+								</a>
+							</div>
+						</div>
+
+						<p
+							id="project-four-description"
+							class="project-description"
+						>
+							Short description of the project.
+							Just a couple sentences will do.
+						</p>
+					</div>
+				</article>
+
+
+				<article id="project-five" class="project-card">
+
+					<div
+						id="project-five-screenshot"
+						class="project-screenshot"
+					>
+						<p
+							id="project-five-screenshot-text"
+							class="project-screenshot-text"
+						>
+							screenshot<br>
+							of project
+						</p>
+					</div>
+
+					<div
+						id="project-five-info"
+						class="project-info"
+					>
+						<div
+							id="project-five-header"
+							class="project-header"
+						>
+							<h3
+								id="project-five-title"
+								class="project-title"
+							>
+								Project name
+							</h3>
+
+							<div
+								id="project-five-links"
+								class="project-links"
+							>
+								<a
+									id="project-five-github-link"
+									class="project-link"
+									href="#"
+									aria-label="Project five GitHub"
+								>
+									<img
+										id="project-five-github-icon"
+										class="project-link-icon"
+										src="assets/icons/github.svg"
+										alt=""
+									>
+								</a>
+
+								<a
+									id="project-five-live-link"
+									class="project-link"
+									href="#"
+									aria-label="Open project five"
+								>
+									<img
+										id="project-five-live-icon"
+										class="project-link-icon"
+										src="assets/icons/open-in-new.svg"
+										alt=""
+									>
+								</a>
+							</div>
+						</div>
+
+						<p
+							id="project-five-description"
+							class="project-description"
+						>
+							Short description of the project.
+							Just a couple sentences will do.
+						</p>
+					</div>
+				</article>
+
+
+				<article id="project-six" class="project-card">
+
+					<div
+						id="project-six-screenshot"
+						class="project-screenshot"
+					>
+						<p
+							id="project-six-screenshot-text"
+							class="project-screenshot-text"
+						>
+							screenshot<br>
+							of project
+						</p>
+					</div>
+
+					<div
+						id="project-six-info"
+						class="project-info"
+					>
+						<div
+							id="project-six-header"
+							class="project-header"
+						>
+							<h3
+								id="project-six-title"
+								class="project-title"
+							>
+								Project name
+							</h3>
+
+							<div
+								id="project-six-links"
+								class="project-links"
+							>
+								<a
+									id="project-six-github-link"
+									class="project-link"
+									href="#"
+									aria-label="Project six GitHub"
+								>
+									<img
+										id="project-six-github-icon"
+										class="project-link-icon"
+										src="assets/icons/github.svg"
+										alt=""
+									>
+								</a>
+
+								<a
+									id="project-six-live-link"
+									class="project-link"
+									href="#"
+									aria-label="Open project six"
+								>
+									<img
+										id="project-six-live-icon"
+										class="project-link-icon"
+										src="assets/icons/open-in-new.svg"
+										alt=""
+									>
+								</a>
+							</div>
+						</div>
+
+						<p
+							id="project-six-description"
+							class="project-description"
+						>
+							Short description of the project.
+							Just a couple sentences will do.
+						</p>
+					</div>
+				</article>
+
+			</div>
+		</section>
+	</main>
+
+
+	<footer id="contact-section">
+
+		<div id="contact-content">
+
+			<h2 id="contact-heading" class="section-heading">
+				Contact me
+			</h2>
+
+			<p id="contact-introduction">
+				Please get in touch if you think our work could
+				be mutually beneficial!
+			</p>
+
+			<address id="contact-details">
+
+				<p id="contact-address">
+					1234 Random Road<br>
+					Random Town, California 12345
+				</p>
+
+				<p id="contact-phone" class="contact-row">
+					<img
+						id="contact-phone-icon"
+						class="contact-icon"
+						src="assets/icons/phone.svg"
+						alt=""
+					>
+
+					<span id="contact-phone-number">
+						555-555-5555
+					</span>
+				</p>
+
+				<p id="contact-email" class="contact-row">
+					<img
+						id="contact-email-icon"
+						class="contact-icon"
+						src="assets/icons/email.svg"
+						alt=""
+					>
+
+					<span id="contact-email-address">
+						ashleywilliams.is.not.real@gmail.com
+					</span>
+				</p>
+
+			</address>
+
+			<div id="contact-social-links" class="social-links">
+
+				<a
+					id="contact-github-link"
+					class="social-link"
+					href="#"
+					aria-label="GitHub"
+				>
+					<img
+						id="contact-github-icon"
+						class="social-icon"
+						src="assets/icons/github.svg"
+						alt=""
+					>
+				</a>
+
+				<a
+					id="contact-linkedin-link"
+					class="social-link"
+					href="#"
+					aria-label="LinkedIn"
+				>
+					<img
+						id="contact-linkedin-icon"
+						class="social-icon"
+						src="assets/icons/linkedin.svg"
+						alt=""
+					>
+				</a>
+
+				<a
+					id="contact-twitter-link"
+					class="social-link"
+					href="#"
+					aria-label="X"
+				>
+					<img
+						id="contact-twitter-icon"
+						class="social-icon"
+						src="assets/icons/twitter.svg"
+						alt=""
+					>
+				</a>
+
+			</div>
+		</div>
+
+		<div id="contact-image-box">
+			<img
+				id="contact-image"
+				src="assets/images/contact.jpg"
+				alt="Yaphet Bashahider working on a laptop"
+			>
+		</div>
+
+	</footer>
+
 </body>
 </html>
