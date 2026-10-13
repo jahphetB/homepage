@@ -44,7 +44,7 @@
   color: #07809d;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 500px) {
   .site-nav {
     align-items: flex-start;
     flex-direction: column;
