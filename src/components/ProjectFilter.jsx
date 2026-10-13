@@ -74,7 +74,8 @@ export default function ProjectFilter({ options, activeFilters, onApply, onClear
         <span>Filters</span>
         {selectedCount > 0 && (
           <span className="project-filter__count">
-            {selectedCount} selected
+            <span className="project-filter__count-number">{selectedCount}</span>
+            <span className="project-filter__count-label"> selected</span>
           </span>
         )}
         <svg className="project-filter__chevron" viewBox="0 0 16 16" aria-hidden="true">

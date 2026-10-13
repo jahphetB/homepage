@@ -57,14 +57,15 @@
   #projects-section {
     --projects-grid-columns: 1;
     --projects-grid-gap: 2rem;
+    --projects-heading-row-gap: clamp(0.65rem, 3vw, 1rem);
+    --projects-heading-font-size: clamp(1.65rem, 8vw, 2rem);
   }
 
   .projects-section__heading-row {
-    align-items: stretch;
-    flex-direction: column;
+    align-items: center;
   }
 
   .projects-section__heading {
-    text-align: center;
+    text-align: left;
   }
 }

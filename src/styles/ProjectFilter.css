@@ -1,6 +1,7 @@
 #projects-section {
   /* Filter trigger controls. */
   --project-filter-width: 18rem;
+  --project-filter-mobile-width: clamp(8rem, 42vw, 11rem);
   --project-filter-trigger-height: 3.25rem;
   --project-filter-trigger-padding: 0.85rem 1rem;
   --project-filter-trigger-radius: 0.7rem;
@@ -23,6 +24,8 @@
 
   /* Popover controls. */
   --project-filter-panel-top: calc(100% + 0.55rem);
+  --project-filter-panel-width: 18rem;
+  --project-filter-panel-max-height: calc(100vh - 5rem);
   --project-filter-panel-padding: 0.75rem;
   --project-filter-panel-radius: 0.7rem;
   --project-filter-panel-shadow: 0 0.8rem 2rem rgb(30 50 58 / 18%);
@@ -77,7 +80,9 @@
 }
 
 .project-filter__icon {
+  flex: 0 0 auto;
   width: var(--project-filter-icon-size);
+  height: var(--project-filter-icon-size);
   fill: currentColor;
 }
 
@@ -93,7 +98,9 @@
 }
 
 .project-filter__chevron {
+  flex: 0 0 auto;
   width: var(--project-filter-chevron-size);
+  height: var(--project-filter-chevron-size);
   margin-left: auto;
   fill: none;
   stroke: currentColor;
@@ -116,8 +123,10 @@
   z-index: 10;
   top: var(--project-filter-panel-top);
   right: 0;
-  width: 100%;
+  width: min(var(--project-filter-panel-width), calc(100vw - 2.5rem));
+  max-height: var(--project-filter-panel-max-height);
   padding: var(--project-filter-panel-padding);
+  overflow-y: auto;
   background: var(--project-filter-background);
   border: 1px solid var(--project-filter-border);
   border-radius: var(--project-filter-panel-radius);
@@ -197,5 +206,15 @@
 @media (max-width: 620px) {
   .project-filter {
     align-self: center;
+    width: var(--project-filter-mobile-width);
+  }
+
+  .project-filter__trigger {
+    gap: 0.45rem;
+    padding: 0.65rem 0.7rem;
+  }
+
+  .project-filter__count-label {
+    display: none;
   }
 }
