@@ -1,6 +1,7 @@
 import { useRef } from "react";
-import simonLeeImage from "../../assets/images/Iridescent-Liquid-Glass-Hand.png";
+import simonLeeImage from "../../assets/images/Iridescent-Glass-Hand-in-White-Space.png";
 import mohammadRahmaniImage from "../../assets/images/Neon __dev_ Stone Plaque.png";
+import AboutCopy from "./AboutCopy";
 import "../styles/About.css";
 
 const BASE_BRIGHTNESS = 0.72;
@@ -47,12 +48,9 @@ export default function About() {
           src={simonLeeImage}
           alt="Colorful abstract hand representing creative design"
         />
-        <div className="about-copy about-copy--designer">
-          <h2 className="about-copy__title">designer.</h2>
-          <p className="about-copy__description">
-            Shaping thoughtful interfaces where clarity, color, and human experience work together.
-          </p>
-        </div>
+        <AboutCopy variant="designer" title="designer.">
+          Shaping thoughtful interfaces where clarity, color, and human experience work together.
+        </AboutCopy>
       </div>
 
       <div className="about-panel about-panel--right">
@@ -61,12 +59,9 @@ export default function About() {
           src={mohammadRahmaniImage}
           alt="Neon developer symbol carved into a stone plaque"
         />
-        <div className="about-copy about-copy--builder">
-          <h2 className="about-copy__title">builder.</h2>
-          <p className="about-copy__description">
-            Turning ambitious ideas into reliable products with clean code and purposeful engineering.
-          </p>
-        </div>
+        <AboutCopy variant="builder" title="builder.">
+          Turning ambitious ideas into reliable products with clean code and purposeful engineering.
+        </AboutCopy>
       </div>
     </header>
   );
