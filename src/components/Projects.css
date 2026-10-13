@@ -1,0 +1,6 @@
+#work-section { scroll-margin-top: 6rem; max-width: 90rem; margin: auto; padding: clamp(3.5rem, 7vw, 7rem) clamp(1.25rem, 6vw, 6rem); }
+#work-heading { margin: 0 0 clamp(1.75rem, 3vw, 3rem); }
+#projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1.5rem, 3vw, 2.75rem); }
+
+@media (max-width: 1000px) { #projects-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { #work-heading { text-align: center; } #projects-grid { grid-template-columns: 1fr; gap: 2rem; } }

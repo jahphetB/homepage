@@ -1,5 +1,6 @@
 import githubIcon from "../../assets/icons/github.svg";
 import openInNewIcon from "../../assets/icons/open-in-new.svg";
+import "./ProjectCard.css";
 
 export default function ProjectCard({ project }) {
   const projectId = `project-${project.id}`;

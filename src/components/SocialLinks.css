@@ -1,0 +1,11 @@
+.social-links { display: flex; align-items: center; gap: 1rem; }
+.social-link { display: flex; align-items: center; justify-content: center; }
+.social-icon { width: 1.8rem; height: 1.8rem; transition: transform 160ms ease; }
+.social-link:hover .social-icon, .social-link:focus-visible .social-icon { transform: translateY(-0.15rem); }
+#about-social-links { justify-content: flex-end; margin-top: 1.75rem; }
+#contact-social-links { justify-content: flex-start; margin-top: 2rem; }
+
+@media (max-width: 700px) {
+  #about-social-links, #contact-social-links { justify-content: center; gap: 1.5rem; }
+  .social-icon { width: 2rem; height: 2rem; }
+}

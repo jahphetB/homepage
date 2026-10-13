@@ -1,6 +1,7 @@
 import githubIcon from "../../assets/icons/github.svg";
 import linkedInIcon from "../../assets/icons/linkedin.svg";
 import twitterIcon from "../../assets/icons/twitter.svg";
+import "./SocialLinks.css";
 
 const links = [
   { id: "github", name: "GitHub", icon: githubIcon },

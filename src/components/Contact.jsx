@@ -2,6 +2,7 @@ import contactImage from "../../assets/images/contact.jpg";
 import emailIcon from "../../assets/icons/email.svg";
 import phoneIcon from "../../assets/icons/phone.svg";
 import SocialLinks from "./SocialLinks";
+import "./Contact.css";
 
 export default function Contact() {
   return (

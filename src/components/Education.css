@@ -1,0 +1,4 @@
+.education-section { scroll-margin-top: 6rem; background: #eef9fb; }
+.education-section__content { max-width: 90rem; margin: auto; padding: clamp(3.5rem, 6vw, 6rem) clamp(1.25rem, 6vw, 6rem); }
+.education-section h2 { margin: 0 0 1rem; }
+.education-section p { max-width: 62ch; margin: 0; color: #46555b; font-size: 1.1rem; line-height: 1.65; }
