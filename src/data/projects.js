@@ -1,3 +1,5 @@
+import shoppingCartScreenshot from "../../assets/images/shopping-cart-screenshot.png";
+
 const placeholderDescription = "Short description of the project. Just a couple sentences will do.";
 
 export const projectFilters = [
@@ -8,6 +10,19 @@ export const projectFilters = [
 ];
 
 export const projects = [
+  // Copy this complete project object and edit its values when adding a new project.
+  {
+    id: "shopping-cart",
+    title: "Shopping Cart",
+    description: "A responsive mock shopping cart application built with React.",
+    categories: ["personal"],
+    screenshot: {
+      src: shoppingCartScreenshot,
+      alt: "Shopping Cart application home page",
+    },
+    repositoryUrl: "https://github.com/jahphetB/shopping-cart",
+    liveUrl: "https://shopping-cart-phi-six-71.vercel.app/",
+  },
   {
     id: "one",
     title: "Project name",
