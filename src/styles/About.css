@@ -2,10 +2,25 @@
   --left-brightness: 0.72;
   --right-brightness: 0.72;
 
+  /* Designer text controls: adjust these values to reposition or resize it. */
+  --designer-text-left: 8%;
+  --designer-text-top: 12%;
+  --designer-title-size: clamp(2.8rem, 5vw, 6.5rem);
+  --designer-copy-width: 25rem;
+
+  /* Builder text controls: adjust these values to reposition or resize it. */
+  --builder-text-right: 8%;
+  --builder-text-top: 13%;
+  --builder-title-size: clamp(2.8rem, 5vw, 6.5rem);
+  --builder-copy-width: 27rem;
+
+  /* Shared description size for both text blocks. */
+  --about-copy-size: clamp(0.95rem, 1.35vw, 1.35rem);
+
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  min-height: calc(100svh - 4.5rem);
+  min-height: max(calc(100svh - 4.5rem), 66.667vw);
   overflow: hidden;
   scroll-margin-top: 4.5rem;
   background: #fff;
@@ -35,19 +50,62 @@
 .about-panel__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: filter 160ms linear;
   will-change: filter;
 }
 
 .about-panel--left .about-panel__image {
   filter: brightness(var(--left-brightness));
-  object-position: 58% center;
+  object-position: center;
 }
 
 .about-panel--right .about-panel__image {
   filter: brightness(var(--right-brightness));
   object-position: center;
+}
+
+.about-copy {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-copy--designer {
+  top: var(--designer-text-top);
+  left: var(--designer-text-left);
+  width: min(var(--designer-copy-width), 78%);
+  color: #7851a9;
+}
+
+.about-copy--builder {
+  top: var(--builder-text-top);
+  right: var(--builder-text-right);
+  width: min(var(--builder-copy-width), 78%);
+  color: #242424;
+  text-align: right;
+}
+
+.about-copy__title {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+}
+
+.about-copy--designer .about-copy__title {
+  font-size: var(--designer-title-size);
+}
+
+.about-copy--builder .about-copy__title {
+  font-size: var(--builder-title-size);
+}
+
+.about-copy__description {
+  margin: clamp(0.8rem, 1.5vw, 1.4rem) 0 0;
+  font-size: var(--about-copy-size);
+  line-height: 1.55;
 }
 
 @keyframes about-slide-from-left {
@@ -60,7 +118,20 @@
 
 @media (max-width: 700px) {
   #about-section {
+    --designer-text-left: 6%;
+    --designer-text-top: 8%;
+    --builder-text-right: 6%;
+    --builder-text-top: 8%;
+    --designer-title-size: clamp(2rem, 9vw, 3.5rem);
+    --builder-title-size: clamp(2rem, 9vw, 3.5rem);
+    --about-copy-size: clamp(0.75rem, 2.7vw, 1rem);
+
     min-height: calc(100svh - 7rem);
+  }
+
+  .about-copy--designer,
+  .about-copy--builder {
+    width: 86%;
   }
 }
 

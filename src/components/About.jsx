@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import simonLeeImage from "../../assets/images/simon-lee-ldg40aCeOXo-unsplash.jpg";
-import mohammadRahmaniImage from "../../assets/images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg";
+import simonLeeImage from "../../assets/images/Iridescent-Liquid-Glass-Hand.png";
+import mohammadRahmaniImage from "../../assets/images/Neon __dev_ Stone Plaque.png";
 import "../styles/About.css";
 
 const BASE_BRIGHTNESS = 0.72;
@@ -47,14 +47,26 @@ export default function About() {
           src={simonLeeImage}
           alt="Colorful abstract hand representing creative design"
         />
+        <div className="about-copy about-copy--designer">
+          <h2 className="about-copy__title">designer.</h2>
+          <p className="about-copy__description">
+            Shaping thoughtful interfaces where clarity, color, and human experience work together.
+          </p>
+        </div>
       </div>
 
       <div className="about-panel about-panel--right">
         <img
           className="about-panel__image"
           src={mohammadRahmaniImage}
-          alt="Code displayed on a screen representing software development"
+          alt="Neon developer symbol carved into a stone plaque"
         />
+        <div className="about-copy about-copy--builder">
+          <h2 className="about-copy__title">builder.</h2>
+          <p className="about-copy__description">
+            Turning ambitious ideas into reliable products with clean code and purposeful engineering.
+          </p>
+        </div>
       </div>
     </header>
   );
