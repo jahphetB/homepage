@@ -2,7 +2,7 @@ import "../styles/Navbar.css";
 
 const navigationItems = [
   { label: "About", target: "about-section" },
-  { label: "Work", target: "work-section" },
+  { label: "Projects", target: "projects-section" },
   { label: "Education", target: "education-section" },
   { label: "Contact", target: "contact-section" },
 ];
