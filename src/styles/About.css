@@ -18,22 +18,23 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(14rem, 34%) 1fr;
+  grid-template-columns: minmax(14rem, 25rem) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
   max-width: 90rem;
   margin: auto;
   padding: clamp(2.5rem, 4vw, 4.5rem) clamp(1.25rem, 6vw, 6rem) clamp(3.5rem, 6vw, 6rem);
 }
 
-#profile-image-box { grid-column: 1; grid-row: 1; z-index: 2; }
-#profile-image { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%); }
+#profile-image-box { grid-column: 1; grid-row: 1; z-index: 2; justify-self: center; width: min(100%, 22rem); }
+#profile-image { width: 100%; aspect-ratio: 1; border: 0.45rem solid white; border-radius: 50%; object-fit: cover; box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%); }
 #profile-name-box { grid-column: 1; grid-row: 1; z-index: 3; align-self: end; padding: 1.5rem; }
 #profile-name { margin: 0; color: white; font-family: "Playfair Display", serif; font-size: clamp(2.4rem, 4vw, 4.2rem); font-weight: 400; line-height: 0.95; text-shadow: 0.08rem 0.08rem 0.15rem rgb(0 0 0 / 45%); }
 
 #about-card {
   grid-column: 2;
   grid-row: 1;
-  margin-left: -1.5rem;
+  margin-left: 0;
   padding: clamp(2rem, 4vw, 4rem);
   background: white;
   box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 18%);
@@ -44,7 +45,7 @@
 
 @media (max-width: 700px) {
   #about-background-shape { inset: -8vw 0 auto; height: 38%; transform: skewY(-12deg); }
-  #about-layout { grid-template-columns: 1fr; padding-inline: clamp(1.25rem, 6vw, 3rem); }
+  #about-layout { grid-template-columns: 1fr; gap: 0; padding-inline: clamp(1.25rem, 6vw, 3rem); }
   #profile-image-box, #profile-name-box { grid-column: 1; grid-row: 1; }
   #profile-name-box { padding: clamp(1rem, 4vw, 1.75rem); }
   #about-card { grid-column: 1; grid-row: 2; margin: 0; padding: clamp(2.5rem, 8vw, 4rem) 0 0; background: transparent; box-shadow: none; }

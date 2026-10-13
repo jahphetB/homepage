@@ -1,6 +1,6 @@
-import profileImage from "../../assets/images/profile.jpg";
+import profileImage from "../../assets/images/Yaphet_Bashahider.jpg";
 import SocialLinks from "./SocialLinks";
-import "./About.css";
+import "../styles/About.css";
 
 export default function About() {
   return (

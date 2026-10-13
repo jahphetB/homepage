@@ -1,6 +1,6 @@
 import { projects } from "../data/projects";
 import ProjectCard from "./ProjectCard";
-import "./Projects.css";
+import "../styles/Projects.css";
 
 export default function Projects() {
   return (

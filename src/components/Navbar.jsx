@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "../styles/Navbar.css";
 
 const navigationItems = [
   { label: "About", target: "about-section" },
