@@ -1,0 +1,39 @@
+.project-tech {
+  /* Tech container and badge controls. */
+  --tech-margin-top: 1.25rem;
+  --tech-gap: 0.5rem;
+  --tech-padding: 0.4rem 0.65rem;
+  --tech-radius: 0.35rem;
+  --tech-background: #edf4f6;
+  --tech-color: #254e59;
+  --tech-border: #cbdde2;
+  --tech-font: "Roboto", sans-serif;
+  --tech-size: 0.8rem;
+  --tech-weight: 500;
+  --tech-line-height: 1.3;
+
+  margin-top: var(--tech-margin-top);
+}
+.project-tech:has(.project-tech__list:empty) { margin-top: 0; }
+.project-tech__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: var(--tech-gap);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.project-tech__tag {
+  max-width: 100%;
+  padding: var(--tech-padding);
+  background: var(--tech-background);
+  color: var(--tech-color);
+  border: 1px solid var(--tech-border);
+  border-radius: var(--tech-radius);
+  font-family: var(--tech-font);
+  font-size: var(--tech-size);
+  font-weight: var(--tech-weight);
+  line-height: var(--tech-line-height);
+  overflow-wrap: anywhere;
+}

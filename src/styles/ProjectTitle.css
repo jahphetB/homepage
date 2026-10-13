@@ -1,0 +1,17 @@
+.project-title {
+  /* Card title controls. */
+  --project-title-font: "Playfair Display", serif;
+  --project-title-size: 1.35rem;
+  --project-title-weight: 400;
+  --project-title-color: #1c2b30;
+  --project-title-line-height: 1.35;
+
+  min-width: 0;
+  margin: 0;
+  color: var(--project-title-color);
+  font-family: var(--project-title-font);
+  font-size: var(--project-title-size);
+  font-weight: var(--project-title-weight);
+  line-height: var(--project-title-line-height);
+  overflow-wrap: anywhere;
+}

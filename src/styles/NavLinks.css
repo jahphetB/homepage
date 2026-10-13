@@ -1,0 +1,35 @@
+.nav-links {
+  /* Links controls. */
+  --nav-links-gap: clamp(0.8rem, 2vw, 2rem);
+  --nav-links-mobile-gap: 0.65rem 1.1rem;
+  --nav-links-color: #36515a;
+  --nav-links-hover-color: #07809d;
+  --nav-links-font: "Roboto", sans-serif;
+  --nav-links-size: 0.9rem;
+  --nav-links-weight: 500;
+  --nav-links-line-height: normal;
+  --nav-links-letter-spacing: 0;
+  --nav-links-align: flex-end;
+  --nav-links-transition: 160ms;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: var(--nav-links-align);
+  gap: var(--nav-links-gap);
+  min-width: 0;
+}
+.nav-links__link {
+  color: var(--nav-links-color);
+  font-family: var(--nav-links-font);
+  font-size: var(--nav-links-size);
+  font-weight: var(--nav-links-weight);
+  line-height: var(--nav-links-line-height);
+  letter-spacing: var(--nav-links-letter-spacing);
+  overflow-wrap: anywhere;
+  transition: color var(--nav-links-transition) ease;
+}
+.nav-links__link:hover,
+.nav-links__link:focus-visible { color: var(--nav-links-hover-color); }
+@media (max-width: 500px) {
+  .nav-links { justify-content: flex-start; gap: var(--nav-links-mobile-gap); }
+}

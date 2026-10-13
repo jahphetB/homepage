@@ -1,0 +1,37 @@
+.project-image {
+  /* Image frame and placeholder controls. */
+  --project-image-ratio: 3 / 2;
+  --project-image-fit: contain;
+  --project-image-position: center top;
+  --project-image-background: #f7f7f7;
+  --project-image-text-color: #fff;
+  --project-image-font: "Playfair Display", serif;
+  --project-image-text-size: clamp(1.6rem, 2.5vw, 2.4rem);
+
+  display: grid;
+  place-items: center;
+  aspect-ratio: var(--project-image-ratio);
+  overflow: hidden;
+  background: var(--project-image-background);
+}
+.project-image__image {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: var(--project-image-fit);
+  object-position: var(--project-image-position);
+}
+.project-image__placeholder {
+  margin: 0;
+  color: var(--project-image-text-color);
+  font-family: var(--project-image-font);
+  font-size: var(--project-image-text-size);
+  line-height: 1.15;
+  text-align: center;
+}
+#project-one-screenshot { --project-image-background: #b91c1c; }
+#project-two-screenshot { --project-image-background: #7c73cf; }
+#project-three-screenshot { --project-image-background: #5f9552; }
+#project-four-screenshot { --project-image-background: #c45caf; }
+#project-five-screenshot { --project-image-background: #df9430; }
+#project-six-screenshot { --project-image-background: #4aa3d8; }

@@ -1,4 +1,15 @@
 #about-section {
+  /* Layout and image controls: current dimensions and crop preserved. */
+  --about-height: clamp(250px, 30vw, 450px);
+  --about-width: 100%;
+  --about-background: #fff;
+  --about-left-position: center;
+  --about-right-position: center;
+  --about-image-fit: cover;
+  --about-animation-duration: 1s;
+  --about-animation-delay: 1s;
+  --about-animation-easing: cubic-bezier(0.22, 1, 0.36, 1);
+  --about-brightness-transition: 160ms;
   /* Image brightness controls. */
   --brightness-base: 0.72;
   --brightness-range: 0.32;
@@ -8,23 +19,23 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  width: 100%;
-  height: auto;
+  width: var(--about-width);
+  height: var(--about-height);
   aspect-ratio: 948 / 301;
   overflow: hidden;
   scroll-margin-top: 4.5rem;
-  background: #fff;
+  background: var(--about-background);
 }
 
 .about-panel {
   position: relative;
   min-width: 0;
   overflow: hidden;
-  background: #fff;
-  animation-duration: 1s;
-  animation-delay: 1s;
+  background: var(--about-background);
+  animation-duration: var(--about-animation-duration);
+  animation-delay: var(--about-animation-delay);
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-timing-function: var(--about-animation-easing);
 }
 
 .about-panel--left {
@@ -40,29 +51,27 @@
 .about-panel__image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  transition: filter 160ms linear;
+  object-fit: var(--about-image-fit);
+  transition: filter var(--about-brightness-transition) linear;
   will-change: filter;
 }
 
 .about-panel--left .about-panel__image {
   filter: brightness(var(--left-brightness));
-  object-position: center;
-  width: 100%;
-  object-fit: cover;
+  object-position: var(--about-left-position);
 }
 
 .about-panel--right .about-panel__image {
   filter: brightness(var(--right-brightness));
-  object-position: center;
-  width: 100%;
-  object-fit: cover;
+  object-position: var(--about-right-position);
 
 }
 
 @keyframes about-slide-from-left {
   to { transform: translateX(0); }
 }
+
+.about-panel:focus-visible { outline-offset: -0.3rem; }
 
 @keyframes about-slide-from-right {
   to { transform: translateX(0); }

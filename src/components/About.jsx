@@ -1,7 +1,6 @@
 import { useRef } from "react";
-import simonLeeImage from "../../assets/images/Iridescent-Glass-Hand-on-White-left.png";
-import mohammadRahmaniImage from "../../assets/images/Neon __dev_ Stone Plaque.png";
-import AboutCopy from "./AboutCopy";
+import leftHandImage from "../../assets/images/Iridescent-Glass-Hand-on-White-left.png";
+import rightHandImage from "../../assets/images/Neon-Iridescent-Glass-Hand.png";
 import "../styles/About.css";
 
 function readNumberControl(element, propertyName, fallback) {
@@ -15,8 +14,6 @@ export default function About() {
   function resetInteraction() {
     sectionRef.current?.style.removeProperty("--left-brightness");
     sectionRef.current?.style.removeProperty("--right-brightness");
-    sectionRef.current?.style.removeProperty("--designer-scale");
-    sectionRef.current?.style.removeProperty("--builder-scale");
   }
 
   function handlePointerMove(event) {
@@ -28,10 +25,6 @@ export default function About() {
     const directionFromCenter = Math.max(-1, Math.min(1, horizontalPosition * 2 - 1));
     const brightnessBase = readNumberControl(section, "--brightness-base", 0.72);
     const brightnessRange = readNumberControl(section, "--brightness-range", 0.32);
-    const copyScaleBase = readNumberControl(section, "--copy-scale-base", 1);
-    const copyScaleRange = readNumberControl(section, "--copy-scale-range", 0.08);
-    const designerProximity = Math.max(0, -directionFromCenter);
-    const builderProximity = Math.max(0, directionFromCenter);
 
     section.style.setProperty(
       "--left-brightness",
@@ -41,8 +34,6 @@ export default function About() {
       "--right-brightness",
       brightnessBase + brightnessRange * directionFromCenter,
     );
-    section.style.setProperty("--designer-scale", copyScaleBase + copyScaleRange * designerProximity);
-    section.style.setProperty("--builder-scale", copyScaleBase + copyScaleRange * builderProximity);
   }
 
   return (
@@ -54,27 +45,21 @@ export default function About() {
       onPointerLeave={resetInteraction}
       onPointerCancel={resetInteraction}
     >
-      <div className="about-panel about-panel--left">
+      <a className="about-panel about-panel--left" href="#/portfolio" aria-label="Explore my design and development portfolio">
         <img
           className="about-panel__image"
-          src={simonLeeImage}
+          src={leftHandImage}
           alt="Colorful abstract hand representing creative design"
         />
-        <AboutCopy variant="designer" title="designer">
-          Shaping thoughtful interfaces where clarity, color, and human experience work together.
-        </AboutCopy>
-      </div>
+      </a>
 
-      <div className="about-panel about-panel--right">
+      <a className="about-panel about-panel--right" href="#/portfolio" aria-label="View my portfolio projects">
         <img
           className="about-panel__image"
-          src={mohammadRahmaniImage}
-          alt="Neon developer symbol carved into a stone plaque"
+          src={rightHandImage}
+          alt="Iridescent glass hand representing software development"
         />
-        <AboutCopy variant="builder" title="builder.">
-          Turning ambitious ideas into reliable products with clean code and purposeful engineering.
-        </AboutCopy>
-      </div>
+      </a>
     </header>
   );
 }

@@ -1,71 +1,22 @@
 #projects-section {
-  /* Section layout controls. */
+  /* Full portfolio container controls. */
   --projects-max-width: 90rem;
   --projects-padding-block: clamp(3.5rem, 7vw, 7rem);
   --projects-padding-inline: clamp(1.25rem, 6vw, 6rem);
   --projects-heading-row-gap: 1.5rem;
   --projects-heading-row-margin: clamp(1.75rem, 3vw, 3rem);
-  --projects-heading-font-family: "Playfair Display", serif;
-  --projects-heading-font-size: clamp(2rem, 3.2vw, 3.25rem);
-  --projects-heading-font-weight: 400;
-  --projects-heading-line-height: 1.1;
-  --projects-heading-color: #162f38;
-
-  /* Grid controls. */
-  --projects-grid-columns: 3;
-  --projects-grid-gap: clamp(1.5rem, 3vw, 2.75rem);
 }
-
 .projects-section {
   max-width: var(--projects-max-width);
   margin: auto;
   padding: var(--projects-padding-block) var(--projects-padding-inline);
-  scroll-margin-top: 6rem;
 }
-
 .projects-section__heading-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: var(--projects-heading-row-gap);
   margin-bottom: var(--projects-heading-row-margin);
 }
-
-.projects-section__heading {
-  flex: 0 0 auto;
-  margin: 0;
-  color: var(--projects-heading-color);
-  font-family: var(--projects-heading-font-family);
-  font-size: var(--projects-heading-font-size);
-  font-weight: var(--projects-heading-font-weight);
-  line-height: var(--projects-heading-line-height);
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(var(--projects-grid-columns), minmax(0, 1fr));
-  gap: var(--projects-grid-gap);
-}
-
-@media (max-width: 1000px) {
-  #projects-section {
-    --projects-grid-columns: 2;
-  }
-}
-
-@media (max-width: 620px) {
-  #projects-section {
-    --projects-grid-columns: 1;
-    --projects-grid-gap: 2rem;
-    --projects-heading-row-gap: clamp(0.65rem, 3vw, 1rem);
-    --projects-heading-font-size: clamp(1.65rem, 8vw, 2rem);
-  }
-
-  .projects-section__heading-row {
-    align-items: center;
-  }
-
-  .projects-section__heading {
-    text-align: left;
-  }
-}
+.projects-section__heading-row > .project-filter { margin-left: auto; }

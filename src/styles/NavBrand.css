@@ -1,0 +1,21 @@
+.nav-brand {
+  /* Brand controls. */
+  --brand-color: #0f3b47;
+  --brand-font: "Playfair Display", serif;
+  --brand-size: clamp(1.2rem, 2.1vw, 1.75rem);
+  --brand-weight: 500;
+  --brand-line-height: 1;
+  --brand-letter-spacing: 0;
+  --brand-offset-x: 0px;
+  --brand-offset-y: 0px;
+
+  color: var(--brand-color);
+  font-family: var(--brand-font);
+  font-size: var(--brand-size);
+  font-weight: var(--brand-weight);
+  line-height: var(--brand-line-height);
+  letter-spacing: var(--brand-letter-spacing);
+  transform: translate(var(--brand-offset-x), var(--brand-offset-y));
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}

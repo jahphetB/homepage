@@ -1,59 +1,42 @@
 .site-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
+  /* Navigation container controls. Sticky positioning reserves its actual height. */
+  --nav-position: sticky;
+  --nav-top: 0;
+  --nav-layer: 100;
+  --nav-height: 4.5rem;
+  --nav-padding-block: 0.8rem;
+  --nav-padding-inline: clamp(1.25rem, 6vw, 6rem);
+  --nav-gap: 2rem;
+  --nav-background: rgb(255 255 255 / 94%);
+  --nav-border: 1px solid rgb(8 145 178 / 18%);
+  --nav-shadow: 0 0.2rem 1rem rgb(15 23 42 / 7%);
+  --nav-blur: 0.7rem;
+  --nav-font: "Roboto", sans-serif;
+  --nav-color: #36515a;
+  --nav-mobile-gap: 0.7rem;
+  --nav-mobile-padding-block: 0.9rem;
+
+  position: var(--nav-position);
+  top: var(--nav-top);
+  z-index: var(--nav-layer);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
-  min-height: 4.5rem;
-  padding: 0.8rem clamp(1.25rem, 6vw, 6rem);
-  background: rgb(255 255 255 / 94%);
-  border-bottom: 1px solid rgb(8 145 178 / 18%);
-  box-shadow: 0 0.2rem 1rem rgb(15 23 42 / 7%);
-  backdrop-filter: blur(0.7rem);
+  gap: var(--nav-gap);
+  min-height: var(--nav-height);
+  padding: var(--nav-padding-block) var(--nav-padding-inline);
+  color: var(--nav-color);
+  font-family: var(--nav-font);
+  background: var(--nav-background);
+  border-bottom: var(--nav-border);
+  box-shadow: var(--nav-shadow);
+  backdrop-filter: blur(var(--nav-blur));
 }
-
-.site-nav__name {
-  color: #0f3b47;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(1.2rem, 2.1vw, 1.75rem);
-  font-weight: 500;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.site-nav__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: clamp(0.8rem, 2vw, 2rem);
-}
-
-.site-nav__link {
-  color: #36515a;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: color 160ms ease;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus-visible {
-  color: #07809d;
-}
-
 @media (max-width: 500px) {
   .site-nav {
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.7rem;
-    padding-block: 0.9rem;
-  }
-
-  .site-nav__links {
-    justify-content: flex-start;
-    gap: 0.65rem 1.1rem;
+    gap: var(--nav-mobile-gap);
+    padding-block: var(--nav-mobile-padding-block);
   }
 }

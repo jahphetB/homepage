@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projectFilters, projects } from "../data/projects";
-import ProjectCard from "./ProjectCard";
+import ProjectGrid from "./ProjectGrid";
+import ProjectsTitle from "./ProjectsTitle";
 import ProjectFilter from "./ProjectFilter";
 import ProjectPagination from "./ProjectPagination";
 import "../styles/Projects.css";
@@ -36,12 +37,9 @@ export default function Projects() {
   };
 
   return (
-    <main id="main-content">
-      <section id="projects-section" className="projects-section">
+      <section id="projects-section" className="projects-section" aria-labelledby="projects-heading">
         <div className="projects-section__heading-row">
-          <h2 id="projects-heading" className="section-heading projects-section__heading">
-            My Projects
-          </h2>
+          <ProjectsTitle id="projects-heading">Portfolio</ProjectsTitle>
           <ProjectFilter
             options={projectFilters}
             activeFilters={activeFilters}
@@ -50,11 +48,7 @@ export default function Projects() {
           />
         </div>
 
-        <div className="projects-grid">
-          {visibleProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+        <ProjectGrid projects={visibleProjects} />
 
         <ProjectPagination
           currentPage={Math.min(currentPage, totalPages)}
@@ -65,6 +59,5 @@ export default function Projects() {
           onPageSizeChange={changePageSize}
         />
       </section>
-    </main>
   );
 }

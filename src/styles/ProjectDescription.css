@@ -1,0 +1,17 @@
+.project-description {
+  /* Description controls. */
+  --project-description-margin-top: 1rem;
+  --project-description-font: "Roboto", sans-serif;
+  --project-description-size: 1rem;
+  --project-description-weight: 400;
+  --project-description-color: #526267;
+  --project-description-line-height: 1.5;
+
+  margin: var(--project-description-margin-top) 0 0;
+  color: var(--project-description-color);
+  font-family: var(--project-description-font);
+  font-size: var(--project-description-size);
+  font-weight: var(--project-description-weight);
+  line-height: var(--project-description-line-height);
+  overflow-wrap: anywhere;
+}

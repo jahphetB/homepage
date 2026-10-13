@@ -1,4 +1,4 @@
-import shoppingCartScreenshot from "../../assets/images/shopping-cart-screenshot.png";
+import shoppingCartScreenshot from "../../assets/images/shop-products-sample.png";
 
 const placeholderDescription = "Short description of the project. Just a couple sentences will do.";
 
@@ -10,15 +10,18 @@ export const projectFilters = [
 ];
 
 export const projects = [
-  // Copy this complete project object and edit its values when adding a new project.
+  // Copy the first object, import your screenshot above, then edit its values.
+  // Use a unique id; categories match projectFilters; techStack becomes wrapping badges.
+  // Array order controls display order. The landing page previews the first six entries.
   {
     id: "shopping-cart",
     title: "Shopping Cart",
     description: "A responsive mock shopping cart application built with React.",
     categories: ["personal"],
+    techStack: ["React", "JavaScript", "CSS"],
     screenshot: {
       src: shoppingCartScreenshot,
-      alt: "Shopping Cart application home page",
+      alt: "Shopping Cart product listing with clothing and accessories",
     },
     repositoryUrl: "https://github.com/jahphetB/shopping-cart",
     liveUrl: "https://shopping-cart-phi-six-71.vercel.app/",

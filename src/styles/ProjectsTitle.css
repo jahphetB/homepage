@@ -1,0 +1,21 @@
+.projects-title {
+  /* Section title controls. */
+  --projects-title-font: "Playfair Display", serif;
+  --projects-title-size: clamp(2rem, 3.2vw, 3.25rem);
+  --projects-title-color: #162f38;
+  --projects-title-weight: 400;
+  --projects-title-line-height: 1.1;
+  --projects-title-letter-spacing: 0;
+  --projects-title-align: left;
+
+  min-width: 0;
+  margin: 0;
+  color: var(--projects-title-color);
+  font-family: var(--projects-title-font);
+  font-size: var(--projects-title-size);
+  font-weight: var(--projects-title-weight);
+  line-height: var(--projects-title-line-height);
+  letter-spacing: var(--projects-title-letter-spacing);
+  text-align: var(--projects-title-align);
+  overflow-wrap: anywhere;
+}
