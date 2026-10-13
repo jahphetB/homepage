@@ -5,9 +5,11 @@ import ProjectFilter from "./ProjectFilter";
 import "../styles/Projects.css";
 
 export default function Projects() {
-  const [activeFilter, setActiveFilter] = useState(null);
-  const visibleProjects = activeFilter
-    ? projects.filter((project) => project.categories.includes(activeFilter))
+  const [activeFilters, setActiveFilters] = useState([]);
+  const visibleProjects = activeFilters.length
+    ? projects.filter((project) =>
+        activeFilters.some((filter) => project.categories.includes(filter)),
+      )
     : projects;
 
   return (
@@ -19,8 +21,9 @@ export default function Projects() {
           </h2>
           <ProjectFilter
             options={projectFilters}
-            activeFilter={activeFilter}
-            onFilterChange={setActiveFilter}
+            activeFilters={activeFilters}
+            onApply={setActiveFilters}
+            onClear={() => setActiveFilters([])}
           />
         </div>
 

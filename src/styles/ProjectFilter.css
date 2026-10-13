@@ -1,58 +1,201 @@
 #projects-section {
-  /* Filter layout controls. */
-  --project-filter-gap: 0.5rem;
-  --project-filter-button-padding-block: 0.55rem;
-  --project-filter-button-padding-inline: 0.9rem;
-  --project-filter-button-radius: 999px;
+  /* Filter trigger controls. */
+  --project-filter-width: 18rem;
+  --project-filter-trigger-height: 3.25rem;
+  --project-filter-trigger-padding: 0.85rem 1rem;
+  --project-filter-trigger-radius: 0.7rem;
+  --project-filter-icon-size: 1.25rem;
+  --project-filter-chevron-size: 1rem;
 
-  /* Filter type and color controls. */
-  --project-filter-font-size: 0.82rem;
+  /* Filter typography controls. */
+  --project-filter-font-size: 1rem;
   --project-filter-font-family: "Roboto", sans-serif;
-  --project-filter-font-weight: 500;
+  --project-filter-font-weight: 400;
   --project-filter-letter-spacing: 0;
+
+  /* Filter color controls. */
   --project-filter-background: #fff;
-  --project-filter-text: #36515a;
-  --project-filter-border: #b8c9ce;
-  --project-filter-hover-background: #e8f6f9;
-  --project-filter-active-background: #087f9a;
-  --project-filter-active-text: #fff;
+  --project-filter-text: #26383e;
+  --project-filter-border: #b9c5c9;
+  --project-filter-focus: #087f9a;
+  --project-filter-count-background: #087f9a;
+  --project-filter-count-text: #fff;
+
+  /* Popover controls. */
+  --project-filter-panel-top: calc(100% + 0.55rem);
+  --project-filter-panel-padding: 0.75rem;
+  --project-filter-panel-radius: 0.7rem;
+  --project-filter-panel-shadow: 0 0.8rem 2rem rgb(30 50 58 / 18%);
+  --project-filter-option-gap: 0.45rem;
+  --project-filter-option-padding: 0.65rem 0.55rem;
+  --project-filter-option-radius: 0.45rem;
+  --project-filter-option-hover: #edf7f9;
+  --project-filter-checkbox-size: 1.2rem;
+
+  /* Action button controls. */
+  --project-filter-action-gap: 0.6rem;
+  --project-filter-action-padding: 0.7rem 0.85rem;
+  --project-filter-action-radius: 0.45rem;
+  --project-filter-clear-background: #fff;
+  --project-filter-clear-text: #36515a;
+  --project-filter-apply-background: #087f9a;
+  --project-filter-apply-text: #fff;
 }
 
 .project-filter {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: var(--project-filter-gap);
-}
-
-.project-filter__button {
-  padding: var(--project-filter-button-padding-block) var(--project-filter-button-padding-inline);
+  position: relative;
+  width: min(100%, var(--project-filter-width));
   color: var(--project-filter-text);
-  background: var(--project-filter-background);
-  border: 1px solid var(--project-filter-border);
-  border-radius: var(--project-filter-button-radius);
   font-family: var(--project-filter-font-family);
   font-size: var(--project-filter-font-size);
   font-weight: var(--project-filter-font-weight);
   letter-spacing: var(--project-filter-letter-spacing);
-  line-height: 1;
+}
+
+.project-filter__trigger {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: var(--project-filter-trigger-height);
+  gap: 0.65rem;
+  padding: var(--project-filter-trigger-padding);
+  color: var(--project-filter-text);
+  background: var(--project-filter-background);
+  border: 1px solid var(--project-filter-border);
+  border-radius: var(--project-filter-trigger-radius);
+  box-shadow: 0 0.1rem 0.25rem rgb(30 50 58 / 8%);
+  font: inherit;
+  text-align: left;
   cursor: pointer;
-  transition: color 150ms ease, background-color 150ms ease, border-color 150ms ease;
 }
 
-.project-filter__button:hover,
-.project-filter__button:focus-visible {
-  background: var(--project-filter-hover-background);
+.project-filter__trigger:focus-visible,
+.project-filter__action:focus-visible,
+.project-filter__checkbox:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--project-filter-focus) 35%, transparent);
+  outline-offset: 2px;
 }
 
-.project-filter__button[aria-pressed="true"] {
-  color: var(--project-filter-active-text);
-  background: var(--project-filter-active-background);
-  border-color: var(--project-filter-active-background);
+.project-filter__icon {
+  width: var(--project-filter-icon-size);
+  fill: currentColor;
+}
+
+.project-filter__count {
+  padding: 0.3rem 0.55rem;
+  margin-left: auto;
+  color: var(--project-filter-count-text);
+  background: var(--project-filter-count-background);
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.project-filter__chevron {
+  width: var(--project-filter-chevron-size);
+  margin-left: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.75;
+  transition: transform 160ms ease;
+}
+
+.project-filter__trigger[aria-expanded="true"] .project-filter__chevron {
+  transform: rotate(180deg);
+}
+
+.project-filter__count + .project-filter__chevron {
+  margin-left: 0;
+}
+
+.project-filter__panel {
+  position: absolute;
+  z-index: 10;
+  top: var(--project-filter-panel-top);
+  right: 0;
+  width: 100%;
+  padding: var(--project-filter-panel-padding);
+  background: var(--project-filter-background);
+  border: 1px solid var(--project-filter-border);
+  border-radius: var(--project-filter-panel-radius);
+  box-shadow: var(--project-filter-panel-shadow);
+}
+
+.project-filter__options {
+  display: grid;
+  gap: var(--project-filter-option-gap);
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.project-filter__legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.project-filter__option {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: var(--project-filter-option-padding);
+  border-radius: var(--project-filter-option-radius);
+  cursor: pointer;
+}
+
+.project-filter__option:hover {
+  background: var(--project-filter-option-hover);
+}
+
+.project-filter__checkbox {
+  width: var(--project-filter-checkbox-size);
+  height: var(--project-filter-checkbox-size);
+  margin: 0;
+  accent-color: var(--project-filter-focus);
+  cursor: pointer;
+}
+
+.project-filter__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--project-filter-action-gap);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--project-filter-border);
+}
+
+.project-filter__action {
+  padding: var(--project-filter-action-padding);
+  border: 1px solid var(--project-filter-focus);
+  border-radius: var(--project-filter-action-radius);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.project-filter__action--clear {
+  color: var(--project-filter-clear-text);
+  background: var(--project-filter-clear-background);
+}
+
+.project-filter__action--apply {
+  color: var(--project-filter-apply-text);
+  background: var(--project-filter-apply-background);
 }
 
 @media (max-width: 620px) {
   .project-filter {
-    justify-content: center;
+    align-self: center;
   }
 }
