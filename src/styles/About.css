@@ -66,12 +66,6 @@
   to { transform: translateX(0); }
 }
 
-@media (max-width: 700px) {
-  #about-section {
-    min-height: 20rem;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .about-panel {
     transform: translateX(0);
