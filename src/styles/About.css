@@ -1,53 +1,72 @@
 #about-section {
-  position: relative;
-  overflow: hidden;
-  scroll-margin-top: 6rem;
-}
+  --left-brightness: 0.72;
+  --right-brightness: 0.72;
 
-#about-background-shape {
-  position: absolute;
-  inset: -6vw 0 auto;
-  z-index: 0;
-  height: 76%;
-  background: #0891b2;
-  transform: skewY(-10deg);
-  transform-origin: top left;
-}
-
-#about-layout {
   position: relative;
-  z-index: 1;
   display: grid;
-  grid-template-columns: minmax(14rem, 25rem) minmax(0, 1fr);
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: center;
-  max-width: 90rem;
-  margin: auto;
-  padding: clamp(2.5rem, 4vw, 4.5rem) clamp(1.25rem, 6vw, 6rem) clamp(3.5rem, 6vw, 6rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: calc(100svh - 4.5rem);
+  overflow: hidden;
+  scroll-margin-top: 4.5rem;
+  background: #fff;
 }
 
-#profile-image-box { grid-column: 1; grid-row: 1; z-index: 2; justify-self: center; width: min(100%, 22rem); }
-#profile-image { width: 100%; aspect-ratio: 1; border: 0.45rem solid white; border-radius: 50%; object-fit: cover; box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 30%); }
-#profile-name-box { grid-column: 1; grid-row: 1; z-index: 3; align-self: end; padding: 1.5rem; }
-#profile-name { margin: 0; color: white; font-family: "Playfair Display", serif; font-size: clamp(2.4rem, 4vw, 4.2rem); font-weight: 400; line-height: 0.95; text-shadow: 0.08rem 0.08rem 0.15rem rgb(0 0 0 / 45%); }
-
-#about-card {
-  grid-column: 2;
-  grid-row: 1;
-  margin-left: 0;
-  padding: clamp(2rem, 4vw, 4rem);
-  background: white;
-  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 18%);
+.about-panel {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-#about-heading { margin: 0 0 1.25rem; }
-#about-description { margin: 0; max-width: 65ch; color: #46555b; font-size: clamp(1rem, 1.35vw, 1.2rem); line-height: 1.65; }
+.about-panel--left {
+  transform: translateX(-100%);
+  animation-name: about-slide-from-left;
+}
+
+.about-panel--right {
+  transform: translateX(100%);
+  animation-name: about-slide-from-right;
+}
+
+.about-panel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 160ms linear;
+  will-change: filter;
+}
+
+.about-panel--left .about-panel__image {
+  filter: brightness(var(--left-brightness));
+  object-position: 58% center;
+}
+
+.about-panel--right .about-panel__image {
+  filter: brightness(var(--right-brightness));
+  object-position: center;
+}
+
+@keyframes about-slide-from-left {
+  to { transform: translateX(0); }
+}
+
+@keyframes about-slide-from-right {
+  to { transform: translateX(0); }
+}
 
 @media (max-width: 700px) {
-  #about-background-shape { inset: -8vw 0 auto; height: 38%; transform: skewY(-12deg); }
-  #about-layout { grid-template-columns: 1fr; gap: 0; padding-inline: clamp(1.25rem, 6vw, 3rem); }
-  #profile-image-box, #profile-name-box { grid-column: 1; grid-row: 1; }
-  #profile-name-box { padding: clamp(1rem, 4vw, 1.75rem); }
-  #about-card { grid-column: 1; grid-row: 2; margin: 0; padding: clamp(2.5rem, 8vw, 4rem) 0 0; background: transparent; box-shadow: none; }
-  #about-heading { text-align: center; }
+  #about-section {
+    min-height: calc(100svh - 7rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-panel {
+    transform: translateX(0);
+    animation: none;
+  }
 }

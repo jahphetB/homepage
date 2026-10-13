@@ -35,4 +35,5 @@ Help the user learn while building maintainable web projects. Prefer clear, prop
 
 - State what changed, what was checked, and what remains unverified.
 - Inspect Git status before reporting repository state. Preserve unrelated changes.
-- Commit meaningful verified changes only when requested or established for the project; push only with explicit approval.
+- After successfully verifying any file edits in this project, commit them locally without asking for approval.
+- Never push commits or modify a remote without explicit approval.
