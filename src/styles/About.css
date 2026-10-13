@@ -1,6 +1,9 @@
 #about-section {
-  --left-brightness: 0.72;
-  --right-brightness: 0.72;
+  /* Image brightness controls. */
+  --brightness-base: 0.72;
+  --brightness-range: 0.32;
+  --left-brightness: var(--brightness-base);
+  --right-brightness: var(--brightness-base);
 
   position: relative;
   display: grid;
@@ -43,11 +46,16 @@
 .about-panel--left .about-panel__image {
   filter: brightness(var(--left-brightness));
   object-position: center;
+  width: 100%;
+  object-fit: cover;
 }
 
 .about-panel--right .about-panel__image {
   filter: brightness(var(--right-brightness));
   object-position: center;
+  width: 100%;
+  object-fit: cover;
+
 }
 
 @keyframes about-slide-from-left {
