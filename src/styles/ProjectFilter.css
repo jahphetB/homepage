@@ -2,7 +2,7 @@
   /* Filter trigger controls. */
   --project-filter-width: 18rem;
   --project-filter-mobile-width: clamp(8rem, 42vw, 11rem);
-  --project-filter-trigger-height: 3.25rem;
+  --project-filter-trigger-height: 2.05rem;
   --project-filter-trigger-padding: 0.85rem 1rem;
   --project-filter-trigger-radius: 0.7rem;
   --project-filter-icon-size: 1.25rem;

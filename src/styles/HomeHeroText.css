@@ -1,6 +1,6 @@
-#about-section {
+#home-section {
   /* Designer text controls. */
-  --designer-text-left: 55%;
+  --designer-text-left: 55.2%;
   --designer-text-top: 29.5%;
   --designer-title-size: 1.48vw;
   --designer-copy-width: 14.5vw;
@@ -13,20 +13,20 @@
 
   /* Pointer growth controls: 0.08 means up to 8% larger. */
   --copy-scale-base: 1;
-  --copy-scale-range: 0.40;
+  --copy-scale-range: 0.45;
   --designer-scale: var(--copy-scale-base);
   --builder-scale: var(--copy-scale-base);
 
-  --about-copy-size: 0.9vw;
+  --home-hero-text-size: 0.9vw;
 }
 
-.about-copy {
+.home-hero-text {
   position: absolute;
   z-index: 1;
   pointer-events: none;
 }
 
-.about-copy--designer {
+.home-hero-text--designer {
   top: var(--designer-text-top);
   left: var(--designer-text-left);
   width: min(var(--designer-copy-width), 78%);
@@ -35,7 +35,7 @@
   transform-origin: top left;
 }
 
-.about-copy--builder {
+.home-hero-text--builder {
   top: var(--builder-text-top);
   right: var(--builder-text-right);
   width: min(var(--builder-copy-width), 78%);
@@ -45,7 +45,7 @@
   transform-origin: top right;
 }
 
-.about-copy__title {
+.home-hero-text__title {
   margin: 0;
   font-family: "Playfair Display", serif;
   font-weight: 500;
@@ -53,27 +53,38 @@
   letter-spacing: -0.045em;
 }
 
-.about-copy--designer .about-copy__title {
+.home-hero-text--designer .home-hero-text__title {
   font-size: var(--designer-title-size);
 }
 
-.about-copy--builder .about-copy__title {
+.home-hero-text--builder .home-hero-text__title {
   font-size: var(--builder-title-size);
 }
 
-.about-copy__description {
+.home-hero-text__description {
   margin: 1vw 0 0;
-  font-size: var(--about-copy-size);
+  font-size: var(--home-hero-text-size);
   line-height: 1.45;
 }
 
-.about-copy {
+.home-hero-text {
   transition: transform 180ms ease-out;
   will-change: transform;
 }
 
-@media (max-width: 766px) {
-  .about-copy__description {
-    display: none;
-  }
+@media (max-width: 426px) {
+	.home-hero-text--designer {
+		top: calc(var(--designer-text-top) / 0.8);
+	}
+
+	.home-hero-text--builder {
+		top: calc(var(--builder-text-top) / 0.8);
+	}
+
+  #home-section {
+		--designer-title-size: 20px;
+		--builder-title-size: 20px;
+		--home-hero-text-size: 8px;
+	}
+
 }

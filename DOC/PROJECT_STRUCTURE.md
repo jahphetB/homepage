@@ -1,10 +1,12 @@
 # Portfolio structure and editing guide
 
-The app has three hash routes, so direct links and refresh work on static hosting:
+The app uses hash routes, so direct links and refresh work on static hosting:
 
-- `#/about` (also the default): navigation, animated image section, six project previews.
+- `#/home` (also the default): navigation, animated image section, six project previews,
+  a portfolio link, and Contact at the bottom.
 - `#/portfolio`: the complete collection, with filters and pagination.
-- `#/contact`: the existing contact content.
+- `#/about`: a short introduction about Yaphet.
+- `#/contact`: the contact content on its own route.
 
 ## Component ownership
 
@@ -13,8 +15,11 @@ All component implementations live in `src/components/`; each has its own CSS fi
 Each new component stylesheet starts with editable CSS custom properties.
 
 - `Navbar` contains `NavBrand` and `NavLinks`.
-- `About` owns the two image links, entrance animation, and pointer brightness effect.
+- `Home` owns the two image links, entrance animation, pointer brightness effect, and
+  the text overlays rendered by `HomeHeroText` (previously called `AboutCopy`).
+- `About` is the separate introductory page.
 - `FeaturedProjects` contains `ProjectsTitle` and `ProjectGrid`; it previews the first six data entries.
+- `GoToPortfolio` is the centered link beneath the Home project grid.
 - `Projects` composes the full portfolio with the same title/grid plus filtering and pagination.
 - `ProjectGrid` renders `ProjectCard` entries.
 - `ProjectCard` contains `ProjectImage`, a title/links row (`ProjectTitle` and
@@ -35,8 +40,11 @@ hide their icons, and missing tech stacks render no badges.
 ## Adjust appearance
 
 - Navigation: `Navbar.css`, `NavBrand.css`, and `NavLinks.css`.
-- Hero height, image position, fit, timing, brightness: `About.css`.
+- Hero height, image position, fit, timing, brightness: `Home.css`.
+- Hero overlay wording: `Home.jsx`; typography, position, and growth: `HomeHeroText.css`.
 - Preview spacing: `FeaturedProjects.css`; heading: `ProjectsTitle.css`; columns/gaps: `ProjectGrid.css`.
+- Portfolio link position, size, colors, and typography: `GoToPortfolio.css`.
+- About page layout and text: `About.css`.
 - Card frame/hover: `ProjectCard.css`; each card child has its own named stylesheet.
 - Tech badge colors, font, padding, gap, and wrapping: `ProjectTechStack.css`.
 - Individual card: target `#project-shopping-cart` (or the corresponding project ID).

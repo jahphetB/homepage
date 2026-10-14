@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Home from "./components/Home";
 import Contact from "./components/Contact";
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
@@ -8,8 +9,9 @@ import FeaturedProjects from "./components/FeaturedProjects";
 function readPage() {
   const route = window.location.hash.slice(1);
   if (route === "/portfolio") return "portfolio";
+  if (route === "/about") return "about";
   if (route === "/contact") return "contact";
-  return "about";
+  return "home";
 }
 
 export default function App() {
@@ -28,13 +30,15 @@ export default function App() {
     <div id="page-body">
       <Navbar currentPage={page} />
       <main id="main-content">
-        {page === "about" && (
+        {page === "home" && (
           <>
-            <About />
+            <Home />
             <FeaturedProjects />
+            <Contact />
           </>
         )}
         {page === "portfolio" && <Projects />}
+        {page === "about" && <About />}
         {page === "contact" && <Contact />}
       </main>
     </div>

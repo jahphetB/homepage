@@ -1,4 +1,4 @@
-import contactImage from "../../assets/images/contact.jpg";
+import contactImage from "../../assets/images/Yaphet_Bashahider.jpg";
 import emailIcon from "../../assets/icons/email.svg";
 import phoneIcon from "../../assets/icons/phone.svg";
 import SocialLinks from "./SocialLinks";

@@ -1,0 +1,85 @@
+#home-section {
+  /* Layout and image controls: current dimensions and crop preserved. */
+  --home-height: clamp(250px, 30vw, 450px);
+  --home-width: 100%;
+  --home-background: #fff;
+  --home-left-position: center;
+  --home-right-position: center;
+  --home-image-fit: cover;
+  --home-animation-duration: 1s;
+  --home-animation-delay: 1s;
+  --home-animation-easing: cubic-bezier(0.22, 1, 0.36, 1);
+  --home-brightness-transition: 160ms;
+  /* Image brightness controls. */
+  --brightness-base: 0.72;
+  --brightness-range: 0.32;
+  --left-brightness: var(--brightness-base);
+  --right-brightness: var(--brightness-base);
+
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: var(--home-width);
+  height: var(--home-height);
+  aspect-ratio: 948 / 301;
+  overflow: hidden;
+  scroll-margin-top: 4.5rem;
+  background: var(--home-background);
+}
+
+.home-panel {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--home-background);
+  animation-duration: var(--home-animation-duration);
+  animation-delay: var(--home-animation-delay);
+  animation-fill-mode: forwards;
+  animation-timing-function: var(--home-animation-easing);
+}
+
+.home-panel--left {
+  transform: translateX(-100%);
+  animation-name: home-slide-from-left;
+}
+
+.home-panel--right {
+  transform: translateX(100%);
+  animation-name: home-slide-from-right;
+}
+
+.home-panel__image {
+  width: 100%;
+  height: 100%;
+  object-fit: var(--home-image-fit);
+  transition: filter var(--home-brightness-transition) linear;
+  will-change: filter;
+}
+
+.home-panel--left .home-panel__image {
+  filter: brightness(var(--left-brightness));
+  object-position: var(--home-left-position);
+}
+
+.home-panel--right .home-panel__image {
+  filter: brightness(var(--right-brightness));
+  object-position: var(--home-right-position);
+
+}
+
+@keyframes home-slide-from-left {
+  to { transform: translateX(0); }
+}
+
+.home-panel:focus-visible { outline-offset: -0.3rem; }
+
+@keyframes home-slide-from-right {
+  to { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-panel {
+    transform: translateX(0);
+    animation: none;
+  }
+}

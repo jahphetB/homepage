@@ -1,4 +1,9 @@
 import shoppingCartScreenshot from "../../assets/images/shop-products-sample.png";
+import restaurantPageScreenshot from "../../assets/images/restaurant-home-page-screenshot.png";
+import battleShipScreenshot from "../../assets/images/battleship-game-screenshot.png";
+import weatherAppScreenshot from "../../assets/images/weather-app-screenshot.png";
+import memoryCardGameScreenshot from "../../assets/images/memory-card-screenshot.png";
+
 
 const placeholderDescription = "Short description of the project. Just a couple sentences will do.";
 
@@ -26,18 +31,63 @@ export const projects = [
     repositoryUrl: "https://github.com/jahphetB/shopping-cart",
     liveUrl: "https://shopping-cart-phi-six-71.vercel.app/",
   },
+
   {
-    id: "one",
-    title: "Project name",
-    description: placeholderDescription,
+    id: "restaurant-page",
+    title: "Restaurant Page",
+    description: "A responsive mock restaurant page built for real business use",
     categories: ["personal"],
+    techStack: ["HTML5", "JavaScript", "CSS"],
+    screenshot: {
+      src: restaurantPageScreenshot,
+      alt: "Restaurant page displaying manu, address, and contanct",
+    },
+    repositoryUrl: "https://github.com/jahphetB/restaurant_page",
+    liveUrl: "https://jahphetb.github.io/restaurant_page/",
   },
+
   {
-    id: "two",
-    title: "Project name",
-    description: placeholderDescription,
-    categories: ["games"],
+    id: "weather-app",
+    title: "Weather App",
+    description: "Check today's weather in your city and the weather forcast for the next 10 days.",
+    categories: ["personal"],
+    techStack: ["Visual Crossing API" ,"HTML5", "JavaScript", "CSS", "Webpack", "GitHub Pages"],
+    screenshot: {
+      src: weatherAppScreenshot,
+      alt: "A weather app to check today's weather and weather forcast for the next few days.",
+    },
+    repositoryUrl: "https://github.com/jahphetB/weather-app",
+    liveUrl: "https://jahphetb.github.io/weather-app/",
   },
+
+  {
+    id: "battleship-game",
+    title: "Battleship Game",
+    description: "Fight a moderately smart AI in the game of Battleship.",
+    categories: ["games"],
+    techStack: ["HTML5", "JavaScript", "CSS", "Jest", "Webpack"],
+    screenshot: {
+      src: battleShipScreenshot,
+      alt: "Play Battleship with AI.",
+    },
+    repositoryUrl: "https://github.com/jahphetB/battleship-game",
+    liveUrl: "https://jahphetb.github.io/battleship-game/",
+  },
+
+  {
+    id: "memory-card-game",
+    title: "Memory Card",
+    description: "Test your memory with a simple rule 12 GIF cards game.",
+    categories: ["games"],
+    techStack: ["GIPHY API", "React", "JavaScript", "CSS", "Vite", "Vercel"],
+    screenshot: {
+      src: memoryCardGameScreenshot,
+      alt: "A simple 12 GIF cards game.",
+    },
+    repositoryUrl: "https://github.com/jahphetB/memory-card",
+    liveUrl: "https://memory-card-eta-nine.vercel.app/",
+  },
+
   {
     id: "three",
     title: "Project name",

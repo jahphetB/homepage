@@ -1,0 +1,45 @@
+.go-to-portfolio {
+  /* Container position controls. */
+  --portfolio-action-margin-top: clamp(2.5rem, 5vw, 4rem);
+  --portfolio-action-align: center;
+  --portfolio-action-offset-x: 0px;
+  --portfolio-action-offset-y: 0px;
+
+  display: flex;
+  justify-content: var(--portfolio-action-align);
+  margin-top: var(--portfolio-action-margin-top);
+  transform: translate(var(--portfolio-action-offset-x), var(--portfolio-action-offset-y));
+}
+
+.go-to-portfolio__button {
+  /* Button typography, size, and color controls. */
+  --portfolio-button-padding: 0.9rem 1.5rem;
+  --portfolio-button-radius: 0.55rem;
+  --portfolio-button-font: "Roboto", sans-serif;
+  --portfolio-button-size: 1rem;
+  --portfolio-button-weight: 500;
+  --portfolio-button-line-height: 1.3;
+  --portfolio-button-color: #fff;
+  --portfolio-button-background: #087f9a;
+  --portfolio-button-hover-background: #086d83;
+  --portfolio-button-border: 1px solid transparent;
+
+  display: inline-block;
+  max-width: 100%;
+  padding: var(--portfolio-button-padding);
+  color: var(--portfolio-button-color);
+  background: var(--portfolio-button-background);
+  border: var(--portfolio-button-border);
+  border-radius: var(--portfolio-button-radius);
+  font-family: var(--portfolio-button-font);
+  font-size: var(--portfolio-button-size);
+  font-weight: var(--portfolio-button-weight);
+  line-height: var(--portfolio-button-line-height);
+  text-align: center;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.go-to-portfolio__button:hover {
+  background: var(--portfolio-button-hover-background);
+}
