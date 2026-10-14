@@ -10,9 +10,23 @@ The app uses hash routes, so direct links and refresh work on static hosting:
 
 ## Component ownership
 
-All component implementations live in `src/components/`; each has its own CSS file in
-`src/styles/`. `src/styles/global.css` holds shared base styles and page layout.
-Each new component stylesheet starts with editable CSS custom properties.
+Component implementations and their individual CSS files live in matching feature
+folders under `src/components/` and `src/styles/`. `src/styles/global.css` holds
+shared base styles and page layout. New component stylesheets start with editable
+CSS custom properties.
+
+| Feature | Components | Styles | Responsibility |
+| --- | --- | --- | --- |
+| Layout | `src/components/layout/` | `src/styles/layout/` | Navigation, footer, back-to-top |
+| Home | `src/components/home/` | `src/styles/home/` | Hero and six-project preview |
+| Portfolio | `src/components/portfolio/` | `src/styles/portfolio/` | Cards, filters, pagination |
+| Contact | `src/components/contact/` | `src/styles/contact/` | Contact content and social links |
+| About | `src/components/about/` | `src/styles/about/` | About page |
+| Unused | `src/components/unused/` | `src/styles/unused/` | Retained Education files; not rendered |
+
+Content and configuration remain in `src/data/`; the scroll helper remains in
+`src/utils/`. Place a new component and its stylesheet in the same-named feature
+folders, without combining unrelated responsibilities.
 
 - `Navbar` contains `NavBrand` and `NavLinks`.
 - `Home` owns the two image links, entrance animation, pointer brightness effect, and
@@ -62,3 +76,9 @@ hide their icons, and missing tech stacks render no badges.
 Copy an entry in `src/data/navigation.js` and edit `id`, `label`, and `href`.
 Existing routes and external URLs work immediately. For a new internal page, also add
 its route and component to `src/App.jsx`.
+
+## Source and hosting
+
+GitHub (`jahphetB/homepage`) holds the source. Vercel is the intended host for
+the Vite build (`npm run build`, output `dist`). Hosting setup and deployment are
+separate from this folder reorganization.

@@ -1,12 +1,12 @@
-import About from "./components/About";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
+import About from "./components/about/About";
+import Home from "./components/home/Home";
+import Contact from "./components/contact/Contact";
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import FeaturedProjects from "./components/FeaturedProjects";
-import BackToTop from "./components/BackToTop";
-import SiteFooter from "./components/SiteFooter";
+import Navbar from "./components/layout/Navbar";
+import Projects from "./components/portfolio/Projects";
+import FeaturedProjects from "./components/home/FeaturedProjects";
+import BackToTop from "./components/layout/BackToTop";
+import SiteFooter from "./components/layout/SiteFooter";
 
 function readPage() {
   const route = window.location.hash.slice(1);
