@@ -7,7 +7,7 @@
   --home-right-position: center;
   --home-image-fit: cover;
   --home-animation-duration: 1s;
-  --home-animation-delay: 1s;
+  --home-animation-delay: 0.5s;
   --home-animation-easing: cubic-bezier(0.22, 1, 0.36, 1);
   --home-brightness-transition: 160ms;
   /* Image brightness controls. */

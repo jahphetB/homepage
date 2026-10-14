@@ -11,7 +11,7 @@ const pageSizeOptions = [3, 6, 9];
 export default function Projects() {
   const [activeFilters, setActiveFilters] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(pageSizeOptions[0]);
+  const [pageSize, setPageSize] = useState(9);
   const filteredProjects = activeFilters.length
     ? projects.filter((project) =>
         activeFilters.some((filter) => project.categories.includes(filter)),

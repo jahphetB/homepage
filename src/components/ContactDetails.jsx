@@ -1,4 +1,4 @@
-import emailIcon from "../../assets/icons/email.svg";
+import emailIcon from "../../assets/icons/email-black.svg";
 import "../styles/ContactDetails.css";
 
 export default function ContactDetails() {

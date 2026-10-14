@@ -23,7 +23,7 @@ export const projects = [
     title: "Shopping Cart",
     description: "A responsive mock shopping cart application built with React.",
     categories: ["personal"],
-    techStack: ["React", "JavaScript", "CSS"],
+    techStack: ["React", "JavaScript", "CSS", "FakeStore API", "Vitest", "React Testing Library"],
     screenshot: {
       src: shoppingCartScreenshot,
       alt: "Shopping Cart product listing with clothing and accessories",
