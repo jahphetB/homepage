@@ -81,4 +81,5 @@ its route and component to `src/App.jsx`.
 
 GitHub (`jahphetB/homepage`) holds the source. Vercel is the intended host for
 the Vite build (`npm run build`, output `dist`). Hosting setup and deployment are
-separate from this folder reorganization.
+separate from this folder reorganization. See `DOC/DEPLOYMENT.md` for the import
+settings and production smoke checks.
