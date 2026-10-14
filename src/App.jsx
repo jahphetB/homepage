@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import FeaturedProjects from "./components/FeaturedProjects";
+import BackToTop from "./components/BackToTop";
+import SiteFooter from "./components/SiteFooter";
 
 function readPage() {
   const route = window.location.hash.slice(1);
@@ -41,6 +43,8 @@ export default function App() {
         {page === "about" && <About />}
         {page === "contact" && <Contact />}
       </main>
+      <BackToTop />
+      <SiteFooter />
     </div>
   );
 }

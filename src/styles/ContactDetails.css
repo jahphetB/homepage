@@ -1,0 +1,19 @@
+#contact-details {
+  /* Address and email controls. */
+  --contact-details-size: 1rem;
+  --contact-details-line-height: 1.6;
+  --contact-details-gap: 1rem;
+  --contact-email-icon-size: 1.5rem;
+  --contact-email-gap: 0.75rem;
+  --contact-email-color: inherit;
+
+  font-size: var(--contact-details-size);
+  font-style: normal;
+  line-height: var(--contact-details-line-height);
+}
+
+#contact-address { margin: 0 0 var(--contact-details-gap); }
+#contact-email { display: flex; align-items: center; gap: var(--contact-email-gap); margin: 0; }
+#contact-email-icon { width: var(--contact-email-icon-size); height: var(--contact-email-icon-size); }
+#contact-email-address { color: var(--contact-email-color); overflow-wrap: anywhere; }
+#contact-email-address:hover { text-decoration: underline; }

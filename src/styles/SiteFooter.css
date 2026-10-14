@@ -1,0 +1,32 @@
+.site-footer {
+  /* Footer layout, color, and typography controls. */
+  --footer-columns: repeat(3, minmax(0, 1fr));
+  --footer-gap: 2rem;
+  --footer-padding-block: 2rem;
+  --footer-padding-inline: clamp(1.25rem, 6vw, 6rem);
+  --footer-background: #193740;
+  --footer-color: #e8edef;
+  --footer-label-color: #fff;
+  --footer-font: "Roboto", sans-serif;
+  --footer-size: 0.9rem;
+  --footer-label-size: 1rem;
+  --footer-line-height: 1.5;
+
+  display: grid;
+  grid-template-columns: var(--footer-columns);
+  gap: var(--footer-gap);
+  padding: var(--footer-padding-block) var(--footer-padding-inline);
+  background: var(--footer-background);
+  color: var(--footer-color);
+  font-family: var(--footer-font);
+  font-size: var(--footer-size);
+  line-height: var(--footer-line-height);
+}
+
+.site-footer__section { min-width: 0; }
+.site-footer__label { color: var(--footer-label-color); font-size: var(--footer-label-size); font-weight: 600; }
+.site-footer__section p { margin: 0.5rem 0 0; overflow-wrap: anywhere; }
+
+@media (max-width: 700px) {
+  .site-footer { grid-template-columns: 1fr; gap: 1.5rem; }
+}

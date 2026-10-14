@@ -1,0 +1,31 @@
+#contact-intro {
+  /* Introduction controls. */
+  --contact-heading-color: #242422;
+  --contact-heading-size: clamp(2rem, 3vw, 3rem);
+  --contact-heading-weight: 600;
+  --contact-heading-line-height: 1.15;
+  --contact-heading-spacing: -0.03em;
+  --contact-heading-gap: 1rem;
+  --contact-intro-color: #55534f;
+  --contact-intro-size: 1rem;
+  --contact-intro-line-height: 1.6;
+  --contact-intro-width: 42ch;
+  --contact-intro-gap: 1.5rem;
+}
+
+#contact-heading {
+  margin: 0 0 var(--contact-heading-gap);
+  color: var(--contact-heading-color);
+  font-size: var(--contact-heading-size);
+  font-weight: var(--contact-heading-weight);
+  line-height: var(--contact-heading-line-height);
+  letter-spacing: var(--contact-heading-spacing);
+}
+
+#contact-introduction {
+  max-width: var(--contact-intro-width);
+  margin: 0 0 var(--contact-intro-gap);
+  color: var(--contact-intro-color);
+  font-size: var(--contact-intro-size);
+  line-height: var(--contact-intro-line-height);
+}

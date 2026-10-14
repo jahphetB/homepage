@@ -1,0 +1,25 @@
+#contact-image-box {
+  /* Portrait controls. */
+  --contact-image-padding: clamp(1.5rem, 3vw, 3rem);
+  --contact-image-background: #e5e3df;
+  --contact-image-max-width: 28rem;
+  --contact-image-mobile-padding: 0 1.5rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--contact-image-padding);
+  background: var(--contact-image-background);
+}
+
+#contact-image {
+  display: block;
+  width: 100%;
+  max-width: var(--contact-image-max-width);
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  #contact-image-box { padding: var(--contact-image-mobile-padding); }
+}

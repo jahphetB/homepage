@@ -24,6 +24,11 @@ Each new component stylesheet starts with editable CSS custom properties.
 - `ProjectGrid` renders `ProjectCard` entries.
 - `ProjectCard` contains `ProjectImage`, a title/links row (`ProjectTitle` and
   `ProjectLinks`), `ProjectDescription`, and `ProjectTechStack`.
+- `Contact` composes `ContactIntro`, `ContactDetails`, `SocialLinks`, and
+  `ContactPortrait` on Home and the Contact route.
+- `BackToTop` and `SiteFooter` render after the main content on every route.
+  The footer is in normal flow, not sticky. The name and Home link scroll to
+  the top when Home is already open.
 
 ## Add a project
 
@@ -45,6 +50,8 @@ hide their icons, and missing tech stacks render no badges.
 - Preview spacing: `FeaturedProjects.css`; heading: `ProjectsTitle.css`; columns/gaps: `ProjectGrid.css`.
 - Portfolio link position, size, colors, and typography: `GoToPortfolio.css`.
 - About page layout and text: `About.css`.
+- Contact layout: `Contact.css`; copy, details, and portrait each have a matching stylesheet.
+- Back-to-top button: `BackToTop.css`; shared footer: `SiteFooter.css`.
 - Card frame/hover: `ProjectCard.css`; each card child has its own named stylesheet.
 - Tech badge colors, font, padding, gap, and wrapping: `ProjectTechStack.css`.
 - Individual card: target `#project-shopping-cart` (or the corresponding project ID).

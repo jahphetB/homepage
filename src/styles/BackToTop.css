@@ -1,0 +1,41 @@
+.back-to-top {
+  /* Back-to-top position and appearance controls. */
+  --top-align: flex-end;
+  --top-padding-block: 1.25rem;
+  --top-padding-inline: clamp(1.25rem, 6vw, 6rem);
+  --top-background: #e5e3df;
+  --top-button-background: #fff;
+  --top-button-color: #0f3b47;
+  --top-button-border: 1px solid #b8b5af;
+  --top-button-radius: 999px;
+  --top-button-padding: 0.7rem 1.1rem;
+  --top-button-font: "Roboto", sans-serif;
+  --top-button-size: 0.95rem;
+  --top-button-weight: 500;
+  --top-arrow-size: 1.25rem;
+  --top-button-gap: 0.5rem;
+
+  display: flex;
+  justify-content: var(--top-align);
+  padding: var(--top-padding-block) var(--top-padding-inline);
+  background: var(--top-background);
+}
+
+.back-to-top__button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--top-button-gap);
+  padding: var(--top-button-padding);
+  color: var(--top-button-color);
+  background: var(--top-button-background);
+  border: var(--top-button-border);
+  border-radius: var(--top-button-radius);
+  font-family: var(--top-button-font);
+  font-size: var(--top-button-size);
+  font-weight: var(--top-button-weight);
+  cursor: pointer;
+}
+
+.back-to-top__button:hover { filter: brightness(0.95); }
+.back-to-top__button:focus-visible { outline: 0.18rem solid #075f75; outline-offset: 0.25rem; }
+.back-to-top__arrow { font-size: var(--top-arrow-size); line-height: 1; }
