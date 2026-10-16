@@ -2,7 +2,6 @@
 
 A personal space for the projects I design and build. The site brings together a visual introduction, selected work, a filterable portfolio, and ways to get in touch.
 
-**[Visit the live site](https://homepage-one-pi-12.vercel.app/)** · [Explore the portfolio](https://homepage-one-pi-12.vercel.app/#/portfolio)
 
 ## What you'll find
 
