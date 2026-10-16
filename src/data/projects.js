@@ -3,6 +3,7 @@ import restaurantPageScreenshot from "../../assets/images/restaurant-home-page-s
 import battleShipScreenshot from "../../assets/images/battleship-game-screenshot.png";
 import weatherAppScreenshot from "../../assets/images/weather-app-screenshot.png";
 import memoryCardGameScreenshot from "../../assets/images/memory-card-screenshot.png";
+import wayfinderScreenshot from "../../assets/images/way-finder-screenshot.png";
 
 
 const placeholderDescription = "Short description of the project. Just a couple sentences will do.";
@@ -18,6 +19,20 @@ export const projects = [
   // Copy the first object, import your screenshot above, then edit its values.
   // Use a unique id; categories match projectFilters; techStack becomes wrapping badges.
   // Array order controls display order. The landing page previews the first six entries.
+  {
+    id: "wayfinder",
+    title: "Wayfinder",
+    description: "An interactive digital map for navigating CofI's campus",
+    categories: ["personal"],
+    techStack: ["TypeScript", "React", "MapLibre GL JS", "Three.js", "Vite", "Vitest", "OpenStreetMap", "Vercel"],
+    screenshot: {
+      src: wayfinderScreenshot,
+      alt: "An interactive digital map for navigating CofI's campus",
+    },
+    repositoryUrl: "https://github.com/jahphetB/wayfinder",
+    liveUrl: "https://wayfinder-umber.vercel.app/",
+  },
+
   {
     id: "shopping-cart",
     title: "Shopping Cart",
