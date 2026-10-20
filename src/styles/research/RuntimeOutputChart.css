@@ -1,0 +1,28 @@
+.runtime-chart {
+	/* Runtime/output controls. */
+	--runtime-ordinary: #2e8c8e;
+	--runtime-productive: #b55d32;
+	padding: clamp(1rem, 2vw, 1.5rem);
+	border: 1px solid var(--research-border);
+	border-radius: 0.6rem;
+	background: var(--research-card);
+}
+.runtime-chart__heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem 1rem; }
+.runtime-chart__title { margin: 0; font: 500 1.38rem "Playfair Display", Georgia, serif; }
+.runtime-chart__scale { color: var(--research-muted); font-size: 0.75rem; }
+.runtime-chart__svg { display: block; width: 100%; height: auto; margin-top: 1rem; }
+.runtime-chart__axis { stroke: #a8bab8; stroke-width: 1.5; }
+.runtime-chart__point { opacity: 0.8; cursor: crosshair; }
+.runtime-chart__point:hover,
+.runtime-chart__point:focus-visible { opacity: 1; stroke: var(--research-ink); stroke-width: 2; }
+.runtime-chart__point--ordinary { fill: var(--runtime-ordinary); }
+.runtime-chart__point--productive { fill: var(--runtime-productive); }
+.runtime-chart__axis-label { fill: var(--research-muted); font-size: 12px; font-family: "Roboto", sans-serif; }
+.runtime-chart__detail { min-height: 2.5em; margin: 0.7rem 0; color: var(--research-muted); font-size: 0.85rem; line-height: 1.5; }
+.runtime-chart__legend { display: flex; flex-wrap: wrap; gap: 0.55rem 1rem; }
+.runtime-chart__legend-item { color: var(--research-muted); font-size: 0.78rem; }
+.runtime-chart__legend-item::before { content: ""; display: inline-block; width: 0.65rem; height: 0.65rem; margin-right: 0.35rem; border-radius: 50%; vertical-align: middle; }
+.runtime-chart__legend-item--ordinary::before { background: var(--runtime-ordinary); }
+.runtime-chart__legend-item--productive::before { background: var(--runtime-productive); }
+.runtime-chart__caveat { color: var(--research-muted); font-size: 0.82rem; line-height: 1.5; }
+.runtime-chart__source { color: var(--research-accent); font-size: 0.82rem; text-decoration: underline; text-underline-offset: 0.2rem; }

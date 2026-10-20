@@ -1,0 +1,30 @@
+.research-method {
+	/* Method section controls. */
+	--method-flow-gap: 1rem;
+	max-width: calc(var(--research-width) + 2 * var(--research-side-padding));
+	margin-inline: auto;
+	padding: var(--research-section-padding) var(--research-side-padding);
+}
+.research-method__eyebrow { margin: 0 0 0.8rem; color: var(--research-accent); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.research-method__title { margin: 0; font-family: "Playfair Display", Georgia, serif; font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 500; line-height: 1.15; }
+.research-method__lead { max-width: 70ch; margin: 1rem 0 0; color: var(--research-muted); font-size: 1rem; line-height: 1.7; }
+.research-method__flow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--method-flow-gap); margin: 2.5rem 0 0; padding: 0; list-style: none; }
+.research-method__stage { position: relative; min-height: 14rem; padding: 1.35rem; border: 1px solid var(--research-border); border-top: 4px solid var(--research-accent); border-radius: 0.55rem; background: var(--research-card); box-shadow: 0 0.3rem 1.2rem #17343e0a; }
+.research-method__stage:not(:last-child)::after { content: "→"; position: absolute; top: 0.8rem; right: -0.85rem; z-index: 1; color: var(--research-accent); font-size: 1.15rem; }
+.research-method__stage-number { color: var(--research-accent); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.1em; }
+.research-method__stage-title { margin: 0.9rem 0 0.6rem; font-family: "Playfair Display", Georgia, serif; font-size: 1.35rem; font-weight: 500; }
+.research-method__stage-text { margin: 0; color: var(--research-muted); font-size: 0.9rem; line-height: 1.6; }
+.research-method__notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: 2rem; }
+.research-method__note { margin: 0; color: var(--research-muted); font-size: 0.92rem; line-height: 1.65; }
+.research-method__note-label { color: var(--research-ink); }
+.research-method__source { display: inline-block; margin-top: 1.5rem; color: var(--research-accent); font-size: 0.9rem; font-weight: 600; text-decoration: underline; text-underline-offset: 0.2rem; }
+@media (max-width: 950px) {
+	.research-method__flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.research-method__stage--02::after { display: none; }
+}
+@media (max-width: 580px) {
+	.research-method__flow,
+	.research-method__notes { grid-template-columns: 1fr; }
+	.research-method__stage { min-height: auto; }
+	.research-method__stage::after { display: none; }
+}

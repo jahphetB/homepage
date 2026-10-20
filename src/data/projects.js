@@ -4,6 +4,7 @@ import battleShipScreenshot from "../../assets/images/battleship-game-screenshot
 import weatherAppScreenshot from "../../assets/images/weather-app-screenshot.png";
 import memoryCardGameScreenshot from "../../assets/images/memory-card-screenshot.png";
 import wayfinderScreenshot from "../../assets/images/way-finder-screenshot.png";
+import BrainfuckResearchScreenshot from "../../assets/images/ResearchResult-img.png";
 
 
 const placeholderDescription = "Short description of the project. Just a couple sentences will do.";
@@ -31,6 +32,20 @@ export const projects = [
     },
     repositoryUrl: "https://github.com/jahphetB/wayfinder",
     liveUrl: "https://wayfinder-umber.vercel.app/",
+  },
+
+  {
+    id: "bb(n)-short-programs-complexicity-research",
+    title: "Computational Limits of Short Programs",
+    description: "From Short Programs to Complex Computation: An Empirical Study of Brainfuck Program Length, Runtime, and Output Productivity",
+    categories: ["ongoing"],
+    techStack: ["Python", "Computational Algorithms", "Data Analysis", "Automated Testing", "Git"],
+    screenshot: {
+      src: BrainfuckResearchScreenshot,
+      alt: "An interactive digital map for navigating CofI's campus",
+    },
+    repositoryUrl: "https://github.com/jahphetB/BrainF_busy_beaver-simulator",
+    liveUrl: "https://homepage-jahphet.vercel.app/#/bfbbn-page",
   },
 
   {

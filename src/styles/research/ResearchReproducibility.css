@@ -1,0 +1,25 @@
+.research-repro {
+	/* Reproducibility section controls. */
+	--repro-card-gap: 1rem;
+	padding: var(--research-section-padding) var(--research-side-padding);
+	background: #edf3f0;
+}
+.research-repro__heading,
+.research-repro__resources,
+.research-repro__steps { max-width: var(--research-width); margin-inline: auto; }
+.research-repro__eyebrow { margin: 0 0 0.8rem; color: var(--research-accent); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.research-repro__title { margin: 0; font: 500 clamp(2rem, 4.5vw, 3.4rem)/1.15 "Playfair Display", Georgia, serif; }
+.research-repro__lead { max-width: 75ch; margin: 1rem 0 0; color: var(--research-muted); line-height: 1.7; }
+.research-repro__resources { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--repro-card-gap); margin-top: 2rem; }
+.research-repro__resource { display: flex; flex-direction: column; padding: 1.3rem; border: 1px solid var(--research-border); border-radius: 0.5rem; background: #fff; }
+.research-repro__resource-title { margin: 0; font: 500 1.25rem "Playfair Display", Georgia, serif; }
+.research-repro__resource-detail { flex: 1; color: var(--research-muted); font-size: 0.85rem; line-height: 1.6; }
+.research-repro__resource-link { color: var(--research-accent); font-size: 0.86rem; font-weight: 700; text-decoration: underline; text-underline-offset: 0.2rem; }
+.research-repro__steps { margin-top: 2rem; }
+.research-repro__steps-title { margin: 0 0 0.8rem; font: 500 1.4rem "Playfair Display", Georgia, serif; }
+.research-repro__commands { padding: 1.2rem; border-radius: 0.5rem; background: #18343d; color: #ecf6f1; overflow-x: auto; }
+.research-repro__code { font: 0.82rem/1.7 Consolas, monospace; }
+.research-repro__provenance { color: var(--research-muted); font-size: 0.84rem; line-height: 1.6; }
+.research-repro__commit { overflow-wrap: anywhere; }
+@media (max-width: 850px) { .research-repro__resources { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 580px) { .research-repro__resources { grid-template-columns: 1fr; } }

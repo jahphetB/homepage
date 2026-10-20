@@ -1,0 +1,39 @@
+.research-dashboard {
+	/* Dashboard controls. */
+	--dashboard-gap: 1.35rem;
+	--dashboard-chart-min: 24rem;
+	padding: var(--research-section-padding) var(--research-side-padding);
+	background: #edf3f0;
+}
+.research-dashboard__heading,
+.research-dashboard__controls,
+.research-dashboard__scope,
+.research-dashboard__empty,
+.research-dashboard__chart-grid,
+.research-dashboard__witnesses,
+.research-dashboard > .memory-chart { max-width: var(--research-width); margin-inline: auto; }
+.research-dashboard__eyebrow { margin: 0 0 0.8rem; color: var(--research-accent); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.research-dashboard__title { margin: 0; font: 500 clamp(2rem, 4.5vw, 3.4rem)/1.15 "Playfair Display", Georgia, serif; }
+.research-dashboard__lead { max-width: 70ch; margin: 1rem 0 0; color: var(--research-muted); line-height: 1.7; }
+.research-dashboard__controls { display: flex; align-items: center; flex-wrap: wrap; gap: 0.7rem 1rem; margin-top: 2rem; padding: 1.2rem; border: 1px solid var(--research-border); border-radius: 0.6rem; background: var(--research-card); }
+.research-dashboard__config-label,
+.research-dashboard__lengths-title { color: var(--research-ink); font-size: 0.88rem; font-weight: 700; }
+.research-dashboard__config { max-width: 100%; padding: 0.65rem 0.75rem; border: 1px solid var(--research-border); border-radius: 0.35rem; background: #fff; color: var(--research-ink); font: inherit; }
+.research-dashboard__lengths { display: flex; align-items: center; flex-wrap: wrap; gap: 0.45rem; margin: 0; padding: 0; border: 0; }
+.research-dashboard__lengths-title { margin-bottom: 0.35rem; }
+.research-dashboard__length-option { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.4rem 0.5rem; border-radius: 0.35rem; background: #edf3f0; cursor: pointer; }
+.research-dashboard__length-checkbox { accent-color: var(--research-accent); }
+.research-dashboard__scope { margin-top: 1rem; color: var(--research-muted); font-size: 0.87rem; line-height: 1.6; }
+.research-dashboard__chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--dashboard-gap); margin-top: 1.5rem; }
+.research-dashboard > .memory-chart { margin-top: var(--dashboard-gap); }
+.research-dashboard__empty { padding: 2rem 0; }
+.research-dashboard__witnesses { margin-top: 2rem; }
+.research-dashboard__witness-title { margin: 0 0 0.4rem; font: 500 1.55rem "Playfair Display", Georgia, serif; }
+.research-dashboard__witness-description { margin: 0 0 1rem; color: var(--research-muted); line-height: 1.6; }
+.research-dashboard__witness-list { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+.research-dashboard__witness { display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem; padding: 0.65rem 0.85rem; border: 1px solid var(--research-border); border-radius: 0.4rem; background: #fff; color: var(--research-ink); cursor: pointer; }
+.research-dashboard__witness:hover,
+.research-dashboard__witness:focus-visible { border-color: var(--research-accent); }
+.research-dashboard__witness-code { font-size: 1rem; overflow-wrap: anywhere; }
+.research-dashboard__witness-meta { color: var(--research-muted); font-size: 0.75rem; }
+@media (max-width: 850px) { .research-dashboard__chart-grid { grid-template-columns: 1fr; } }

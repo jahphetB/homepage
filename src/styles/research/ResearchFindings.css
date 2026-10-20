@@ -1,0 +1,21 @@
+.research-findings {
+	/* Findings layout controls. */
+	--findings-card-gap: 1rem;
+	padding: var(--research-section-padding) var(--research-side-padding);
+	max-width: calc(var(--research-width) + 2 * var(--research-side-padding));
+	margin-inline: auto;
+}
+.research-findings__eyebrow { margin: 0 0 0.8rem; color: var(--research-accent); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.research-findings__title { margin: 0; font: 500 clamp(2rem, 4.5vw, 3.4rem)/1.15 "Playfair Display", Georgia, serif; }
+.research-findings__lead { max-width: 70ch; margin: 1rem 0 0; color: var(--research-muted); line-height: 1.7; }
+.research-findings__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--findings-card-gap); margin-top: 2rem; }
+.research-findings__card { padding: clamp(1.3rem, 2.5vw, 2rem); border: 1px solid var(--research-border); border-radius: 0.5rem; background: #fff; }
+.research-findings__card-index { color: var(--research-accent); font-weight: 700; font-size: 0.8rem; }
+.research-findings__card-title { margin: 0.8rem 0; font: 500 1.45rem "Playfair Display", Georgia, serif; }
+.research-findings__card-text { margin: 0; color: var(--research-muted); line-height: 1.65; }
+.research-findings__code { padding: 0.1rem 0.25rem; border-radius: 0.2rem; background: #edf3f0; color: var(--research-ink); overflow-wrap: anywhere; }
+.research-findings__boundary { margin-top: 1.5rem; padding: clamp(1.3rem, 2.5vw, 2rem); border-left: 4px solid var(--research-gold); background: #f2ebe4; }
+.research-findings__boundary-title { margin: 0; font: 500 1.45rem "Playfair Display", Georgia, serif; }
+.research-findings__boundary-text { max-width: 85ch; color: var(--research-muted); line-height: 1.65; }
+.research-findings__boundary-link { color: var(--research-accent); font-size: 0.9rem; text-decoration: underline; text-underline-offset: 0.2rem; }
+@media (max-width: 700px) { .research-findings__grid { grid-template-columns: 1fr; } }

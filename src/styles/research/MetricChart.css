@@ -1,0 +1,33 @@
+.metric-chart {
+	/* Metric chart controls. */
+	--metric-resolved: #087f82;
+	--metric-bounded: #a65e28;
+	padding: clamp(1rem, 2vw, 1.5rem);
+	border: 1px solid var(--research-border);
+	border-radius: 0.6rem;
+	background: var(--research-card);
+}
+.metric-chart__heading { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 0.3rem 1rem; }
+.metric-chart__title { margin: 0; font: 500 1.38rem "Playfair Display", Georgia, serif; }
+.metric-chart__scale { color: var(--research-muted); font-size: 0.75rem; }
+.metric-chart__svg { display: block; width: 100%; height: auto; margin-top: 1rem; overflow: visible; }
+.metric-chart__axis { stroke: #a8bab8; stroke-width: 1.5; }
+.metric-chart__line { fill: none; stroke: var(--metric-resolved); stroke-width: 2.5; }
+.metric-chart__point { cursor: crosshair; stroke-width: 2.5; }
+.metric-chart__point--resolved { fill: var(--metric-resolved); stroke: #fff; }
+.metric-chart__point--bounded { fill: #fff; stroke: var(--metric-bounded); }
+.metric-chart__point:focus-visible { outline: 3px solid var(--metric-bounded); }
+.metric-chart__tick,
+.metric-chart__axis-label { fill: var(--research-muted); font-size: 12px; font-family: "Roboto", sans-serif; }
+.metric-chart__detail { min-height: 2.5em; margin: 0.7rem 0; color: var(--research-muted); font-size: 0.85rem; line-height: 1.5; overflow-wrap: anywhere; }
+.metric-chart__legend { display: flex; flex-wrap: wrap; gap: 0.55rem 1rem; }
+.metric-chart__legend-item { color: var(--research-muted); font-size: 0.78rem; }
+.metric-chart__legend-item::before { content: ""; display: inline-block; width: 0.65rem; height: 0.65rem; margin-right: 0.35rem; border-radius: 50%; vertical-align: middle; }
+.metric-chart__legend-item--resolved::before { background: var(--metric-resolved); }
+.metric-chart__legend-item--bounded::before { border: 2px solid var(--metric-bounded); background: #fff; }
+.metric-chart__data { margin-top: 1rem; }
+.metric-chart__data-toggle { color: var(--research-accent); font-size: 0.86rem; cursor: pointer; }
+.metric-chart__table { display: block; width: 100%; margin-top: 0.6rem; border-collapse: collapse; overflow-x: auto; font-size: 0.8rem; }
+.metric-chart__table-cell { padding: 0.4rem; border-bottom: 1px solid var(--research-border); text-align: left; }
+.metric-chart__code { overflow-wrap: anywhere; }
+.metric-chart__source { display: inline-block; margin-top: 1rem; color: var(--research-accent); font-size: 0.82rem; text-decoration: underline; text-underline-offset: 0.2rem; }

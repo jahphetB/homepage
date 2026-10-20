@@ -7,12 +7,14 @@ import Projects from "./components/portfolio/Projects";
 import FeaturedProjects from "./components/home/FeaturedProjects";
 import BackToTop from "./components/layout/BackToTop";
 import SiteFooter from "./components/layout/SiteFooter";
+import ResearchPage from "./components/research/ResearchPage";
 
 function readPage() {
   const route = window.location.hash.slice(1);
   if (route === "/portfolio") return "portfolio";
   if (route === "/about") return "about";
   if (route === "/contact") return "contact";
+  if (route === "/bfbbn-page") return "research";
   return "home";
 }
 
@@ -42,6 +44,7 @@ export default function App() {
         {page === "portfolio" && <Projects />}
         {page === "about" && <About />}
         {page === "contact" && <Contact />}
+        {page === "research" && <ResearchPage />}
       </main>
       <BackToTop />
       <SiteFooter />

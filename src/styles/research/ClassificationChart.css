@@ -1,0 +1,35 @@
+.classification-chart {
+	/* Classification colors. */
+	--class-halted: #087f82;
+	--class-cycle: #3f6aa0;
+	--class-step: #bb7946;
+	--class-invalid: #bdc9c5;
+	padding: clamp(1rem, 2vw, 1.5rem);
+	border: 1px solid var(--research-border);
+	border-radius: 0.6rem;
+	background: var(--research-card);
+}
+.classification-chart__title { margin: 0; font: 500 1.38rem "Playfair Display", Georgia, serif; }
+.classification-chart__description { color: var(--research-muted); font-size: 0.84rem; line-height: 1.55; }
+.classification-chart__legend { display: flex; flex-wrap: wrap; gap: 0.45rem 0.9rem; margin: 1rem 0; }
+.classification-chart__legend-item { color: var(--research-muted); font-size: 0.75rem; }
+.classification-chart__legend-item::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; margin-right: 0.3rem; background: var(--class-halted); vertical-align: middle; }
+.classification-chart__legend-item--cycle_detected::before { background: var(--class-cycle); }
+.classification-chart__legend-item--step_limit::before { background: var(--class-step); }
+.classification-chart__legend-item--syntactically_invalid::before { background: var(--class-invalid); }
+.classification-chart__rows { display: grid; gap: 0.7rem; }
+.classification-chart__row { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr) 4.5rem; align-items: center; gap: 0.5rem; }
+.classification-chart__length,
+.classification-chart__total { color: var(--research-muted); font-size: 0.74rem; }
+.classification-chart__total { text-align: right; }
+.classification-chart__bar { display: flex; height: 1.3rem; overflow: hidden; border-radius: 0.2rem; }
+.classification-chart__segment { display: block; min-width: 0; background: var(--class-halted); }
+.classification-chart__segment--cycle_detected { background: var(--class-cycle); }
+.classification-chart__segment--step_limit { background: var(--class-step); }
+.classification-chart__segment--syntactically_invalid { background: var(--class-invalid); }
+.classification-chart__data { margin-top: 1rem; }
+.classification-chart__data-toggle { color: var(--research-accent); font-size: 0.86rem; cursor: pointer; }
+.classification-chart__table-wrap { overflow-x: auto; }
+.classification-chart__table { width: 100%; margin-top: 0.6rem; border-collapse: collapse; font-size: 0.77rem; }
+.classification-chart__table-cell { padding: 0.4rem; border-bottom: 1px solid var(--research-border); text-align: left; }
+.classification-chart__source { display: inline-block; margin-top: 1rem; color: var(--research-accent); font-size: 0.82rem; text-decoration: underline; text-underline-offset: 0.2rem; }
