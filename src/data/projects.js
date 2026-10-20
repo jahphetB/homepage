@@ -36,7 +36,7 @@ export const projects = [
 
   {
     id: "bb(n)-short-programs-complexicity-research",
-    title: "Computational Limits of Short Programs",
+    title: "Computational Limits of Short Programs (On going)",
     description: "From Short Programs to Complex Computation: An Empirical Study of Brainfuck Program Length, Runtime, and Output Productivity",
     categories: ["ongoing"],
     techStack: ["Python", "Computational Algorithms", "Data Analysis", "Automated Testing", "Git"],
