@@ -100,12 +100,12 @@ export const factEntries = [
 		description: "I have played every annual FIFA/EA Sports FC soccer game release since 2008.",
 		media: { src: new URL("../../assets/images/fifa-collections.jpg", import.meta.url).href, alt: "A collection of FIFA soccer game cases", aspect: "portrait" },
 	},
+	{ id: "wushu", title: "Martial arts", description: "I hold a blue belt in Wushu martial arts." },
 	{
 		id: "zera-yacob",
 		title: "Zera Yacob is a mentor",
 		description: "Ethiopian philosopher Zera Yacob is one of my inspirations and mentors—yes, I know we have never met, but I mean it.",
 	},
-	{ id: "wushu", title: "Martial arts", description: "I hold a blue belt in Wushu martial arts." },
 	{ id: "running-gym", title: "Running and the gym", description: "I enjoy running and working out at the gym." },
 ];
 
