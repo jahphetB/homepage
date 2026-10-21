@@ -49,6 +49,20 @@ export const projects = [
   },
 
   {
+    id: "weather-app",
+    title: "Weather App",
+    description: "Check today's weather in your city and the weather forcast for the next 10 days.",
+    categories: ["personal"],
+    techStack: ["Visual Crossing API" ,"HTML5", "JavaScript", "CSS", "Webpack", "GitHub Pages"],
+    screenshot: {
+      src: weatherAppScreenshot,
+      alt: "A weather app to check today's weather and weather forcast for the next few days.",
+    },
+    repositoryUrl: "https://github.com/jahphetB/weather-app",
+    liveUrl: "https://jahphetb.github.io/weather-app/",
+  },
+
+  {
     id: "shopping-cart",
     title: "Shopping Cart",
     description: "A responsive mock shopping cart application built with React.",
@@ -77,20 +91,6 @@ export const projects = [
   },
 
   {
-    id: "weather-app",
-    title: "Weather App",
-    description: "Check today's weather in your city and the weather forcast for the next 10 days.",
-    categories: ["personal"],
-    techStack: ["Visual Crossing API" ,"HTML5", "JavaScript", "CSS", "Webpack", "GitHub Pages"],
-    screenshot: {
-      src: weatherAppScreenshot,
-      alt: "A weather app to check today's weather and weather forcast for the next few days.",
-    },
-    repositoryUrl: "https://github.com/jahphetB/weather-app",
-    liveUrl: "https://jahphetb.github.io/weather-app/",
-  },
-
-  {
     id: "battleship-game",
     title: "Battleship Game",
     description: "Fight a moderately smart AI in the game of Battleship.",
@@ -116,30 +116,5 @@ export const projects = [
     },
     repositoryUrl: "https://github.com/jahphetB/memory-card",
     liveUrl: "https://memory-card-eta-nine.vercel.app/",
-  },
-
-  {
-    id: "three",
-    title: "Project name",
-    description: placeholderDescription,
-    categories: ["ongoing"],
-  },
-  {
-    id: "four",
-    title: "Project name",
-    description: placeholderDescription,
-    categories: ["services"],
-  },
-  {
-    id: "five",
-    title: "Project name",
-    description: placeholderDescription,
-    categories: ["personal"],
-  },
-  {
-    id: "six",
-    title: "Project name",
-    description: placeholderDescription,
-    categories: ["ongoing"],
   },
 ];

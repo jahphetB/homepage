@@ -82,7 +82,7 @@ export const skillGroups = [
 	{ id: "frontend", title: "Frontend Development", skills: ["HTML", "CSS", "JavaScript", "React", "TypeScript"] },
 	{ id: "tools-quality", title: "Tools and Testing", skills: ["Git", "Vite", "Webpack", "Jest", "Vitest", "React Testing Library"] },
 	{ id: "systems-research", title: "Systems and Research", skills: ["APIs", "Python", "Java", "Data Structures and Algorithms", "Data Analysis"] },
-	{ id: "backend", title: "Backend Development", skills: ["APIs", "NodeJS", "PostgreSQL", "Express framework", "JWT authentication"] },
+	{ id: "backend", title: "Backend Development", skills: ["APIs", "NodeJS", "PostgreSQL", "Express framework", "JWT authentication", "Docker"] },
 ];
 
 export const backgroundEntries = [
