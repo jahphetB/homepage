@@ -1,6 +1,7 @@
 import "../../styles/about/About.css";
-import { aboutGroupIntroductions } from "../../data/about";
+import { aboutGroupIntroductions, educationGroups, experienceEntries } from "../../data/about";
 import AboutGroup from "./AboutGroup";
+import AboutSection from "./AboutSection";
 
 export default function About() {
 	return (
@@ -13,7 +14,10 @@ export default function About() {
 					reliably it works, and I keep learning through the projects I build.
 				</p>
 				<div className="about-page__groups">
-					<AboutGroup {...aboutGroupIntroductions.professional} />
+					<AboutGroup {...aboutGroupIntroductions.professional}>
+						<AboutSection id="experience" title="Experience" introduction="Work, teaching, and research that shaped how I build and learn." entries={experienceEntries} />
+						<AboutSection id="education" title="Education" introduction="Formal study alongside continued, project-based learning." groups={educationGroups} />
+					</AboutGroup>
 					<AboutGroup {...aboutGroupIntroductions.personal} />
 				</div>
 			</div>

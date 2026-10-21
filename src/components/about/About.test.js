@@ -28,6 +28,12 @@ test("About preserves its introduction and renders exactly two main chapters", (
 	assert.match(markup, /class="about-page__content"/);
 	assert.match(markup, /Professional Background/);
 	assert.match(markup, /More About Me/);
+	assert.match(markup, /Integration Specialist/);
+	assert.match(markup, /Teaching Assistant \/ Grader/);
+	assert.match(markup, /Dr\. Jonny Comes/);
+	assert.match(markup, /Dr\. David Rosoff/);
+	assert.match(markup, /Bachelor&#x27;s degree in Computer Science and Mathematics/);
+	assert.match(markup, /The Odin Project/);
 	assert.equal((markup.match(/class="about-group /g) ?? []).length, 2);
 });
 
