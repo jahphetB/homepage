@@ -1,0 +1,13 @@
+.about-blog__empty-state {
+	/* Blog preview typography and surface controls. */
+	--about-blog-text-color: #50636a;
+	--about-blog-background: #f8f9f8;
+	--about-blog-border: #d3dddd;
+	margin: 0;
+	padding: clamp(1rem, 2.5vw, 1.4rem);
+	border: 1px solid var(--about-blog-border);
+	border-radius: 0.55rem;
+	background: var(--about-blog-background);
+	color: var(--about-blog-text-color);
+	font: 400 0.96rem/1.65 "Roboto", sans-serif;
+}

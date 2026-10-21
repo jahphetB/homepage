@@ -43,7 +43,12 @@ test("About preserves its introduction and renders exactly two main chapters", (
 	assert.match(markup, /Zera Yacob/);
 	assert.match(markup, /blue belt in Wushu/);
 	assert.match(markup, /running and working out at the gym/);
-	assert.equal((markup.match(/about-media--placeholder/g) ?? []).length, 1);
+	assert.match(markup, /There are no blog posts yet/);
+	assert.match(markup, /Sample Book One/);
+	assert.match(markup, /Sample Book Two/);
+	assert.equal((markup.match(/Fictional sample<\/span>/g) ?? []).length, 2);
+	assert.equal((markup.match(/about-media--placeholder/g) ?? []).length, 3);
+	assert.doesNotMatch(markup, /#\/about\/(?:blog|more-about-me)\//);
 	assert.equal((markup.match(/class="about-group /g) ?? []).length, 2);
 });
 
