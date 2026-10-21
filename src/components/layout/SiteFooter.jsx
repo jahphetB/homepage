@@ -9,7 +9,7 @@ export default function SiteFooter() {
       </div>
       <div className="site-footer__section site-footer__license">
         <span className="site-footer__label">License</span>
-        <p>Licensing information has not been published.</p>
+        <p>-</p>
       </div>
       <div className="site-footer__section site-footer__developer">
         <span className="site-footer__label">Developer</span>

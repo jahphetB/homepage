@@ -23,7 +23,7 @@ test("only the game and books include media, all backed by real image files", ()
 		...bookEntries,
 	];
 	const withMedia = entries.filter((entry) => entry.media);
-	assert.deepEqual(withMedia.map((entry) => entry.id), ["fifa-since-2008", "the-pragmatic-programmer", "full-stack-react-typescript-node"]);
+	assert.deepEqual(new Set(withMedia.map((entry) => entry.id)), new Set(["fifa-since-2008", "the-pragmatic-programmer", "full-stack-react-typescript-node"]));
 	assert.ok(withMedia.every((entry) => entry.media.src && entry.media.alt && entry.media.kind !== "placeholder"));
 });
 

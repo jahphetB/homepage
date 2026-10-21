@@ -118,15 +118,15 @@ export const blogPreview = {
 
 export const bookEntries = [
 	{
-		id: "the-pragmatic-programmer",
-		title: "The Pragmatic Programmer",
-		description: "Thoughts on this book are coming soon.",
-		media: { src: new URL("../../assets/images/the-pragmatic-programmer.jpg", import.meta.url).href, alt: "The Pragmatic Programmer book cover", aspect: "portrait" },
-	},
-	{
 		id: "full-stack-react-typescript-node",
 		title: "Full-Stack React, TypeScript, and Node",
-		description: "Thoughts on this book are coming soon.",
+		description: "-",
 		media: { src: new URL("../../assets/images/full-stack-book.jpg", import.meta.url).href, alt: "Full-Stack React, TypeScript, and Node book cover", aspect: "portrait" },
 	},
+	{
+		id: "the-pragmatic-programmer",
+		title: "The Pragmatic Programmer",
+		description: "-",
+		media: { src: new URL("../../assets/images/the-pragmatic-programmer.jpg", import.meta.url).href, alt: "The Pragmatic Programmer book cover", aspect: "portrait" },
+	}
 ];
