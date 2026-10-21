@@ -1,4 +1,4 @@
-import contactImage from "../../../assets/images/Yaphet_Bashahider.jpg";
+import contactImage from "../../../assets/images/Yaphet_Bashahider.png";
 import "../../styles/contact/ContactPortrait.css";
 
 export default function ContactPortrait() {
