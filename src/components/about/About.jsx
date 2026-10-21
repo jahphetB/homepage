@@ -1,5 +1,5 @@
 import "../../styles/about/About.css";
-import { aboutGroupIntroductions, educationGroups, experienceEntries, skillGroups } from "../../data/about";
+import { aboutGroupIntroductions, backgroundEntries, educationGroups, experienceEntries, factEntries, skillGroups } from "../../data/about";
 import AboutGroup from "./AboutGroup";
 import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillsSection";
@@ -20,7 +20,10 @@ export default function About() {
 						<AboutSection id="education" title="Education" introduction="Formal study alongside continued, project-based learning." groups={educationGroups} />
 						<SkillsSection groups={skillGroups} />
 					</AboutGroup>
-					<AboutGroup {...aboutGroupIntroductions.personal} />
+					<AboutGroup {...aboutGroupIntroductions.personal}>
+						<AboutSection id="personal-background" title="Where I Come From" entries={backgroundEntries} />
+						<AboutSection id="random-facts" title="A Few Random Facts" entries={factEntries} />
+					</AboutGroup>
 				</div>
 			</div>
 		</section>

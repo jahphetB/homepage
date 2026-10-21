@@ -13,9 +13,10 @@
 .about-section__introduction { margin: 0.55rem 0 0; color: var(--about-section-muted); font: 400 0.96rem/1.65 "Roboto", sans-serif; }
 .about-section__entries { display: grid; grid-template-columns: repeat(var(--about-section-columns), minmax(0, 1fr)); gap: var(--about-section-entry-gap); margin-top: 1.25rem; }
 .about-section--education { --about-section-columns: 2; }
+.about-section--random-facts { --about-section-columns: 2; }
 .about-section__groups { display: grid; gap: 1.75rem; margin-top: 1.5rem; }
 .about-section__subheading { margin: 0; color: var(--about-section-heading-color); font: 600 0.88rem/1.4 "Roboto", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
 .about-section__custom-content { margin-top: 1.25rem; }
 .about-section > .about-media { max-width: 24rem; margin-top: 1.25rem; }
 .about-section > .about-action-link { margin-top: 1.4rem; }
-@media (max-width: 680px) { .about-section--education { --about-section-columns: 1; } }
+@media (max-width: 680px) { .about-section--education, .about-section--random-facts { --about-section-columns: 1; } }

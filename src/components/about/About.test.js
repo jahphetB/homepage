@@ -38,6 +38,12 @@ test("About preserves its introduction and renders exactly two main chapters", (
 	assert.match(markup, /The Odin Project/);
 	assert.match(markup, /Technical Skills/);
 	assert.match(markup, /React Testing Library/);
+	assert.match(markup, /I was born and raised in Bahir Dar, Ethiopia/);
+	assert.match(markup, /FIFA\/EA Sports FC soccer game release since 2008/);
+	assert.match(markup, /Zera Yacob/);
+	assert.match(markup, /blue belt in Wushu/);
+	assert.match(markup, /running and working out at the gym/);
+	assert.equal((markup.match(/about-media--placeholder/g) ?? []).length, 1);
 	assert.equal((markup.match(/class="about-group /g) ?? []).length, 2);
 });
 
