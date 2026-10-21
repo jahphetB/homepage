@@ -4,7 +4,7 @@ export const aboutGroupIntroductions = {
 	professional: {
 		id: "professional-background",
 		title: "Professional Background",
-		introduction: "The experience, education, and skills behind the work I build.",
+		introduction: "-",
 	},
 	personal: {
 		id: "more-about-me",
@@ -53,9 +53,9 @@ export const experienceEntries = [
 export const educationGroups = [
 	{
 		id: "formal-education",
-		title: "Formal Education",
+		title: "Education",
 		entries: [
-			{ id: "college-of-idaho", title: "The College of Idaho", context: "USA · Class of 2026", description: "Bachelor's degree in Computer Science and Mathematics." },
+			{ id: "college-of-idaho", title: "The College of Idaho", context: "Caldwell, ID · Class of 2026", description: "Bachelor's degree in Computer Science and Mathematics." },
 			{ id: "mekelle-university", title: "Mekelle University", context: "Ethiopia · 2020–2021 · approximately nine months", description: "Software Engineering." },
 			{ id: "blessed-g-michael", title: "Blessed G/Michael Catholic School", context: "Bahir Dar, Ethiopia", description: "High school." },
 		],
@@ -74,13 +74,14 @@ export const skillGroups = [
 	{ id: "frontend", title: "Frontend Development", skills: ["HTML", "CSS", "JavaScript", "React", "TypeScript"] },
 	{ id: "tools-quality", title: "Tools and Testing", skills: ["Git", "Vite", "Webpack", "Jest", "Vitest", "React Testing Library"] },
 	{ id: "systems-research", title: "Systems and Research", skills: ["APIs", "Python", "Java", "Data Structures and Algorithms", "Data Analysis"] },
+	{ id: "backend", title: "Backend Development", skills: ["APIs", "NodeJS", "PostgreSQL", "Express framework", "JWT authentication"] },
 ];
 
 export const backgroundEntries = [
 	{
 		id: "bahir-dar-to-us",
-		title: "From Bahir Dar to the United States",
-		description: "I was born and raised in Bahir Dar, Ethiopia, and moved to the United States in 2021 to attend college.",
+		title: "I was born and raised in Bahir Dar, Ethiopia",
+		description: "And moved to the United States in 2021 to attend college.",
 	},
 ];
 
@@ -89,14 +90,14 @@ export const factEntries = [
 		id: "fifa-since-2008",
 		title: "Football games, year after year",
 		description: "I have played every annual FIFA/EA Sports FC soccer game release since 2008.",
-		media: { kind: "placeholder", label: "FIFA / EA Sports FC cover image to come", aspect: "landscape" },
+		media: { src: new URL("../../assets/images/fifa-collections.jpg", import.meta.url).href, alt: "A collection of FIFA soccer game cases", aspect: "portrait" },
 	},
 	{
 		id: "zera-yacob",
-		title: "A philosophical mentor",
-		description: "Ethiopian philosopher Zera Yacob is one of my philosophical inspirations and mentors—yes, I know we have never met, but I mean it.",
+		title: "Zera Yacob is a mentor",
+		description: "Ethiopian philosopher Zera Yacob is one of my inspirations and mentors—yes, I know we have never met, but I mean it.",
 	},
-	{ id: "wushu", title: "Wushu", description: "I hold a blue belt in Wushu martial arts." },
+	{ id: "wushu", title: "Martial arts", description: "I hold a blue belt in Wushu martial arts." },
 	{ id: "running-gym", title: "Running and the gym", description: "I enjoy running and working out at the gym." },
 ];
 
@@ -109,17 +110,15 @@ export const blogPreview = {
 
 export const bookEntries = [
 	{
-		id: "sample-book-one",
-		title: "Sample Book One",
-		description: "Fictional sample entry. Replace this text and cover with a real book later.",
-		sample: true,
-		media: { kind: "placeholder", label: "Sample book cover one", aspect: "portrait" },
+		id: "the-pragmatic-programmer",
+		title: "The Pragmatic Programmer",
+		description: "Thoughts on this book are coming soon.",
+		media: { src: new URL("../../assets/images/the-pragmatic-programmer.jpg", import.meta.url).href, alt: "The Pragmatic Programmer book cover", aspect: "portrait" },
 	},
 	{
-		id: "sample-book-two",
-		title: "Sample Book Two",
-		description: "Fictional sample entry. Replace this text and cover with a real book later.",
-		sample: true,
-		media: { kind: "placeholder", label: "Sample book cover two", aspect: "portrait" },
+		id: "full-stack-react-typescript-node",
+		title: "Full-Stack React, TypeScript, and Node",
+		description: "Thoughts on this book are coming soon.",
+		media: { src: new URL("../../assets/images/full-stack-book.jpg", import.meta.url).href, alt: "Full-Stack React, TypeScript, and Node book cover", aspect: "portrait" },
 	},
 ];

@@ -4,11 +4,12 @@
 	--about-group-title-color: #162f38;
 	--about-group-intro-color: #465a60;
 	--about-group-title-size: clamp(1.8rem, 3vw, 2.55rem);
-	--about-group-section-gap: clamp(2rem, 4vw, 3rem);
-	padding-top: clamp(1.5rem, 3vw, 2.25rem);
+	--about-group-section-gap: clamp(1rem, 2vw, 1.6rem);
+	--about-group-first-section-gap: clamp(0.55rem, 1.2vw, 0.9rem);
+	padding-top: clamp(1.25rem, 2.5vw, 1.8rem);
 	border-top: 1px solid var(--about-group-border);
 }
 .about-group__header { max-width: 43rem; }
 .about-group__heading { margin: 0; color: var(--about-group-title-color); font: 400 var(--about-group-title-size)/1.2 "Playfair Display", Georgia, serif; }
 .about-group__introduction { margin: 0.7rem 0 0; color: var(--about-group-intro-color); font: 400 clamp(0.98rem, 1.4vw, 1.1rem)/1.65 "Roboto", sans-serif; }
-.about-group__sections { display: grid; gap: var(--about-group-section-gap); margin-top: clamp(1.75rem, 3vw, 2.5rem); }
+.about-group__sections { display: grid; gap: var(--about-group-section-gap); margin-top: var(--about-group-first-section-gap); }

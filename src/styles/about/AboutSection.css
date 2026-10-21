@@ -5,7 +5,8 @@
 	--about-section-muted: #4d6268;
 	--about-section-entry-gap: 0.9rem;
 	--about-section-columns: 1;
-	padding: clamp(1.3rem, 3vw, 2rem) 0;
+	--about-section-padding-block: clamp(0.85rem, 1.8vw, 1.25rem);
+	padding: var(--about-section-padding-block) 0;
 	border-top: 1px solid var(--about-section-border);
 }
 .about-section__header { max-width: 42rem; }

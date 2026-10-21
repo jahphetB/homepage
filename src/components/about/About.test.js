@@ -44,10 +44,10 @@ test("About preserves its introduction and renders exactly two main chapters", (
 	assert.match(markup, /blue belt in Wushu/);
 	assert.match(markup, /running and working out at the gym/);
 	assert.match(markup, /There are no blog posts yet/);
-	assert.match(markup, /Sample Book One/);
-	assert.match(markup, /Sample Book Two/);
-	assert.equal((markup.match(/Fictional sample<\/span>/g) ?? []).length, 2);
-	assert.equal((markup.match(/about-media--placeholder/g) ?? []).length, 3);
+	assert.match(markup, /The Pragmatic Programmer/);
+	assert.match(markup, /Full-Stack React, TypeScript, and Node/);
+	assert.equal((markup.match(/class="about-media__image"/g) ?? []).length, 3);
+	assert.doesNotMatch(markup, /about-media--placeholder/);
 	assert.doesNotMatch(markup, /#\/about\/(?:blog|more-about-me)\//);
 	assert.equal((markup.match(/class="about-group /g) ?? []).length, 2);
 });
@@ -75,14 +75,14 @@ test("shared subsection renders ordered entries, grouped entries, and its route"
 	}));
 	assert.ok(experience.indexOf("Integration Specialist") < experience.indexOf("Teaching Assistant / Grader"));
 	assert.match(experience, /#\/about\/experience\//);
-	assert.match(education, /Formal Education/);
+	assert.match(education, /The College of Idaho/);
 	assert.match(education, /Additional Education and Learning/);
 });
 
-test("media is absent by default and placeholders require an explicit request", () => {
+test("media is absent by default and the game image has descriptive alt text", () => {
 	assert.equal(renderToStaticMarkup(React.createElement(AboutMedia, { media: undefined })), "");
 	assert.equal(renderToStaticMarkup(React.createElement(AboutMedia, { media: { alt: "Future image" } })), "");
 	const game = renderToStaticMarkup(React.createElement(AboutMedia, { media: factEntries[0].media }));
-	assert.match(game, /about-media--placeholder/);
-	assert.match(game, /FIFA \/ EA Sports FC cover image to come/);
+	assert.match(game, /fifa-collections/);
+	assert.match(game, /alt="A collection of FIFA soccer game cases"/);
 });
