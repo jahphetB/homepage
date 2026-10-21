@@ -1,14 +1,23 @@
 /* Card links: --project-link-size sizes the clickable icons; --project-link-live-color emphasizes the live-demo link. */
 .project-links {
   /* Link and icon controls. */
+  /* Space between project links items; increase to spread them apart. */
   --project-links-gap: 0.5rem;
+  /* Size of project link; increase to enlarge it. */
   --project-link-size: 2.35rem;
+  /* Size of project link icon; increase to enlarge it. */
   --project-link-icon-size: 1.4rem;
+  /* Text/accent color of project link; choose another CSS color. */
   --project-link-color: #162f38;
+  /* Text/accent color of project link live; choose another CSS color. */
   --project-link-live-color: #006b84;
+  /* Background color of project link live; choose another CSS color. */
   --project-link-live-background: #e4f4f8;
+  /* Border color of project link live; choose another CSS color. */
   --project-link-live-border: #80b4c1;
+  /* Background color of project link hover; choose another CSS color. */
   --project-link-hover-background: #cce9f0;
+  /* Corner roundness of project link; increase for rounder edges. */
   --project-link-radius: 0.4rem;
 
   display: flex;

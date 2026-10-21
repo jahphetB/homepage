@@ -1,9 +1,13 @@
 /* Research introduction: --intro-title-size changes the headline; --intro-content-width limits text line length. */
 .research-intro {
 	/* Intro sizing and color controls. */
+	/* Background color of intro; choose another CSS color. */
 	--intro-background: #edf3f1;
+	/* Size of intro title; increase to enlarge it. */
 	--intro-title-size: clamp(2.65rem, 6.8vw, 5.9rem);
+	/* Width of intro content; increase to make it wider. */
 	--intro-content-width: 72ch;
+	/* Space between intro stat items; increase to spread them apart. */
 	--intro-stat-gap: 1.5rem;
 	padding: clamp(4rem, 9vw, 8rem) var(--research-side-padding) clamp(3rem, 5vw, 5rem);
 	background: radial-gradient(circle at 86% 18%, #d7e8e4 0, transparent 36%), var(--intro-background);

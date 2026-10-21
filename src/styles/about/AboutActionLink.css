@@ -1,9 +1,13 @@
 /* About "More" links: --about-action-padding sizes the button; --about-action-background and --about-action-hover set its colors. */
 .about-action-link {
 	/* About page action controls. */
+	/* Text/accent color of about action; choose another CSS color. */
 	--about-action-color: #fff;
+	/* Background color of about action; choose another CSS color. */
 	--about-action-background: #173f4b;
+	/* Color used for about action hover; choose another CSS color to change its appearance. */
 	--about-action-hover: #0d6172;
+	/* Inner spacing of about action; increase to add room around its contents. */
 	--about-action-padding: 0.65rem 1rem;
 	display: inline-flex;
 	align-items: center;

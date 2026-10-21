@@ -1,11 +1,17 @@
 /* About detail placeholders: --about-coming-soon-max-width controls line length; --about-coming-soon-pad-block sets vertical space. */
 .about-coming-soon {
 	/* Detail-page layout, type, and color controls. */
+	/* Width cap for about coming soon; increase to allow wider content. */
 	--about-coming-soon-max-width: 54rem;
+	/* Vertical inner spacing of about coming soon; increase to make it taller. */
 	--about-coming-soon-pad-block: clamp(4rem, 10vw, 8rem);
+	/* Horizontal inner spacing of about coming soon; increase for wider side gutters. */
 	--about-coming-soon-pad-inline: clamp(1.25rem, 6vw, 6rem);
+	/* Text/accent color of about coming soon heading; choose another CSS color. */
 	--about-coming-soon-heading-color: #162f38;
+	/* Text/accent color of about coming soon text; choose another CSS color. */
 	--about-coming-soon-text-color: #465a60;
+	/* Text/accent color of about coming soon link; choose another CSS color. */
 	--about-coming-soon-link-color: #254c5b;
 	min-height: calc(100vh - 4.5rem);
 	padding: var(--about-coming-soon-pad-block) var(--about-coming-soon-pad-inline);

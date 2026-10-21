@@ -1,9 +1,13 @@
 /* Classification chart: change --class-halted, --class-cycle, --class-step, or --class-invalid to recolor outcome categories. */
 .classification-chart {
 	/* Classification colors. */
+	/* Color used for class halted; choose another CSS color to change its appearance. */
 	--class-halted: #087f82;
+	/* Color used for class cycle; choose another CSS color to change its appearance. */
 	--class-cycle: #3f6aa0;
+	/* Color used for class step; choose another CSS color to change its appearance. */
 	--class-step: #bb7946;
+	/* Color used for class invalid; choose another CSS color to change its appearance. */
 	--class-invalid: #bdc9c5;
 	padding: clamp(1rem, 2vw, 1.5rem);
 	border: 1px solid var(--research-border);

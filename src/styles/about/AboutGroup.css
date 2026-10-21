@@ -1,11 +1,17 @@
 /* Chapter headings: lower --about-group-first-section-gap to bring "Professional Background" closer to "Experience"; --about-group-section-gap spaces later sections. */
 .about-group {
 	/* Main About chapter controls. */
+	/* Border color of about group; choose another CSS color. */
 	--about-group-border: #bbc9ca;
+	/* Text/accent color of about group title; choose another CSS color. */
 	--about-group-title-color: #162f38;
+	/* Text/accent color of about group intro; choose another CSS color. */
 	--about-group-intro-color: #465a60;
+	/* Size of about group title; increase to enlarge it. */
 	--about-group-title-size: clamp(1.8rem, 3vw, 2.55rem);
+	/* Space between sections within one About chapter; lower to tighten the stack. */
 	--about-group-section-gap: clamp(1rem, 2vw, 1.6rem);
+	/* Space from a chapter heading to its first section; lower to bring Experience closer to Professional Background. */
 	--about-group-first-section-gap: clamp(0.55rem, 1.2vw, 0.9rem);
 	padding-top: clamp(1.25rem, 2.5vw, 1.8rem);
 	border-top: 1px solid var(--about-group-border);

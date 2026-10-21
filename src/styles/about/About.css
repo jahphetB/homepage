@@ -1,20 +1,35 @@
 /* About page frame: lower --about-page-groups-gap to bring the two chapters closer; --about-page-groups-top-gap controls the space below the introduction. */
 .about-page {
 	/* Page layout and surface controls; preserve the introduction dimensions. */
+	/* Width cap for about page; increase to allow wider content. */
 	--about-page-max-width: 54rem;
+	/* Vertical inner spacing of about page; increase to make it taller. */
 	--about-page-padding-block: clamp(4rem, 10vw, 8rem);
+	/* Horizontal inner spacing of about page; increase for wider side gutters. */
 	--about-page-padding-inline: clamp(1.25rem, 6vw, 6rem);
+	/* Background color of about page; choose another CSS color. */
 	--about-page-background: transparent;
+	/* Text/accent color of about page text; choose another CSS color. */
 	--about-page-text-color: #1c2b30;
+	/* Text/accent color of about page heading; choose another CSS color. */
 	--about-page-heading-color: #162f38;
+	/* Typeface for about page heading; replace with another font stack. */
 	--about-page-heading-font: "Playfair Display", serif;
+	/* Size of about page heading; increase to enlarge it. */
 	--about-page-heading-size: clamp(2.25rem, 5vw, 3.5rem);
+	/* Font weight of about page heading; increase for bolder text. */
 	--about-page-heading-weight: 400;
+	/* Typeface for about page paragraph; replace with another font stack. */
 	--about-page-paragraph-font: "Roboto", sans-serif;
+	/* Size of about page paragraph; increase to enlarge it. */
 	--about-page-paragraph-size: clamp(1rem, 1.6vw, 1.2rem);
+	/* Height of about page paragraph line; increase to make it taller. */
 	--about-page-paragraph-line-height: 1.7;
+	/* Space beneath the About me heading; lower to pull the introductory paragraph up. */
 	--about-page-heading-gap: 1.5rem;
+	/* Space between Professional Background and More About Me; lower to bring those chapters closer. */
 	--about-page-groups-gap: clamp(2rem, 4vw, 3rem);
+	/* Space below the About introduction before the first chapter; lower to start it sooner. */
 	--about-page-groups-top-gap: clamp(2.5rem, 5vw, 4rem);
 
 	min-height: calc(100vh - 4.5rem);

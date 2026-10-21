@@ -1,15 +1,25 @@
 /* Research-wide tokens: --research-width caps content; --research-section-padding controls vertical rhythm across research sections. */
 .research-page {
 	/* Research body controls; shared site header and footer are unchanged. */
+	/* Text/accent color of research; choose another CSS color. */
 	--research-ink: #17343e;
+	/* Color used for research muted; choose another CSS color to change its appearance. */
 	--research-muted: #4f6870;
+	/* Color used for research accent; choose another CSS color to change its appearance. */
 	--research-accent: #087f82;
+	/* Color used for research gold; choose another CSS color to change its appearance. */
 	--research-gold: #a65e28;
+	/* Color used for research paper; choose another CSS color to change its appearance. */
 	--research-paper: #f8faf8;
+	/* Color used for research card; choose another CSS color to change its appearance. */
 	--research-card: #fff;
+	/* Border color of research; choose another CSS color. */
 	--research-border: #d5e0df;
+	/* Width of research; increase to make it wider. */
 	--research-width: 76rem;
+	/* Inner spacing of research side; increase to add room around its contents. */
 	--research-side-padding: clamp(1.25rem, 5vw, 5rem);
+	/* Inner spacing of research section; increase to add room around its contents. */
 	--research-section-padding: clamp(3.5rem, 7vw, 6rem);
 	background: var(--research-paper);
 	color: var(--research-ink);

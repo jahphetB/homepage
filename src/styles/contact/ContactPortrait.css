@@ -1,9 +1,13 @@
 /* Contact portrait: --contact-image-max-width caps its size; --contact-image-padding adds space around it. */
 #contact-image-box {
   /* Portrait controls. */
+  /* Inner spacing of contact image; increase to add room around its contents. */
   --contact-image-padding: clamp(1.5rem, 3vw, 3rem);
+  /* Background color of contact image; choose another CSS color. */
   --contact-image-background: #e5e3df;
+  /* Width cap for contact image; increase to allow wider content. */
   --contact-image-max-width: 28rem;
+  /* Inner spacing of contact image mobile; increase to add room around its contents. */
   --contact-image-mobile-padding: 0 1.5rem 2rem;
 
   display: flex;

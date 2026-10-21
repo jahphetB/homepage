@@ -1,16 +1,27 @@
 /* Header links: --nav-links-gap controls desktop spacing; --nav-links-mobile-gap adjusts wrapped links on small screens. */
 .nav-links {
   /* Links controls. */
+  /* Space between nav links items; increase to spread them apart. */
   --nav-links-gap: clamp(0.8rem, 2vw, 2rem);
+  /* Space between nav links mobile items; increase to spread them apart. */
   --nav-links-mobile-gap: 0.65rem 1.1rem;
+  /* Text/accent color of nav links; choose another CSS color. */
   --nav-links-color: #36515a;
+  /* Text/accent color of nav links hover; choose another CSS color. */
   --nav-links-hover-color: #07809d;
+  /* Typeface for nav links; replace with another font stack. */
   --nav-links-font: "Roboto", sans-serif;
+  /* Size of nav links; increase to enlarge it. */
   --nav-links-size: 0.9rem;
+  /* Font weight of nav links; increase for bolder text. */
   --nav-links-weight: 500;
+  /* Height of nav links line; increase to make it taller. */
   --nav-links-line-height: normal;
+  /* Letter spacing of nav links; increase to spread characters apart. */
   --nav-links-letter-spacing: 0;
+  /* Alignment of nav links; change the value to move it within its container. */
   --nav-links-align: flex-end;
+  /* Animation time for nav links transition; increase for a slower change. */
   --nav-links-transition: 160ms;
 
   display: flex;

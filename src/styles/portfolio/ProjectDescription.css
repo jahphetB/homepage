@@ -1,11 +1,17 @@
 /* Card summary: --project-description-size changes text size; --project-description-margin-top sets space below the title. */
 .project-description {
   /* Description controls. */
+  /* Space above project description; increase to push it farther down. */
   --project-description-margin-top: 1rem;
+  /* Typeface for project description; replace with another font stack. */
   --project-description-font: "Roboto", sans-serif;
+  /* Size of project description; increase to enlarge it. */
   --project-description-size: 1rem;
+  /* Font weight of project description; increase for bolder text. */
   --project-description-weight: 400;
+  /* Text/accent color of project description; choose another CSS color. */
   --project-description-color: #526267;
+  /* Height of project description line; increase to make it taller. */
   --project-description-line-height: 1.5;
 
   margin: var(--project-description-margin-top) 0 0;

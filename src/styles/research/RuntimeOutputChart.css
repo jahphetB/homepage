@@ -1,7 +1,9 @@
 /* Runtime/output scatterplot: --runtime-ordinary and --runtime-productive distinguish typical and unusually productive programs. */
 .runtime-chart {
 	/* Runtime/output controls. */
+	/* Color used for runtime ordinary; choose another CSS color to change its appearance. */
 	--runtime-ordinary: #2e8c8e;
+	/* Color used for runtime productive; choose another CSS color to change its appearance. */
 	--runtime-productive: #b55d32;
 	padding: clamp(1rem, 2vw, 1.5rem);
 	border: 1px solid var(--research-border);

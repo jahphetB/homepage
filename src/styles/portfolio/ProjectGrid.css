@@ -1,8 +1,11 @@
 /* Project grid: --grid-columns sets desktop columns and --grid-gap sets spacing; media queries below reduce columns on smaller screens. */
 .projects-grid {
   /* Grid controls. */
+  /* Column layout for grid; adjust to change how many items fit in each row. */
   --grid-columns: 3;
+  /* Space between grid items; increase to spread them apart. */
   --grid-gap: clamp(1.5rem, 3vw, 2.75rem);
+  /* Space between grid mobile items; increase to spread them apart. */
   --grid-mobile-gap: 2rem;
 
   display: grid;

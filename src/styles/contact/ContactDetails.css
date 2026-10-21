@@ -1,11 +1,17 @@
 /* Contact address/email: --contact-details-gap spaces rows; --contact-email-icon-size changes the email icon. */
 #contact-details {
   /* Address and email controls. */
+  /* Size of contact details; increase to enlarge it. */
   --contact-details-size: 1rem;
+  /* Height of contact details line; increase to make it taller. */
   --contact-details-line-height: 1.6;
+  /* Space between contact details items; increase to spread them apart. */
   --contact-details-gap: 1rem;
+  /* Size of contact email icon; increase to enlarge it. */
   --contact-email-icon-size: 1.5rem;
+  /* Space between contact email items; increase to spread them apart. */
   --contact-email-gap: 0.75rem;
+  /* Text/accent color of contact email; choose another CSS color. */
   --contact-email-color: inherit;
 
   font-size: var(--contact-details-size);

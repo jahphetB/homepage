@@ -1,20 +1,34 @@
 /* Landing images: --home-height changes hero height; --home-image-fit controls cropping; animation and brightness variables tune the reveal. */
 #home-section {
   /* Layout and image controls: current dimensions and crop preserved. */
+  /* Height of home; increase to make it taller. */
   --home-height: clamp(250px, 30vw, 450px);
+  /* Width of home; increase to make it wider. */
   --home-width: 100%;
+  /* Background color of home; choose another CSS color. */
   --home-background: #fff;
+  /* Focal point of the left hero image; move the position to change which part stays visible. */
   --home-left-position: center;
+  /* Focal point of the right hero image; move the position to change which part stays visible. */
   --home-right-position: center;
+  /* How hero images fill their halves; cover crops to fill, contain preserves the entire image. */
   --home-image-fit: cover;
+  /* Animation time for home animation duration; increase for a slower change. */
   --home-animation-duration: 1s;
+  /* Wait before home animation animation starts; increase to start later. */
   --home-animation-delay: 0.5s;
+  /* Speed curve of the hero entrance; change the easing function to alter acceleration. */
   --home-animation-easing: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Animation time for home brightness transition; increase for a slower change. */
   --home-brightness-transition: 160ms;
   /* Image brightness controls. */
+  /* Resting brightness for both hero images; increase toward 1 for brighter images. */
   --brightness-base: 0.72;
+  /* Maximum brightness change on pointer movement; increase for stronger contrast between images. */
   --brightness-range: 0.32;
+  /* Current left-image brightness; normally set by the Home interaction rather than edited here. */
   --left-brightness: var(--brightness-base);
+  /* Current right-image brightness; normally set by the Home interaction rather than edited here. */
   --right-brightness: var(--brightness-base);
 
   position: relative;

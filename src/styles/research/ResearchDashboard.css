@@ -1,7 +1,9 @@
 /* Research dashboard: --dashboard-gap spaces charts; --dashboard-chart-min sets the minimum chart width before wrapping. */
 .research-dashboard {
 	/* Dashboard controls. */
+	/* Space between dashboard items; increase to spread them apart. */
 	--dashboard-gap: 1.35rem;
+	/* Minimum width for a dashboard chart; lower it to fit more charts side by side. */
 	--dashboard-chart-min: 24rem;
 	padding: var(--research-section-padding) var(--research-side-padding);
 	background: #edf3f0;

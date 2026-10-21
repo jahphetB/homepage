@@ -1,6 +1,7 @@
 /* Research findings: --findings-card-gap spaces result cards; --research-section-padding sets section spacing. */
 .research-findings {
 	/* Findings layout controls. */
+	/* Space between findings card items; increase to spread them apart. */
 	--findings-card-gap: 1rem;
 	padding: var(--research-section-padding) var(--research-side-padding);
 	max-width: calc(var(--research-width) + 2 * var(--research-side-padding));

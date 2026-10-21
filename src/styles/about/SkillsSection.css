@@ -1,17 +1,29 @@
 /* Skill groups: --about-skills-column-min determines when columns wrap; --about-skills-chip-gap spaces skill labels. */
 .about-skills__groups {
 	/* Technical-skill layout and chip controls. */
+	/* Minimum width of a skill-group column; lower it to fit more columns before wrapping. */
 	--about-skills-column-min: 18rem;
+	/* Space between about skills group items; increase to spread them apart. */
 	--about-skills-group-gap: 0.85rem;
+	/* Background color of about skills group; choose another CSS color. */
 	--about-skills-group-background: #f8f9f8;
+	/* Border color of about skills group; choose another CSS color. */
 	--about-skills-group-border: #d3dddd;
+	/* Inner spacing of about skills group; increase to add room around its contents. */
 	--about-skills-group-padding: clamp(1rem, 2vw, 1.4rem);
+	/* Text/accent color of about skills heading; choose another CSS color. */
 	--about-skills-heading-color: #17343e;
+	/* Size of about skills heading; increase to enlarge it. */
 	--about-skills-heading-size: clamp(1.13rem, 2vw, 1.4rem);
+	/* Space between about skills chip items; increase to spread them apart. */
 	--about-skills-chip-gap: 0.4rem;
+	/* Inner spacing of about skills chip; increase to add room around its contents. */
 	--about-skills-chip-padding: 0.38rem 0.58rem;
+	/* Background color of about skills chip; choose another CSS color. */
 	--about-skills-chip-background: #e8f0ef;
+	/* Border color of about skills chip; choose another CSS color. */
 	--about-skills-chip-border: #bfd1ce;
+	/* Text/accent color of about skills chip; choose another CSS color. */
 	--about-skills-chip-color: #24515a;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--about-skills-column-min)), 1fr));

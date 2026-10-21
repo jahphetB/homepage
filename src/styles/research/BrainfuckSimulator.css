@@ -1,10 +1,15 @@
 /* Simulator shell: --sim-background and --sim-panel set dark surfaces; --sim-accent colors highlighted state. */
 .research-simulator {
 	/* Simulator controls. */
+	/* Background color of sim; choose another CSS color. */
 	--sim-background: #18343d;
+	/* Color used for sim panel; choose another CSS color to change its appearance. */
 	--sim-panel: #24444c;
+	/* Border color of sim; choose another CSS color. */
 	--sim-border: #42616a;
+	/* Color used for sim accent; choose another CSS color to change its appearance. */
 	--sim-accent: #91ded4;
+	/* Text/accent color of sim; choose another CSS color. */
 	--sim-text: #f4f8f5;
 	padding: var(--research-section-padding) var(--research-side-padding);
 	background: var(--sim-background);

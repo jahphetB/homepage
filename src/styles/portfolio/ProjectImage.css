@@ -1,12 +1,19 @@
 /* Project screenshots: --project-image-ratio changes frame shape; --project-image-fit chooses contain versus cover. */
 .project-image {
   /* Image frame and placeholder controls. */
+  /* Screenshot frame width-to-height ratio; a larger first number makes the frame wider. */
   --project-image-ratio: 3 / 2;
+  /* How project screenshots fill their frame; contain shows the full image, cover crops to fill. */
   --project-image-fit: contain;
+  /* Screenshot focal point inside its frame; change center/top coordinates to adjust cropping. */
   --project-image-position: center top;
+  /* Background color of project image; choose another CSS color. */
   --project-image-background: #f7f7f7;
+  /* Text/accent color of project image text; choose another CSS color. */
   --project-image-text-color: #fff;
+  /* Typeface for project image; replace with another font stack. */
   --project-image-font: "Playfair Display", serif;
+  /* Size of project image text; increase to enlarge it. */
   --project-image-text-size: clamp(1.6rem, 2.5vw, 2.4rem);
 
   display: grid;

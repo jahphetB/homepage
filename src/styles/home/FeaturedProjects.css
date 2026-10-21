@@ -1,10 +1,15 @@
 /* Home project preview: --featured-title-gap spaces the heading and grid; --featured-padding-block sets the section height. */
 .featured-projects {
   /* Preview container controls. */
+  /* Width cap for featured; increase to allow wider content. */
   --featured-max-width: 90rem;
+  /* Vertical inner spacing of featured; increase to make it taller. */
   --featured-padding-block: clamp(3.5rem, 7vw, 7rem);
+  /* Horizontal inner spacing of featured; increase for wider side gutters. */
   --featured-padding-inline: clamp(1.25rem, 6vw, 6rem);
+  /* Space between featured title items; increase to spread them apart. */
   --featured-title-gap: clamp(1.75rem, 3vw, 3rem);
+  /* Background color of featured; choose another CSS color. */
   --featured-background: transparent;
 
   max-width: var(--featured-max-width);

@@ -1,23 +1,36 @@
 /* Hero labels: --designer-text-left and --builder-text-right position the words; their title-size variables scale them. */
 #home-section {
   /* Designer text controls. */
+  /* Distance of designer text from the left edge; increase to move it right. */
   --designer-text-left: 55.2%;
+  /* Distance of designer text from the top edge; increase to move it down. */
   --designer-text-top: 29.5%;
+  /* Size of designer title; increase to enlarge it. */
   --designer-title-size: 1.48vw;
+  /* Width of designer copy; increase to make it wider. */
   --designer-copy-width: 14.5vw;
 
   /* Builder text controls. */
+  /* Distance of builder text from the right edge; increase to move it left. */
   --builder-text-right: 57.2%;
+  /* Distance of builder text from the top edge; increase to move it down. */
   --builder-text-top: 29.5%;
+  /* Size of builder title; increase to enlarge it. */
   --builder-title-size: 1.48vw;
+  /* Width of builder copy; increase to make it wider. */
   --builder-copy-width: 14.5vw;
 
   /* Pointer growth controls: 0.08 means up to 8% larger. */
+  /* Resting hero-label scale; 1 means normal size, larger values enlarge both labels. */
   --copy-scale-base: 1;
+  /* Extra hero-label growth near the pointer; increase for a stronger hover response. */
   --copy-scale-range: 0.45;
+  /* Current designer-label scale; normally updated by pointer movement in Home. */
   --designer-scale: var(--copy-scale-base);
+  /* Current builder-label scale; normally updated by pointer movement in Home. */
   --builder-scale: var(--copy-scale-base);
 
+  /* Size of home hero text; increase to enlarge it. */
   --home-hero-text-size: 0.9vw;
 }
 
@@ -83,8 +96,11 @@
 	}
 
   #home-section {
+		/* Size of designer title; increase to enlarge it. */
 		--designer-title-size: 20px;
+		/* Size of builder title; increase to enlarge it. */
 		--builder-title-size: 20px;
+		/* Size of home hero text; increase to enlarge it. */
 		--home-hero-text-size: 8px;
 	}
 

@@ -1,19 +1,33 @@
 /* Back-to-top area: --top-align moves the button horizontally; --top-padding-block separates it from the footer. */
 .back-to-top {
   /* Back-to-top position and appearance controls. */
+  /* Alignment of top; change the value to move it within its container. */
   --top-align: flex-end;
+  /* Vertical inner spacing of top; increase to make it taller. */
   --top-padding-block: 1.25rem;
+  /* Horizontal inner spacing of top; increase for wider side gutters. */
   --top-padding-inline: clamp(1.25rem, 6vw, 6rem);
+  /* Background color of top; choose another CSS color. */
   --top-background: #e5e3df;
+  /* Background color of top button; choose another CSS color. */
   --top-button-background: #fff;
+  /* Text/accent color of top button; choose another CSS color. */
   --top-button-color: #0f3b47;
+  /* Border of top button; edit thickness, style, or color here. */
   --top-button-border: 1px solid #b8b5af;
+  /* Corner roundness of top button; increase for rounder edges. */
   --top-button-radius: 999px;
+  /* Inner spacing of top button; increase to add room around its contents. */
   --top-button-padding: 0.7rem 1.1rem;
+  /* Typeface for top button; replace with another font stack. */
   --top-button-font: "Roboto", sans-serif;
+  /* Size of top button; increase to enlarge it. */
   --top-button-size: 0.95rem;
+  /* Font weight of top button; increase for bolder text. */
   --top-button-weight: 500;
+  /* Size of top arrow; increase to enlarge it. */
   --top-arrow-size: 1.25rem;
+  /* Space between top button items; increase to spread them apart. */
   --top-button-gap: 0.5rem;
 
   display: flex;

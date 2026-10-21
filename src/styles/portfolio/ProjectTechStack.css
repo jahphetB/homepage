@@ -1,16 +1,27 @@
 /* Technology badges: --tech-gap spaces badges; --tech-padding and --tech-background control each badge's size and fill. */
 .project-tech {
   /* Tech container and badge controls. */
+  /* Space above tech; increase to push it farther down. */
   --tech-margin-top: 1.25rem;
+  /* Space between tech items; increase to spread them apart. */
   --tech-gap: 0.5rem;
+  /* Inner spacing of tech; increase to add room around its contents. */
   --tech-padding: 0.4rem 0.65rem;
+  /* Corner roundness of tech; increase for rounder edges. */
   --tech-radius: 0.35rem;
+  /* Background color of tech; choose another CSS color. */
   --tech-background: #edf4f6;
+  /* Text/accent color of tech; choose another CSS color. */
   --tech-color: #254e59;
+  /* Border color of tech; choose another CSS color. */
   --tech-border: #cbdde2;
+  /* Typeface for tech; replace with another font stack. */
   --tech-font: "Roboto", sans-serif;
+  /* Size of tech; increase to enlarge it. */
   --tech-size: 0.8rem;
+  /* Font weight of tech; increase for bolder text. */
   --tech-weight: 500;
+  /* Height of tech line; increase to make it taller. */
   --tech-line-height: 1.3;
 
   margin-top: var(--tech-margin-top);

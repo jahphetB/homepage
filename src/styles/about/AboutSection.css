@@ -1,11 +1,17 @@
 /* About subsections: lower --about-section-padding-block for tighter heading boundaries; --about-section-entry-gap spaces their cards. */
 .about-section {
 	/* Reusable subsection controls. */
+	/* Border color of about section; choose another CSS color. */
 	--about-section-border: #d4dcdb;
+	/* Text/accent color of about section heading; choose another CSS color. */
 	--about-section-heading-color: #17343e;
+	/* Color used for about section muted; choose another CSS color to change its appearance. */
 	--about-section-muted: #4d6268;
+	/* Space between about section entry items; increase to spread them apart. */
 	--about-section-entry-gap: 0.9rem;
+	/* Column layout for about section; adjust to change how many items fit in each row. */
 	--about-section-columns: 1;
+	/* Vertical inner spacing of about section; increase to make it taller. */
 	--about-section-padding-block: clamp(0.85rem, 1.8vw, 1.25rem);
 	padding: var(--about-section-padding-block) 0;
 	border-top: 1px solid var(--about-section-border);

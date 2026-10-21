@@ -1,9 +1,13 @@
 /* About cards: adjust --about-entry-background and --about-entry-border for the surface; change .about-entry padding for inner space. */
 .about-entry {
 	/* Entry surface and typography controls. */
+	/* Background color of about entry; choose another CSS color. */
 	--about-entry-background: #f8f9f8;
+	/* Border color of about entry; choose another CSS color. */
 	--about-entry-border: #d3dddd;
+	/* Text/accent color of about entry title; choose another CSS color. */
 	--about-entry-title-color: #17343e;
+	/* Color used for about entry muted; choose another CSS color to change its appearance. */
 	--about-entry-muted: #50636a;
 	display: flex;
 	align-items: flex-start;

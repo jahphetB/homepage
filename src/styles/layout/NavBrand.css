@@ -1,13 +1,21 @@
 /* Header name/logo: --brand-size controls type scale; --brand-offset-x and --brand-offset-y nudge its position. */
 .nav-brand {
   /* Brand controls. */
+  /* Text/accent color of brand; choose another CSS color. */
   --brand-color: #0f3b47;
+  /* Typeface for brand; replace with another font stack. */
   --brand-font: "Playfair Display", serif;
+  /* Size of brand; increase to enlarge it. */
   --brand-size: clamp(1.2rem, 2.1vw, 1.75rem);
+  /* Font weight of brand; increase for bolder text. */
   --brand-weight: 500;
+  /* Height of brand line; increase to make it taller. */
   --brand-line-height: 1;
+  /* Letter spacing of brand; increase to spread characters apart. */
   --brand-letter-spacing: 0;
+  /* Horizontal offset of brand; positive values move it right. */
   --brand-offset-x: 0px;
+  /* Vertical offset of brand; positive values move it down. */
   --brand-offset-y: 0px;
 
   color: var(--brand-color);

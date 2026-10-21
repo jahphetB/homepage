@@ -1,10 +1,15 @@
 /* Project card title: --project-title-size changes its type scale; --project-title-color changes its ink. */
 .project-title {
   /* Card title controls. */
+  /* Typeface for project title; replace with another font stack. */
   --project-title-font: "Playfair Display", serif;
+  /* Size of project title; increase to enlarge it. */
   --project-title-size: 1.35rem;
+  /* Font weight of project title; increase for bolder text. */
   --project-title-weight: 400;
+  /* Text/accent color of project title; choose another CSS color. */
   --project-title-color: #1c2b30;
+  /* Height of project title line; increase to make it taller. */
   --project-title-line-height: 1.35;
 
   min-width: 0;

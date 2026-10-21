@@ -1,12 +1,19 @@
 /* Portfolio section title: --projects-title-size scales the heading; --projects-title-align changes its alignment. */
 .projects-title {
   /* Section title controls. */
+  /* Typeface for projects title; replace with another font stack. */
   --projects-title-font: "Playfair Display", serif;
+  /* Size of projects title; increase to enlarge it. */
   --projects-title-size: clamp(2rem, 3.2vw, 3.25rem);
+  /* Text/accent color of projects title; choose another CSS color. */
   --projects-title-color: #162f38;
+  /* Font weight of projects title; increase for bolder text. */
   --projects-title-weight: 400;
+  /* Height of projects title line; increase to make it taller. */
   --projects-title-line-height: 1.1;
+  /* Letter spacing of projects title; increase to spread characters apart. */
   --projects-title-letter-spacing: 0;
+  /* Alignment of projects title; change the value to move it within its container. */
   --projects-title-align: center;
 
   min-width: 0;

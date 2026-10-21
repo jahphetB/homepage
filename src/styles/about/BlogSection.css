@@ -1,8 +1,11 @@
 /* Empty blog preview: --about-blog-background changes the panel; .about-blog__empty-state padding controls its inner space. */
 .about-blog__empty-state {
 	/* Blog preview typography and surface controls. */
+	/* Text/accent color of about blog text; choose another CSS color. */
 	--about-blog-text-color: #50636a;
+	/* Background color of about blog; choose another CSS color. */
 	--about-blog-background: #f8f9f8;
+	/* Border color of about blog; choose another CSS color. */
 	--about-blog-border: #d3dddd;
 	margin: 0;
 	padding: clamp(1rem, 2.5vw, 1.4rem);

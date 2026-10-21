@@ -1,7 +1,9 @@
 /* Length-versus-metric charts: --metric-resolved colors measured series; --metric-bounded colors bounded observations. */
 .metric-chart {
 	/* Metric chart controls. */
+	/* Color used for metric resolved; choose another CSS color to change its appearance. */
 	--metric-resolved: #087f82;
+	/* Color used for metric bounded; choose another CSS color to change its appearance. */
 	--metric-bounded: #a65e28;
 	padding: clamp(1rem, 2vw, 1.5rem);
 	border: 1px solid var(--research-border);

@@ -1,9 +1,13 @@
 /* Portfolio CTA: --portfolio-action-margin-top adds space above it; --portfolio-action-align and offsets move the button. */
 .go-to-portfolio {
   /* Container position controls. */
+  /* Space above portfolio action; increase to push it farther down. */
   --portfolio-action-margin-top: clamp(2.5rem, 5vw, 4rem);
+  /* Alignment of portfolio action; change the value to move it within its container. */
   --portfolio-action-align: center;
+  /* Horizontal offset of portfolio action; positive values move it right. */
   --portfolio-action-offset-x: 0px;
+  /* Vertical offset of portfolio action; positive values move it down. */
   --portfolio-action-offset-y: 0px;
 
   display: flex;
@@ -14,15 +18,25 @@
 
 .go-to-portfolio__button {
   /* Button typography, size, and color controls. */
+  /* Inner spacing of portfolio button; increase to add room around its contents. */
   --portfolio-button-padding: 0.9rem 1.5rem;
+  /* Corner roundness of portfolio button; increase for rounder edges. */
   --portfolio-button-radius: 0.55rem;
+  /* Typeface for portfolio button; replace with another font stack. */
   --portfolio-button-font: "Roboto", sans-serif;
+  /* Size of portfolio button; increase to enlarge it. */
   --portfolio-button-size: 1rem;
+  /* Font weight of portfolio button; increase for bolder text. */
   --portfolio-button-weight: 500;
+  /* Height of portfolio button line; increase to make it taller. */
   --portfolio-button-line-height: 1.3;
+  /* Text/accent color of portfolio button; choose another CSS color. */
   --portfolio-button-color: #fff;
+  /* Background color of portfolio button; choose another CSS color. */
   --portfolio-button-background: #087f9a;
+  /* Background color of portfolio button hover; choose another CSS color. */
   --portfolio-button-hover-background: #086d83;
+  /* Border of portfolio button; edit thickness, style, or color here. */
   --portfolio-button-border: 1px solid transparent;
 
   display: inline-block;

@@ -1,20 +1,35 @@
 /* Shared navigation shell: --nav-height and --nav-padding-inline size it; --nav-position controls whether it stays visible on scroll. */
 .site-nav {
   /* Navigation container controls. Sticky positioning reserves its actual height. */
+  /* Navigation positioning mode; sticky keeps it visible while scrolling, static lets it scroll away. */
   --nav-position: sticky;
+  /* Distance from the top edge when navigation is sticky; increase to move it down. */
   --nav-top: 0;
+  /* Navigation stacking level; increase if other content incorrectly appears above it. */
   --nav-layer: 100;
+  /* Height of nav; increase to make it taller. */
   --nav-height: 4.5rem;
+  /* Vertical inner spacing of nav; increase to make it taller. */
   --nav-padding-block: 0.8rem;
+  /* Horizontal inner spacing of nav; increase for wider side gutters. */
   --nav-padding-inline: clamp(1.25rem, 6vw, 6rem);
+  /* Space between nav items; increase to spread them apart. */
   --nav-gap: 2rem;
+  /* Background color of nav; choose another CSS color. */
   --nav-background: rgb(255 255 255 / 94%);
+  /* Border of nav; edit thickness, style, or color here. */
   --nav-border: 1px solid rgb(8 145 178 / 18%);
+  /* Shadow of nav; increase blur/spread for a stronger lift. */
   --nav-shadow: 0 0.2rem 1rem rgb(15 23 42 / 7%);
+  /* Backdrop blur behind the sticky navigation; increase for a softer glass effect. */
   --nav-blur: 0.7rem;
+  /* Typeface for nav; replace with another font stack. */
   --nav-font: "Roboto", sans-serif;
+  /* Text/accent color of nav; choose another CSS color. */
   --nav-color: #36515a;
+  /* Space between nav mobile items; increase to spread them apart. */
   --nav-mobile-gap: 0.7rem;
+  /* Vertical inner spacing of nav mobile; increase to make it taller. */
   --nav-mobile-padding-block: 0.9rem;
 
   position: var(--nav-position);

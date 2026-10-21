@@ -1,12 +1,19 @@
 /* Contact section: --contact-columns sets the portrait/text split; --contact-content-padding sizes the text panel. */
 #contact-section {
 	/* Contact layout controls. */
+	/* Column layout for contact; adjust to change how many items fit in each row. */
 	--contact-columns: minmax(0, 1fr) minmax(18rem, 1fr);
+	/* Background color of contact; choose another CSS color. */
 	--contact-background: #e5e3df;
+	/* Text/accent color of contact; choose another CSS color. */
 	--contact-color: #252523;
+	/* Border of contact; edit thickness, style, or color here. */
 	--contact-border: 5px solid #b8b5af;
+	/* Inner spacing of contact content; increase to add room around its contents. */
 	--contact-content-padding: clamp(2rem, 3vw, 3.5rem);
+	/* Scroll clearance above Contact for the sticky navbar; increase if the heading is covered. */
 	--contact-scroll-offset: 6rem;
+	/* Inner spacing of contact mobile content; increase to add room around its contents. */
 	--contact-mobile-content-padding: 2rem 1.5rem;
 
 	display: grid;

@@ -1,16 +1,27 @@
 /* Contact introduction: --contact-heading-size changes the title; --contact-heading-gap separates it from supporting text. */
 #contact-intro {
   /* Introduction controls. */
+  /* Text/accent color of contact heading; choose another CSS color. */
   --contact-heading-color: #242422;
+  /* Size of contact heading; increase to enlarge it. */
   --contact-heading-size: clamp(2rem, 3vw, 3rem);
+  /* Font weight of contact heading; increase for bolder text. */
   --contact-heading-weight: 600;
+  /* Height of contact heading line; increase to make it taller. */
   --contact-heading-line-height: 1.15;
+  /* Letter spacing of contact heading; increase to spread characters apart. */
   --contact-heading-spacing: -0.03em;
+  /* Space between contact heading items; increase to spread them apart. */
   --contact-heading-gap: 1rem;
+  /* Text/accent color of contact intro; choose another CSS color. */
   --contact-intro-color: #55534f;
+  /* Size of contact intro; increase to enlarge it. */
   --contact-intro-size: 1rem;
+  /* Height of contact intro line; increase to make it taller. */
   --contact-intro-line-height: 1.6;
+  /* Width of contact intro; increase to make it wider. */
   --contact-intro-width: 42ch;
+  /* Space between contact intro items; increase to spread them apart. */
   --contact-intro-gap: 1.5rem;
 }
 

@@ -1,35 +1,59 @@
 /* Pagination: --pagination-margin-top separates it from cards; --pagination-gap spaces its control and result groups. */
 #projects-section {
   /* Pagination container controls. */
+  /* Space above pagination; increase to push it farther down. */
   --pagination-margin-top: clamp(2.5rem, 5vw, 4.5rem);
+  /* Width cap for pagination; increase to allow wider content. */
   --pagination-max-width: 34rem;
+  /* Space between pagination items; increase to spread them apart. */
   --pagination-gap: 1.25rem;
+  /* Space between pagination control items; increase to spread them apart. */
   --pagination-control-gap: 0.5rem;
 
   /* Pagination typography controls. */
+  /* Typeface for pagination; replace with another font stack. */
   --pagination-font-family: "Roboto", sans-serif;
+  /* Size of pagination; increase to enlarge it. */
   --pagination-font-size: 1rem;
+  /* Font weight of pagination font; increase for bolder text. */
   --pagination-font-weight: 500;
+  /* Height of pagination line; increase to make it taller. */
   --pagination-line-height: 1.2;
 
   /* Pagination button controls. */
+  /* Size of pagination button; increase to enlarge it. */
   --pagination-button-size: 3rem;
+  /* Corner roundness of pagination button; increase for rounder edges. */
   --pagination-button-radius: 0.65rem;
+  /* Background color of pagination button; choose another CSS color. */
   --pagination-button-background: #fff;
+  /* Text/accent color of pagination button; choose another CSS color. */
   --pagination-button-text: #26383e;
+  /* Border color of pagination button; choose another CSS color. */
   --pagination-button-border: #c7d1d4;
+  /* Color used for pagination button hover; choose another CSS color to change its appearance. */
   --pagination-button-hover: #edf7f9;
+  /* Background color of pagination active; choose another CSS color. */
   --pagination-active-background: #087f9a;
+  /* Text/accent color of pagination active; choose another CSS color. */
   --pagination-active-text: #fff;
+  /* Faded appearance of disabled pagination controls; lower toward 0 to fade them more. */
   --pagination-disabled-opacity: 0.38;
+  /* Focus-ring color on pagination controls; choose a contrasting color for keyboard visibility. */
   --pagination-focus: #087f9a;
 
   /* Results and page-size controls. */
+  /* Text/accent color of pagination summary; choose another CSS color. */
   --pagination-summary-color: #26383e;
+  /* Width of pagination select; increase to make it wider. */
   --pagination-select-width: 5rem;
+  /* Inner spacing of pagination select; increase to add room around its contents. */
   --pagination-select-padding: 0.75rem 2rem 0.75rem 0.85rem;
+  /* Background color of pagination select; choose another CSS color. */
   --pagination-select-background: #eef1f2;
+  /* Text/accent color of pagination select; choose another CSS color. */
   --pagination-select-text: #26383e;
+  /* Corner roundness of pagination select; increase for rounder edges. */
   --pagination-select-radius: 0.65rem;
 }
 
@@ -145,8 +169,11 @@
 
 @media (max-width: 620px) {
   #projects-section {
+    /* Size of pagination button; increase to enlarge it. */
     --pagination-button-size: clamp(2.4rem, 12vw, 3rem);
+    /* Space between pagination control items; increase to spread them apart. */
     --pagination-control-gap: clamp(0.3rem, 2vw, 0.5rem);
+    /* Size of pagination; increase to enlarge it. */
     --pagination-font-size: 0.9rem;
   }
 

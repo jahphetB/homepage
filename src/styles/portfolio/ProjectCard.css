@@ -1,13 +1,21 @@
 /* Project card shell: --project-card-padding sizes the interior; --project-card-hover-scale controls the hover zoom. */
 .project-card {
   /* Card frame, layout, and hover controls. */
+  /* Background color of project card; choose another CSS color. */
   --project-card-background: #fff;
+  /* Shadow of project card; increase blur/spread for a stronger lift. */
   --project-card-shadow: 0 0.25rem 0.9rem rgb(15 23 42 / 16%);
+  /* Inner spacing of project card; increase to add room around its contents. */
   --project-card-padding: 1.4rem 1.5rem 1.75rem;
+  /* Space between project card header items; increase to spread them apart. */
   --project-card-header-gap: 0.75rem;
+  /* Card zoom on hover; 1 is unchanged and values above 1 enlarge the card. */
   --project-card-hover-scale: 1.018;
+  /* Animation time for project card transition duration; increase for a slower change. */
   --project-card-transition-duration: 180ms;
+  /* Speed curve of the card hover animation; change easing to alter its feel. */
   --project-card-transition-easing: ease-out;
+  /* Shadow of project card hover; increase blur/spread for a stronger lift. */
   --project-card-hover-shadow: 0 0.65rem 1.5rem rgb(15 23 42 / 20%);
 
   position: relative;

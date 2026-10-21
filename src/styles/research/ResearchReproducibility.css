@@ -1,6 +1,7 @@
 /* Reproducibility resources: --repro-card-gap spaces resource cards; --research-width caps the content. */
 .research-repro {
 	/* Reproducibility section controls. */
+	/* Space between repro card items; increase to spread them apart. */
 	--repro-card-gap: 1rem;
 	padding: var(--research-section-padding) var(--research-side-padding);
 	background: #edf3f0;

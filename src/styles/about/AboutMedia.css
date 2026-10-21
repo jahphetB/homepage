@@ -1,9 +1,13 @@
 /* Optional About images: --about-media-radius rounds the frame; .about-media__image controls fit and portrait aspect ratio. */
 .about-media {
 	/* Optional image and explicit placeholder controls. */
+	/* Border color of about media; choose another CSS color. */
 	--about-media-border: #c6d2d0;
+	/* Background color of about media placeholder; choose another CSS color. */
 	--about-media-placeholder-background: #edf1ef;
+	/* Text/accent color of about media placeholder; choose another CSS color. */
 	--about-media-placeholder-color: #61787b;
+	/* Corner roundness of About images; increase for softer corners. */
 	--about-media-radius: 0.35rem;
 	margin: 0;
 	border: 1px solid var(--about-media-border);

@@ -1,16 +1,27 @@
 /* Shared footer: --footer-columns and --footer-gap control its layout; --footer-padding-block changes its height. */
 .site-footer {
   /* Footer layout, color, and typography controls. */
+  /* Column layout for footer; adjust to change how many items fit in each row. */
   --footer-columns: repeat(3, minmax(0, 1fr));
+  /* Space between footer items; increase to spread them apart. */
   --footer-gap: 2rem;
+  /* Vertical inner spacing of footer; increase to make it taller. */
   --footer-padding-block: 2rem;
+  /* Horizontal inner spacing of footer; increase for wider side gutters. */
   --footer-padding-inline: clamp(1.25rem, 6vw, 6rem);
+  /* Background color of footer; choose another CSS color. */
   --footer-background: #193740;
+  /* Text/accent color of footer; choose another CSS color. */
   --footer-color: #e8edef;
+  /* Text/accent color of footer label; choose another CSS color. */
   --footer-label-color: #fff;
+  /* Typeface for footer; replace with another font stack. */
   --footer-font: "Roboto", sans-serif;
+  /* Size of footer; increase to enlarge it. */
   --footer-size: 0.9rem;
+  /* Size of footer label; increase to enlarge it. */
   --footer-label-size: 1rem;
+  /* Height of footer line; increase to make it taller. */
   --footer-line-height: 1.5;
 
   display: grid;

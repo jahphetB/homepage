@@ -1,48 +1,83 @@
 /* Filter popover: --project-filter-width sizes the desktop trigger; --project-filter-mobile-width controls its small-screen width. */
 #projects-section {
   /* Filter trigger controls. */
+  /* Desktop filter-trigger width; increase to make the button wider. */
   --project-filter-width: 18rem;
+  /* Small-screen filter-trigger width; increase to give its label more room. */
   --project-filter-mobile-width: clamp(8rem, 42vw, 11rem);
+  /* Height of project filter trigger; increase to make it taller. */
   --project-filter-trigger-height: 2.05rem;
+  /* Inner spacing of project filter trigger; increase to add room around its contents. */
   --project-filter-trigger-padding: 0.85rem 1rem;
+  /* Corner roundness of project filter trigger; increase for rounder edges. */
   --project-filter-trigger-radius: 0.7rem;
+  /* Size of project filter icon; increase to enlarge it. */
   --project-filter-icon-size: 1.25rem;
+  /* Size of project filter chevron; increase to enlarge it. */
   --project-filter-chevron-size: 1rem;
 
   /* Filter typography controls. */
+  /* Size of project filter; increase to enlarge it. */
   --project-filter-font-size: 1rem;
+  /* Typeface for project filter; replace with another font stack. */
   --project-filter-font-family: "Roboto", sans-serif;
+  /* Font weight of project filter font; increase for bolder text. */
   --project-filter-font-weight: 400;
+  /* Letter spacing of project filter; increase to spread characters apart. */
   --project-filter-letter-spacing: 0;
 
   /* Filter color controls. */
+  /* Background color of project filter; choose another CSS color. */
   --project-filter-background: #fff;
+  /* Text/accent color of project filter; choose another CSS color. */
   --project-filter-text: #26383e;
+  /* Border color of project filter; choose another CSS color. */
   --project-filter-border: #b9c5c9;
+  /* Focus-ring color on filter controls; choose a contrasting color for keyboard visibility. */
   --project-filter-focus: #087f9a;
+  /* Background color of project filter count; choose another CSS color. */
   --project-filter-count-background: #087f9a;
+  /* Text/accent color of project filter count; choose another CSS color. */
   --project-filter-count-text: #fff;
 
   /* Popover controls. */
+  /* Distance of the open filter panel below its trigger; increase to move the panel down. */
   --project-filter-panel-top: calc(100% + 0.55rem);
+  /* Width of project filter panel; increase to make it wider. */
   --project-filter-panel-width: 18rem;
+  /* Maximum open-filter height; increase to show more options before scrolling inside it. */
   --project-filter-panel-max-height: calc(100vh - 5rem);
+  /* Inner spacing of project filter panel; increase to add room around its contents. */
   --project-filter-panel-padding: 0.75rem;
+  /* Corner roundness of project filter panel; increase for rounder edges. */
   --project-filter-panel-radius: 0.7rem;
+  /* Shadow of project filter panel; increase blur/spread for a stronger lift. */
   --project-filter-panel-shadow: 0 0.8rem 2rem rgb(30 50 58 / 18%);
+  /* Space between project filter option items; increase to spread them apart. */
   --project-filter-option-gap: 0.45rem;
+  /* Inner spacing of project filter option; increase to add room around its contents. */
   --project-filter-option-padding: 0.65rem 0.55rem;
+  /* Corner roundness of project filter option; increase for rounder edges. */
   --project-filter-option-radius: 0.45rem;
+  /* Color used for project filter option hover; choose another CSS color to change its appearance. */
   --project-filter-option-hover: #edf7f9;
+  /* Size of project filter checkbox; increase to enlarge it. */
   --project-filter-checkbox-size: 1.2rem;
 
   /* Action button controls. */
+  /* Space between project filter action items; increase to spread them apart. */
   --project-filter-action-gap: 0.6rem;
+  /* Inner spacing of project filter action; increase to add room around its contents. */
   --project-filter-action-padding: 0.7rem 0.85rem;
+  /* Corner roundness of project filter action; increase for rounder edges. */
   --project-filter-action-radius: 0.45rem;
+  /* Background color of project filter clear; choose another CSS color. */
   --project-filter-clear-background: #fff;
+  /* Text/accent color of project filter clear; choose another CSS color. */
   --project-filter-clear-text: #36515a;
+  /* Background color of project filter apply; choose another CSS color. */
   --project-filter-apply-background: #087f9a;
+  /* Text/accent color of project filter apply; choose another CSS color. */
   --project-filter-apply-text: #fff;
 }
 

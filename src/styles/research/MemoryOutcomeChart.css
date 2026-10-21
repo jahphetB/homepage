@@ -1,7 +1,9 @@
 /* Memory/outcome chart: --memory-cells and --memory-outcomes control the colors of its two measurements. */
 .memory-chart {
 	/* Memory/outcome controls. */
+	/* Color used for memory cells; choose another CSS color to change its appearance. */
 	--memory-cells: #087f82;
+	/* Color used for memory outcomes; choose another CSS color to change its appearance. */
 	--memory-outcomes: #b87b43;
 	padding: clamp(1rem, 2vw, 1.5rem);
 	border: 1px solid var(--research-border);
