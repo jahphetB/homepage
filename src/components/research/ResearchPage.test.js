@@ -10,7 +10,7 @@ let ProjectLinks;
 let projects;
 
 before(async () => {
-	vite = await createServer({ server: { middlewareMode: true }, appType: "custom" });
+	vite = await createServer({ server: { middlewareMode: true, hmr: false }, appType: "custom" });
 	({ default: ResearchPage } = await vite.ssrLoadModule("/src/components/research/ResearchPage.jsx"));
 	({ default: ProjectLinks } = await vite.ssrLoadModule("/src/components/portfolio/ProjectLinks.jsx"));
 	({ projects } = await vite.ssrLoadModule("/src/data/projects.js"));
@@ -33,7 +33,7 @@ test("research page renders all requested sections from the real dataset", () =>
 });
 
 test("research card opens the research route in a new tab", () => {
-	const project = projects.find((entry) => entry.title === "Computational Limits of Short Programs");
+	const project = projects.find((entry) => entry.id === "bb(n)-short-programs-complexicity-research");
 	assert.ok(project);
 	assert.equal(project.liveUrl, "https://homepage-jahphet.vercel.app/#/bfbbn-page");
 	const markup = renderToStaticMarkup(React.createElement(ProjectLinks, { project }));

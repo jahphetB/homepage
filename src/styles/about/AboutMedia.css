@@ -1,0 +1,18 @@
+.about-media {
+	/* Optional image and explicit placeholder controls. */
+	--about-media-border: #c6d2d0;
+	--about-media-placeholder-background: #edf1ef;
+	--about-media-placeholder-color: #61787b;
+	--about-media-radius: 0.35rem;
+	margin: 0;
+	border: 1px solid var(--about-media-border);
+	border-radius: var(--about-media-radius);
+	overflow: hidden;
+}
+.about-media--placeholder.about-media--landscape { aspect-ratio: 16 / 10; }
+.about-media--placeholder.about-media--portrait { aspect-ratio: 2 / 3; }
+.about-media--placeholder { display: grid; place-items: center; padding: 1rem; background: var(--about-media-placeholder-background); color: var(--about-media-placeholder-color); }
+.about-media__placeholder-label { max-width: 18ch; font: 600 0.85rem/1.45 "Roboto", sans-serif; text-align: center; }
+.about-media__image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.about-media--portrait .about-media__image { aspect-ratio: 2 / 3; }
+.about-media__caption { padding: 0.4rem 0.6rem; background: #fff; color: #465a60; font: 400 0.78rem/1.4 "Roboto", sans-serif; }

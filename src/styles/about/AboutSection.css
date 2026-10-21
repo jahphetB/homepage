@@ -1,0 +1,18 @@
+.about-section {
+	/* Reusable subsection controls. */
+	--about-section-border: #d4dcdb;
+	--about-section-heading-color: #17343e;
+	--about-section-muted: #4d6268;
+	--about-section-entry-gap: 0.9rem;
+	padding: clamp(1.3rem, 3vw, 2rem) 0;
+	border-top: 1px solid var(--about-section-border);
+}
+.about-section__header { max-width: 42rem; }
+.about-section__heading { margin: 0; color: var(--about-section-heading-color); font: 400 clamp(1.4rem, 2.5vw, 1.9rem)/1.25 "Playfair Display", Georgia, serif; }
+.about-section__introduction { margin: 0.55rem 0 0; color: var(--about-section-muted); font: 400 0.96rem/1.65 "Roboto", sans-serif; }
+.about-section__entries { display: grid; gap: var(--about-section-entry-gap); margin-top: 1.25rem; }
+.about-section__groups { display: grid; gap: 1.75rem; margin-top: 1.5rem; }
+.about-section__subheading { margin: 0; color: var(--about-section-heading-color); font: 600 0.88rem/1.4 "Roboto", sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+.about-section__custom-content { margin-top: 1.25rem; }
+.about-section > .about-media { max-width: 24rem; margin-top: 1.25rem; }
+.about-section > .about-action-link { margin-top: 1.4rem; }

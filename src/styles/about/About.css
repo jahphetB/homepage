@@ -1,40 +1,47 @@
 .about-page {
-  /* Page layout and surface controls. */
-  --about-page-max-width: 54rem;
-  --about-page-padding-block: clamp(4rem, 10vw, 8rem);
-  --about-page-padding-inline: clamp(1.25rem, 6vw, 6rem);
-  --about-page-background: transparent;
-  --about-page-text-color: #1c2b30;
-  --about-page-heading-color: #162f38;
-  --about-page-heading-font: "Playfair Display", serif;
-  --about-page-heading-size: clamp(2.25rem, 5vw, 3.5rem);
-  --about-page-heading-weight: 400;
-  --about-page-paragraph-font: "Roboto", sans-serif;
-  --about-page-paragraph-size: clamp(1rem, 1.6vw, 1.2rem);
-  --about-page-paragraph-line-height: 1.7;
-  --about-page-heading-gap: 1.5rem;
+	/* Page layout and surface controls; preserve the introduction dimensions. */
+	--about-page-max-width: 54rem;
+	--about-page-padding-block: clamp(4rem, 10vw, 8rem);
+	--about-page-padding-inline: clamp(1.25rem, 6vw, 6rem);
+	--about-page-background: transparent;
+	--about-page-text-color: #1c2b30;
+	--about-page-heading-color: #162f38;
+	--about-page-heading-font: "Playfair Display", serif;
+	--about-page-heading-size: clamp(2.25rem, 5vw, 3.5rem);
+	--about-page-heading-weight: 400;
+	--about-page-paragraph-font: "Roboto", sans-serif;
+	--about-page-paragraph-size: clamp(1rem, 1.6vw, 1.2rem);
+	--about-page-paragraph-line-height: 1.7;
+	--about-page-heading-gap: 1.5rem;
+	--about-page-groups-gap: clamp(2.5rem, 6vw, 4rem);
+	--about-page-groups-top-gap: clamp(4rem, 9vw, 6rem);
 
-  min-height: calc(100vh - 4.5rem);
-  padding: var(--about-page-padding-block) var(--about-page-padding-inline);
-  color: var(--about-page-text-color);
-  background: var(--about-page-background);
+	min-height: calc(100vh - 4.5rem);
+	padding: var(--about-page-padding-block) var(--about-page-padding-inline);
+	color: var(--about-page-text-color);
+	background: var(--about-page-background);
 }
 .about-page__content {
-  max-width: var(--about-page-max-width);
-  margin-inline: auto;
+	max-width: var(--about-page-max-width);
+	margin-inline: auto;
 }
 .about-page__heading {
-  margin: 0 0 var(--about-page-heading-gap);
-  color: var(--about-page-heading-color);
-  font-family: var(--about-page-heading-font);
-  font-size: var(--about-page-heading-size);
-  font-weight: var(--about-page-heading-weight);
-  line-height: 1.1;
+	margin: 0 0 var(--about-page-heading-gap);
+	color: var(--about-page-heading-color);
+	font-family: var(--about-page-heading-font);
+	font-size: var(--about-page-heading-size);
+	font-weight: var(--about-page-heading-weight);
+	line-height: 1.1;
 }
 .about-page__paragraph {
-  margin: 0;
-  font-family: var(--about-page-paragraph-font);
-  font-size: var(--about-page-paragraph-size);
-  line-height: var(--about-page-paragraph-line-height);
-  overflow-wrap: anywhere;
+	margin: 0;
+	font-family: var(--about-page-paragraph-font);
+	font-size: var(--about-page-paragraph-size);
+	line-height: var(--about-page-paragraph-line-height);
+	overflow-wrap: anywhere;
+}
+.about-page__groups {
+	display: grid;
+	gap: var(--about-page-groups-gap);
+	margin-top: var(--about-page-groups-top-gap);
 }

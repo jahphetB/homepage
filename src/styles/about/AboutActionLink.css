@@ -1,0 +1,20 @@
+.about-action-link {
+	/* About page action controls. */
+	--about-action-color: #fff;
+	--about-action-background: #173f4b;
+	--about-action-hover: #0d6172;
+	--about-action-padding: 0.65rem 1rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.55rem;
+	min-height: 2.7rem;
+	padding: var(--about-action-padding);
+	border-radius: 0.35rem;
+	background: var(--about-action-background);
+	color: var(--about-action-color);
+	font: 600 0.87rem "Roboto", sans-serif;
+}
+.about-action-link:hover,
+.about-action-link:focus-visible { background: var(--about-action-hover); }
+.about-action-link__arrow { font-size: 1.05rem; line-height: 1; }
