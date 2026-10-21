@@ -9,12 +9,14 @@ let vite;
 let About;
 let AboutSection;
 let AboutMedia;
+let SkillsSection;
 
 before(async () => {
 	vite = await createServer({ server: { middlewareMode: true, hmr: false }, appType: "custom" });
 	({ default: About } = await vite.ssrLoadModule("/src/components/about/About.jsx"));
 	({ default: AboutSection } = await vite.ssrLoadModule("/src/components/about/AboutSection.jsx"));
 	({ default: AboutMedia } = await vite.ssrLoadModule("/src/components/about/AboutMedia.jsx"));
+	({ default: SkillsSection } = await vite.ssrLoadModule("/src/components/about/SkillsSection.jsx"));
 });
 
 after(async () => {
@@ -34,7 +36,18 @@ test("About preserves its introduction and renders exactly two main chapters", (
 	assert.match(markup, /Dr\. David Rosoff/);
 	assert.match(markup, /Bachelor&#x27;s degree in Computer Science and Mathematics/);
 	assert.match(markup, /The Odin Project/);
+	assert.match(markup, /Technical Skills/);
+	assert.match(markup, /React Testing Library/);
 	assert.equal((markup.match(/class="about-group /g) ?? []).length, 2);
+});
+
+test("skill groups can be extended through data without changing their component", () => {
+	const markup = renderToStaticMarkup(React.createElement(SkillsSection, {
+		groups: [{ id: "sample", title: "Sample category", skills: ["First skill", "Second skill"] }],
+	}));
+	assert.match(markup, /Sample category/);
+	assert.match(markup, /data-skill="Second skill"/);
+	assert.doesNotMatch(markup, /about-media--placeholder/);
 });
 
 test("shared subsection renders ordered entries, grouped entries, and its route", () => {

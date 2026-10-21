@@ -1,7 +1,8 @@
 import "../../styles/about/About.css";
-import { aboutGroupIntroductions, educationGroups, experienceEntries } from "../../data/about";
+import { aboutGroupIntroductions, educationGroups, experienceEntries, skillGroups } from "../../data/about";
 import AboutGroup from "./AboutGroup";
 import AboutSection from "./AboutSection";
+import SkillsSection from "./SkillsSection";
 
 export default function About() {
 	return (
@@ -17,6 +18,7 @@ export default function About() {
 					<AboutGroup {...aboutGroupIntroductions.professional}>
 						<AboutSection id="experience" title="Experience" introduction="Work, teaching, and research that shaped how I build and learn." entries={experienceEntries} />
 						<AboutSection id="education" title="Education" introduction="Formal study alongside continued, project-based learning." groups={educationGroups} />
+						<SkillsSection groups={skillGroups} />
 					</AboutGroup>
 					<AboutGroup {...aboutGroupIntroductions.personal} />
 				</div>

@@ -1,0 +1,29 @@
+.about-skills__groups {
+	/* Technical-skill layout and chip controls. */
+	--about-skills-column-min: 18rem;
+	--about-skills-group-gap: 0.85rem;
+	--about-skills-group-background: #f8f9f8;
+	--about-skills-group-border: #d3dddd;
+	--about-skills-group-padding: clamp(1rem, 2vw, 1.4rem);
+	--about-skills-heading-color: #17343e;
+	--about-skills-heading-size: clamp(1.13rem, 2vw, 1.4rem);
+	--about-skills-chip-gap: 0.4rem;
+	--about-skills-chip-padding: 0.38rem 0.58rem;
+	--about-skills-chip-background: #e8f0ef;
+	--about-skills-chip-border: #bfd1ce;
+	--about-skills-chip-color: #24515a;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--about-skills-column-min)), 1fr));
+	gap: var(--about-skills-group-gap);
+}
+.about-skills__group {
+	min-width: 0;
+	padding: var(--about-skills-group-padding);
+	border: 1px solid var(--about-skills-group-border);
+	border-radius: 0.55rem;
+	background: var(--about-skills-group-background);
+}
+.about-skills__group > .about-media { width: min(100%, 16rem); margin-bottom: 1rem; }
+.about-skills__heading { margin: 0 0 0.85rem; color: var(--about-skills-heading-color); font: 400 var(--about-skills-heading-size)/1.3 "Playfair Display", Georgia, serif; }
+.about-skills__list { display: flex; flex-wrap: wrap; gap: var(--about-skills-chip-gap); margin: 0; padding: 0; list-style: none; }
+.about-skills__item { max-width: 100%; padding: var(--about-skills-chip-padding); border: 1px solid var(--about-skills-chip-border); border-radius: 0.25rem; background: var(--about-skills-chip-background); color: var(--about-skills-chip-color); font: 600 0.78rem/1.35 "Roboto", sans-serif; overflow-wrap: anywhere; }
