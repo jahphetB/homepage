@@ -1,3 +1,4 @@
+/* Card links: --project-link-size sizes the clickable icons; --project-link-live-color emphasizes the live-demo link. */
 .project-links {
   /* Link and icon controls. */
   --project-links-gap: 0.5rem;

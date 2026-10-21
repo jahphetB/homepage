@@ -1,3 +1,4 @@
+/* Portfolio section title: --projects-title-size scales the heading; --projects-title-align changes its alignment. */
 .projects-title {
   /* Section title controls. */
   --projects-title-font: "Playfair Display", serif;

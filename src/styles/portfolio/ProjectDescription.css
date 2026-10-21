@@ -1,3 +1,4 @@
+/* Card summary: --project-description-size changes text size; --project-description-margin-top sets space below the title. */
 .project-description {
   /* Description controls. */
   --project-description-margin-top: 1rem;

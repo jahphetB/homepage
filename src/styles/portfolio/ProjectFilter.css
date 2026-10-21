@@ -1,3 +1,4 @@
+/* Filter popover: --project-filter-width sizes the desktop trigger; --project-filter-mobile-width controls its small-screen width. */
 #projects-section {
   /* Filter trigger controls. */
   --project-filter-width: 18rem;

@@ -1,3 +1,4 @@
+/* Portfolio page frame: --projects-max-width caps the grid; --projects-padding-block controls space above and below it. */
 #projects-section {
   /* Full portfolio container controls. */
   --projects-max-width: 90rem;

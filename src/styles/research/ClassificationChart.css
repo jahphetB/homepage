@@ -1,3 +1,4 @@
+/* Classification chart: change --class-halted, --class-cycle, --class-step, or --class-invalid to recolor outcome categories. */
 .classification-chart {
 	/* Classification colors. */
 	--class-halted: #087f82;

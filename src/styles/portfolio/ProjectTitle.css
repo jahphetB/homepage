@@ -1,3 +1,4 @@
+/* Project card title: --project-title-size changes its type scale; --project-title-color changes its ink. */
 .project-title {
   /* Card title controls. */
   --project-title-font: "Playfair Display", serif;

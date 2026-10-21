@@ -1,3 +1,4 @@
+/* Archived education styling (not part of the current About page): .education-section__content padding controls its dormant layout. */
 .education-section { scroll-margin-top: 6rem; background: #eef9fb; }
 .education-section__content { max-width: 90rem; margin: auto; padding: clamp(3.5rem, 6vw, 6rem) clamp(1.25rem, 6vw, 6rem); }
 .education-section h2 { margin: 0 0 1rem; }

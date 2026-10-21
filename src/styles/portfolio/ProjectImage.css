@@ -1,3 +1,4 @@
+/* Project screenshots: --project-image-ratio changes frame shape; --project-image-fit chooses contain versus cover. */
 .project-image {
   /* Image frame and placeholder controls. */
   --project-image-ratio: 3 / 2;

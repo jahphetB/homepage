@@ -1,3 +1,4 @@
+/* Research-wide tokens: --research-width caps content; --research-section-padding controls vertical rhythm across research sections. */
 .research-page {
 	/* Research body controls; shared site header and footer are unchanged. */
 	--research-ink: #17343e;

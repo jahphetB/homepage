@@ -1,3 +1,4 @@
+/* Research findings: --findings-card-gap spaces result cards; --research-section-padding sets section spacing. */
 .research-findings {
 	/* Findings layout controls. */
 	--findings-card-gap: 1rem;

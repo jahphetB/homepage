@@ -1,3 +1,4 @@
+/* Methodology flow: --method-flow-gap spaces stages; --research-section-padding controls the section's outer breathing room. */
 .research-method {
 	/* Method section controls. */
 	--method-flow-gap: 1rem;

@@ -1,3 +1,4 @@
+/* Project card shell: --project-card-padding sizes the interior; --project-card-hover-scale controls the hover zoom. */
 .project-card {
   /* Card frame, layout, and hover controls. */
   --project-card-background: #fff;

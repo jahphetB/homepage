@@ -1,3 +1,4 @@
+/* Technology badges: --tech-gap spaces badges; --tech-padding and --tech-background control each badge's size and fill. */
 .project-tech {
   /* Tech container and badge controls. */
   --tech-margin-top: 1.25rem;

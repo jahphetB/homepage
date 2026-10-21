@@ -1,3 +1,4 @@
+/* Global defaults: edit :root color/background for the site canvas and body min-width to change the minimum supported viewport. */
 :root {
   color: #1c2b30;
   background: #686666;

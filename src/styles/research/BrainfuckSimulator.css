@@ -1,3 +1,4 @@
+/* Simulator shell: --sim-background and --sim-panel set dark surfaces; --sim-accent colors highlighted state. */
 .research-simulator {
 	/* Simulator controls. */
 	--sim-background: #18343d;

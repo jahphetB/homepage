@@ -1,3 +1,4 @@
+/* Project grid: --grid-columns sets desktop columns and --grid-gap sets spacing; media queries below reduce columns on smaller screens. */
 .projects-grid {
   /* Grid controls. */
   --grid-columns: 3;

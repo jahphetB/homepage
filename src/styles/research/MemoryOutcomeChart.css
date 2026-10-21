@@ -1,3 +1,4 @@
+/* Memory/outcome chart: --memory-cells and --memory-outcomes control the colors of its two measurements. */
 .memory-chart {
 	/* Memory/outcome controls. */
 	--memory-cells: #087f82;

@@ -1,3 +1,4 @@
+/* Length-versus-metric charts: --metric-resolved colors measured series; --metric-bounded colors bounded observations. */
 .metric-chart {
 	/* Metric chart controls. */
 	--metric-resolved: #087f82;

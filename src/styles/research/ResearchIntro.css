@@ -1,3 +1,4 @@
+/* Research introduction: --intro-title-size changes the headline; --intro-content-width limits text line length. */
 .research-intro {
 	/* Intro sizing and color controls. */
 	--intro-background: #edf3f1;

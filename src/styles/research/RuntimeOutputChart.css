@@ -1,3 +1,4 @@
+/* Runtime/output scatterplot: --runtime-ordinary and --runtime-productive distinguish typical and unusually productive programs. */
 .runtime-chart {
 	/* Runtime/output controls. */
 	--runtime-ordinary: #2e8c8e;
