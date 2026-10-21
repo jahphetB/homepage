@@ -1,0 +1,125 @@
+// Ordered About content. Add or reorder entries here without changing their UI components.
+// `media` is optional; only explicit `kind: "placeholder"` entries show placeholders.
+export const aboutGroupIntroductions = {
+	professional: {
+		id: "professional-background",
+		title: "Professional Background",
+		introduction: "The experience, education, and skills behind the work I build.",
+	},
+	personal: {
+		id: "more-about-me",
+		title: "More About Me",
+		introduction: "A little about where I come from and what keeps me curious.",
+	},
+};
+
+export const aboutLinks = {
+	experience: "#/about/experience/",
+	education: "#/about/education/",
+	personal: "#/about/more-about-me/",
+	blog: "#/about/blog/",
+};
+
+export const experienceEntries = [
+	{
+		id: "integration-specialist",
+		title: "Integration Specialist",
+		context: "The College of Idaho",
+		details: [
+			{ id: "web-development", text: "Web development" },
+			{ id: "web-design", text: "Web design" },
+			{ id: "systems-integration", text: "Systems integration" },
+		],
+	},
+	{
+		id: "teaching-assistant-grader",
+		title: "Teaching Assistant / Grader",
+		details: [
+			{ id: "calculus", text: "Calculus" },
+			{ id: "statistics", text: "Statistics" },
+			{ id: "tutoring-grading", text: "Tutoring and grading" },
+		],
+	},
+	{
+		id: "independent-study-research",
+		title: "Independent Study and Research",
+		details: [
+			{ id: "algorithms-java", text: "Data Structures and Algorithms using Java", note: "Supervised by Dr. Jonny Comes" },
+			{ id: "brainfuck-research", text: "Computational Limits of Short Brainfuck Programs", note: "Supervised by Dr. David Rosoff" },
+		],
+	},
+];
+
+export const educationGroups = [
+	{
+		id: "formal-education",
+		title: "Formal Education",
+		entries: [
+			{ id: "college-of-idaho", title: "The College of Idaho", context: "USA · Class of 2026", description: "Bachelor's degree in Computer Science and Mathematics." },
+			{ id: "mekelle-university", title: "Mekelle University", context: "Ethiopia · 2020–2021 · approximately nine months", description: "Software Engineering." },
+			{ id: "blessed-g-michael", title: "Blessed G/Michael Catholic School", context: "Bahir Dar, Ethiopia", description: "High school." },
+		],
+	},
+	{
+		id: "additional-education",
+		title: "Additional Education and Learning",
+		entries: [
+			{ id: "alx-africa", title: "ALX Africa", context: "First cohort in Ethiopia · approximately six months", description: "Web fundamentals and related technical training." },
+			{ id: "odin-project", title: "The Odin Project", description: "A full-stack web development curriculum with practical projects in HTML, CSS, JavaScript, React, and related tools." },
+		],
+	},
+];
+
+export const skillGroups = [
+	{ id: "frontend", title: "Frontend Development", skills: ["HTML", "CSS", "JavaScript", "React", "TypeScript"] },
+	{ id: "tools-quality", title: "Tools and Testing", skills: ["Git", "Vite", "Webpack", "Jest", "Vitest", "React Testing Library"] },
+	{ id: "systems-research", title: "Systems and Research", skills: ["APIs", "Python", "Java", "Data Structures and Algorithms", "Data Analysis"] },
+];
+
+export const backgroundEntries = [
+	{
+		id: "bahir-dar-to-us",
+		title: "From Bahir Dar to the United States",
+		description: "I was born and raised in Bahir Dar, Ethiopia, and moved to the United States in 2021 to attend college.",
+	},
+];
+
+export const factEntries = [
+	{
+		id: "fifa-since-2008",
+		title: "Football games, year after year",
+		description: "I have played every annual FIFA/EA Sports FC soccer game release since 2008.",
+		media: { kind: "placeholder", label: "FIFA / EA Sports FC cover image to come", aspect: "landscape" },
+	},
+	{
+		id: "zera-yacob",
+		title: "A philosophical mentor",
+		description: "Ethiopian philosopher Zera Yacob is one of my philosophical inspirations and mentors—yes, I know we have never met, but I mean it.",
+	},
+	{ id: "wushu", title: "Wushu", description: "I hold a blue belt in Wushu martial arts." },
+	{ id: "running-gym", title: "Running and the gym", description: "I enjoy running and working out at the gym." },
+];
+
+export const blogPreview = {
+	id: "personal-blog",
+	title: "Personal Blog",
+	description: "There are no blog posts yet.",
+	href: aboutLinks.blog,
+};
+
+export const bookEntries = [
+	{
+		id: "sample-book-one",
+		title: "Sample Book One",
+		description: "Fictional sample entry. Replace this text and cover with a real book later.",
+		sample: true,
+		media: { kind: "placeholder", label: "Sample book cover one", aspect: "portrait" },
+	},
+	{
+		id: "sample-book-two",
+		title: "Sample Book Two",
+		description: "Fictional sample entry. Replace this text and cover with a real book later.",
+		sample: true,
+		media: { kind: "placeholder", label: "Sample book cover two", aspect: "portrait" },
+	},
+];
