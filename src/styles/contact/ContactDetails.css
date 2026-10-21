@@ -1,3 +1,4 @@
+/* Contact address/email: --contact-details-gap spaces rows; --contact-email-icon-size changes the email icon. */
 #contact-details {
   /* Address and email controls. */
   --contact-details-size: 1rem;

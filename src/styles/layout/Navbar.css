@@ -1,3 +1,4 @@
+/* Shared navigation shell: --nav-height and --nav-padding-inline size it; --nav-position controls whether it stays visible on scroll. */
 .site-nav {
   /* Navigation container controls. Sticky positioning reserves its actual height. */
   --nav-position: sticky;

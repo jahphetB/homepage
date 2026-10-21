@@ -1,3 +1,4 @@
+/* Shared footer: --footer-columns and --footer-gap control its layout; --footer-padding-block changes its height. */
 .site-footer {
   /* Footer layout, color, and typography controls. */
   --footer-columns: repeat(3, minmax(0, 1fr));

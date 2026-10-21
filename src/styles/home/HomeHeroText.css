@@ -1,3 +1,4 @@
+/* Hero labels: --designer-text-left and --builder-text-right position the words; their title-size variables scale them. */
 #home-section {
   /* Designer text controls. */
   --designer-text-left: 55.2%;

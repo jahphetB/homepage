@@ -1,3 +1,4 @@
+/* About cards: adjust --about-entry-background and --about-entry-border for the surface; change .about-entry padding for inner space. */
 .about-entry {
 	/* Entry surface and typography controls. */
 	--about-entry-background: #f8f9f8;

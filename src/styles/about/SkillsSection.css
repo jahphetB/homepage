@@ -1,3 +1,4 @@
+/* Skill groups: --about-skills-column-min determines when columns wrap; --about-skills-chip-gap spaces skill labels. */
 .about-skills__groups {
 	/* Technical-skill layout and chip controls. */
 	--about-skills-column-min: 18rem;

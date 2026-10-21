@@ -1,3 +1,4 @@
+/* Header name/logo: --brand-size controls type scale; --brand-offset-x and --brand-offset-y nudge its position. */
 .nav-brand {
   /* Brand controls. */
   --brand-color: #0f3b47;

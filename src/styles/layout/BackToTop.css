@@ -1,3 +1,4 @@
+/* Back-to-top area: --top-align moves the button horizontally; --top-padding-block separates it from the footer. */
 .back-to-top {
   /* Back-to-top position and appearance controls. */
   --top-align: flex-end;

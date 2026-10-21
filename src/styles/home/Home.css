@@ -1,3 +1,4 @@
+/* Landing images: --home-height changes hero height; --home-image-fit controls cropping; animation and brightness variables tune the reveal. */
 #home-section {
   /* Layout and image controls: current dimensions and crop preserved. */
   --home-height: clamp(250px, 30vw, 450px);

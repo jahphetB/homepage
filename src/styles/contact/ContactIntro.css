@@ -1,3 +1,4 @@
+/* Contact introduction: --contact-heading-size changes the title; --contact-heading-gap separates it from supporting text. */
 #contact-intro {
   /* Introduction controls. */
   --contact-heading-color: #242422;

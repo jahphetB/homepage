@@ -1,3 +1,4 @@
+/* About subsections: lower --about-section-padding-block for tighter heading boundaries; --about-section-entry-gap spaces their cards. */
 .about-section {
 	/* Reusable subsection controls. */
 	--about-section-border: #d4dcdb;

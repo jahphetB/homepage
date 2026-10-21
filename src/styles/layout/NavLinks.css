@@ -1,3 +1,4 @@
+/* Header links: --nav-links-gap controls desktop spacing; --nav-links-mobile-gap adjusts wrapped links on small screens. */
 .nav-links {
   /* Links controls. */
   --nav-links-gap: clamp(0.8rem, 2vw, 2rem);

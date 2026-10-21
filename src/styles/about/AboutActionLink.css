@@ -1,3 +1,4 @@
+/* About "More" links: --about-action-padding sizes the button; --about-action-background and --about-action-hover set its colors. */
 .about-action-link {
 	/* About page action controls. */
 	--about-action-color: #fff;

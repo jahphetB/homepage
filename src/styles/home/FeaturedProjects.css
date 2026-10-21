@@ -1,3 +1,4 @@
+/* Home project preview: --featured-title-gap spaces the heading and grid; --featured-padding-block sets the section height. */
 .featured-projects {
   /* Preview container controls. */
   --featured-max-width: 90rem;

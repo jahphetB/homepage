@@ -1,3 +1,4 @@
+/* About detail placeholders: --about-coming-soon-max-width controls line length; --about-coming-soon-pad-block sets vertical space. */
 .about-coming-soon {
 	/* Detail-page layout, type, and color controls. */
 	--about-coming-soon-max-width: 54rem;

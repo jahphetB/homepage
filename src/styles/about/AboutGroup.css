@@ -1,3 +1,4 @@
+/* Chapter headings: lower --about-group-first-section-gap to bring "Professional Background" closer to "Experience"; --about-group-section-gap spaces later sections. */
 .about-group {
 	/* Main About chapter controls. */
 	--about-group-border: #bbc9ca;

@@ -1,3 +1,4 @@
+/* About page frame: lower --about-page-groups-gap to bring the two chapters closer; --about-page-groups-top-gap controls the space below the introduction. */
 .about-page {
 	/* Page layout and surface controls; preserve the introduction dimensions. */
 	--about-page-max-width: 54rem;

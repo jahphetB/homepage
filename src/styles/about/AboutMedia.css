@@ -1,3 +1,4 @@
+/* Optional About images: --about-media-radius rounds the frame; .about-media__image controls fit and portrait aspect ratio. */
 .about-media {
 	/* Optional image and explicit placeholder controls. */
 	--about-media-border: #c6d2d0;

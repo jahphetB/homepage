@@ -1,3 +1,4 @@
+/* Book cards: --about-books-columns and --about-books-gap control the grid; --about-books-cover-width-mobile sizes covers below 540px. */
 .about-books__grid {
 	/* Change column count, spacing, or breakpoint without editing the book component. */
 	--about-books-columns: 2;
