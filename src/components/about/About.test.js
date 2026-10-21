@@ -9,6 +9,8 @@ let vite;
 let About;
 let AboutSection;
 let AboutMedia;
+let AboutComingSoon;
+let readPage;
 let SkillsSection;
 
 before(async () => {
@@ -16,6 +18,8 @@ before(async () => {
 	({ default: About } = await vite.ssrLoadModule("/src/components/about/About.jsx"));
 	({ default: AboutSection } = await vite.ssrLoadModule("/src/components/about/AboutSection.jsx"));
 	({ default: AboutMedia } = await vite.ssrLoadModule("/src/components/about/AboutMedia.jsx"));
+	({ default: AboutComingSoon } = await vite.ssrLoadModule("/src/components/about/AboutComingSoon.jsx"));
+	({ readPage } = await vite.ssrLoadModule("/src/App.jsx"));
 	({ default: SkillsSection } = await vite.ssrLoadModule("/src/components/about/SkillsSection.jsx"));
 });
 
@@ -48,8 +52,22 @@ test("About preserves its introduction and renders exactly two main chapters", (
 	assert.match(markup, /Full-Stack React, TypeScript, and Node/);
 	assert.equal((markup.match(/class="about-media__image"/g) ?? []).length, 3);
 	assert.doesNotMatch(markup, /about-media--placeholder/);
-	assert.doesNotMatch(markup, /#\/about\/(?:blog|more-about-me)\//);
+	for (const href of Object.values(aboutLinks)) assert.ok(markup.includes(`href="${href}"`));
 	assert.equal((markup.match(/class="about-group /g) ?? []).length, 2);
+});
+
+test("About detail destinations have a useful temporary page and a way back", () => {
+	const markup = renderToStaticMarkup(React.createElement(AboutComingSoon, { title: "Experience" }));
+	assert.match(markup, /Coming soon\. This page is currently being designed and built\./);
+	assert.match(markup, /href="#\/about"/);
+	assert.match(markup, /aria-labelledby="about-coming-soon-heading"/);
+});
+
+test("all About detail URLs resolve without falling back to Home", () => {
+	for (const href of Object.values(aboutLinks)) {
+		assert.equal(readPage(href), href.slice(1));
+	}
+	assert.equal(readPage("#/about"), "about");
 });
 
 test("skill groups can be extended through data without changing their component", () => {

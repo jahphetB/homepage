@@ -1,7 +1,8 @@
+import AboutActionLink from "./AboutActionLink";
 import "../../styles/about/AboutGroup.css";
 
 // A top-level About chapter; future subsections are passed as children.
-export default function AboutGroup({ id, title, introduction, children }) {
+export default function AboutGroup({ id, title, introduction, children, action }) {
 	return (
 		<section className={`about-group about-group--${id}`} id={id} aria-labelledby={`${id}-heading`}>
 			<div className="about-group__header">
@@ -9,6 +10,7 @@ export default function AboutGroup({ id, title, introduction, children }) {
 				<p className="about-group__introduction">{introduction}</p>
 			</div>
 			{children && <div className="about-group__sections">{children}</div>}
+			{action && <AboutActionLink href={action.href} label={action.label} />}
 		</section>
 	);
 }

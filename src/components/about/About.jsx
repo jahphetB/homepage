@@ -1,5 +1,5 @@
 import "../../styles/about/About.css";
-import { aboutGroupIntroductions, backgroundEntries, educationGroups, experienceEntries, factEntries, skillGroups } from "../../data/about";
+import { aboutGroupIntroductions, aboutLinks, backgroundEntries, educationGroups, experienceEntries, factEntries, skillGroups } from "../../data/about";
 import AboutGroup from "./AboutGroup";
 import AboutSection from "./AboutSection";
 import BlogSection from "./BlogSection";
@@ -18,11 +18,11 @@ export default function About() {
 				</p>
 				<div className="about-page__groups">
 					<AboutGroup {...aboutGroupIntroductions.professional}>
-						<AboutSection id="experience" title="Experience" introduction="Work, teaching, and research that shaped how I build and learn." entries={experienceEntries} />
-						<AboutSection id="education" title="Education" introduction="Formal study alongside continued, project-based learning." groups={educationGroups} />
+						<AboutSection id="experience" title="Experience" introduction="" entries={experienceEntries} action={{ href: aboutLinks.experience, label: "More" }} />
+						<AboutSection id="education" title="Education" introduction="." groups={educationGroups} action={{ href: aboutLinks.education, label: "More" }} />
 						<SkillsSection groups={skillGroups} />
 					</AboutGroup>
-					<AboutGroup {...aboutGroupIntroductions.personal}>
+					<AboutGroup {...aboutGroupIntroductions.personal} action={{ href: aboutLinks.personal, label: "More About Me" }}>
 						<AboutSection id="personal-background" title="Where I Come From" entries={backgroundEntries} />
 						<AboutSection id="random-facts" title="A Few Random Facts" entries={factEntries} />
 						<BlogSection />

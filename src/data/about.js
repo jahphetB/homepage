@@ -20,6 +20,14 @@ export const aboutLinks = {
 	blog: "#/about/blog/",
 };
 
+// Shared detail-page registry; add a route here when a new About destination is needed.
+export const aboutDetailPages = Object.fromEntries([
+	[aboutLinks.experience, "Experience"],
+	[aboutLinks.education, "Education"],
+	[aboutLinks.personal, "More About Me"],
+	[aboutLinks.blog, "Personal Blog"],
+].map(([href, title]) => [href.slice(1), { href, title }]));
+
 export const experienceEntries = [
 	{
 		id: "integration-specialist",

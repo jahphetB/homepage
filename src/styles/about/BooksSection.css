@@ -2,6 +2,7 @@
 	/* Change column count, spacing, or breakpoint without editing the book component. */
 	--about-books-columns: 2;
 	--about-books-gap: 0.9rem;
+	--about-books-cover-width-mobile: 10rem;
 	display: grid;
 	grid-template-columns: repeat(var(--about-books-columns), minmax(0, 1fr));
 	gap: var(--about-books-gap);
@@ -11,4 +12,11 @@
 
 @media (max-width: 680px) {
 	.about-books__grid { --about-books-columns: 1; }
+}
+
+@media (max-width: 540px) {
+	.about-books__grid .about-entry > .about-media {
+		flex-basis: auto;
+		width: min(100%, var(--about-books-cover-width-mobile));
+	}
 }

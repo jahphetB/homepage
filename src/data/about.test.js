@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { aboutLinks, backgroundEntries, bookEntries, educationGroups, experienceEntries, factEntries, skillGroups } from "./about.js";
+import { aboutDetailPages, aboutLinks, backgroundEntries, bookEntries, educationGroups, experienceEntries, factEntries, skillGroups } from "./about.js";
 
 test("About collections have stable, unique entry IDs", () => {
 	const entries = [
@@ -30,4 +30,6 @@ test("only the game and books include media, all backed by real image files", ()
 test("future About destinations use the site's hash-route convention", () => {
 	assert.equal(aboutLinks.experience, "#/about/experience/");
 	assert.ok(Object.values(aboutLinks).every((href) => href.startsWith("#/about/")));
+	assert.deepEqual(Object.keys(aboutDetailPages), Object.values(aboutLinks).map((href) => href.slice(1)));
+	assert.ok(Object.values(aboutDetailPages).every((page) => page.title));
 });
